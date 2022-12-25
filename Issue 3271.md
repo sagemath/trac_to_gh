@@ -99,7 +99,7 @@ I thought `MPolynomialRing` was set to be deprecated, see #2353.
 archive/issue_events_003490.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2008-05-22T16:36:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3271",

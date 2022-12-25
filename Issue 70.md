@@ -101,7 +101,7 @@ else:
 archive/issue_events_000071.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2006-10-11T06:37:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/70",

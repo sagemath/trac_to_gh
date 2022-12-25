@@ -127,7 +127,7 @@ Thanks for the review!
 archive/issue_events_009226.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-28T09:11:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
@@ -203,7 +203,7 @@ Changing status from closed to needs_work.
 archive/issue_events_009227.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-28T09:28:16Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
@@ -280,7 +280,7 @@ Changing status from needs_work to positive_review.
 archive/issue_events_009228.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-01T10:06:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9075",

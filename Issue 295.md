@@ -144,7 +144,7 @@ This requires the doctest.ELLIPSIS option be added to local/bin/sage-doctest, so
 archive/issue_events_000312.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2007-02-28T20:33:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/295",

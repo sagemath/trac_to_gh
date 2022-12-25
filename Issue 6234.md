@@ -220,7 +220,7 @@ Real test will sage-4.0.2.alpha1.
 archive/issue_events_006479.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2009-06-12T08:07:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6234",

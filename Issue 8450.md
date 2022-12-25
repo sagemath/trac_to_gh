@@ -1283,7 +1283,7 @@ Setting milestone to 9.6 now that 9.5 is out.
 archive/issue_events_008634.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2022-01-31T23:32:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",

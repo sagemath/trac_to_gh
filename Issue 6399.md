@@ -227,7 +227,7 @@ I'm not sure who the reviewer was. And the milestone for this ticket should be 4
 archive/issue_events_006645.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-17T07:45:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6399",

@@ -425,7 +425,7 @@ Resolution: fixed
 archive/issue_events_007624.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-19T17:44:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7401",
@@ -503,7 +503,7 @@ Changing status from closed to needs_work.
 archive/issue_events_007625.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-22T07:27:24Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7401",
@@ -864,7 +864,7 @@ Changing status from needs_review to positive_review.
 archive/issue_events_007626.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-12-18T00:57:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7401",

@@ -161,7 +161,7 @@ Looks good to me; doctests pass in sage/calculus and sage/rings.  (Apply all thr
 archive/issue_events_001306.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-02T22:07:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1174",

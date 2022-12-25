@@ -93,7 +93,7 @@ I think the problem is that in the save routine (actually, in the .matplotlib() 
 archive/issue_events_008230.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-12-21T20:36:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8019",

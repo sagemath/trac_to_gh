@@ -128,7 +128,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/152
 archive/issue_events_000158.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-02-08T21:30:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/152",

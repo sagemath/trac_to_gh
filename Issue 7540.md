@@ -103,7 +103,7 @@ Done in #7966
 archive/issue_events_007770.json:
 ```json
 {
-    "actor": "@nathanncohen",
+    "actor": "https://github.com/nathanncohen",
     "created_at": "2010-01-19T06:22:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7540",

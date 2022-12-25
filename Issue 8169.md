@@ -1321,7 +1321,7 @@ Changing component from geometry to optional packages.
 archive/issue_events_008373.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-02-06T09:58:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",

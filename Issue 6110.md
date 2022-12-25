@@ -110,7 +110,7 @@ Looks and works well for me. Lets get this pickle stuff in.
 archive/issue_events_006361.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-13T21:53:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6110",

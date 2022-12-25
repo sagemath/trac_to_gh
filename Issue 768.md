@@ -237,7 +237,7 @@ Added a proper patch;  this will be in sage-2.8.6.
 archive/issue_events_000865.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-04T04:46:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/768",
@@ -345,7 +345,7 @@ Changing status from closed to reopened.
 archive/issue_events_000866.json:
 ```json
 {
-    "actor": "@nbruin",
+    "actor": "https://github.com/nbruin",
     "created_at": "2007-10-05T23:57:39Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/768",
@@ -510,7 +510,7 @@ Resolution: fixed
 archive/issue_events_000867.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-10-23T22:20:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/768",
@@ -582,7 +582,7 @@ Changing status from closed to reopened.
 archive/issue_events_000868.json:
 ```json
 {
-    "actor": "@nbruin",
+    "actor": "https://github.com/nbruin",
     "created_at": "2007-10-24T17:50:14Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/768",
@@ -616,7 +616,7 @@ Resolution: fixed
 archive/issue_events_000869.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-10-24T18:01:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/768",

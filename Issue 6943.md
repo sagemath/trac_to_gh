@@ -179,7 +179,7 @@ Should we close this ticket as fixed?
 archive/issue_events_007167.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-31T18:21:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6943",

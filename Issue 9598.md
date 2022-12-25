@@ -617,7 +617,7 @@ Resolution: fixed
 archive/issue_events_009742.json:
 ```json
 {
-    "actor": "@NathanDunfield",
+    "actor": "https://github.com/NathanDunfield",
     "created_at": "2010-12-03T15:20:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9598",

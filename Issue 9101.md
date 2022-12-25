@@ -167,7 +167,7 @@ Resolution: invalid
 archive/issue_events_009258.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-07-14T08:08:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9101",
@@ -241,7 +241,7 @@ Changing status from closed to new.
 archive/issue_events_009259.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-07-15T14:24:11Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9101",
@@ -316,7 +316,7 @@ I'm closing this since #9508 was closed.
 archive/issue_events_009260.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-09-01T00:05:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9101",

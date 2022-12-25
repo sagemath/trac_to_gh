@@ -68,7 +68,7 @@ so this is no longer even a problem.
 archive/issue_events_006644.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-07-09T05:07:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6398",

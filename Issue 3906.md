@@ -86,7 +86,7 @@ This patch is found also at #3907.
 archive/issue_events_004133.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2008-09-05T19:41:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3906",

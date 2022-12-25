@@ -179,7 +179,7 @@ very old stuff indeed, obsolete
 archive/issue_events_003654.json:
 ```json
 {
-    "actor": "@embray",
+    "actor": "https://github.com/embray",
     "created_at": "2019-02-26T13:58:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3435",

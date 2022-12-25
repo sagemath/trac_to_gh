@@ -110,7 +110,7 @@ Since it seems that on other platforms one does need to link against all one's d
 archive/issue_events_002855.json:
 ```json
 {
-    "actor": "@timabbott",
+    "actor": "https://github.com/timabbott",
     "created_at": "2008-05-27T03:22:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2663",

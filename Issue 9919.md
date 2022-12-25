@@ -421,7 +421,7 @@ Sounds good.  Thanks for the information.  I'll add this to SageNB 0.8.4 at #100
 archive/issue_events_010046.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-10-06T03:33:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",

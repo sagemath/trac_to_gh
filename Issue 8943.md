@@ -198,7 +198,7 @@ Resolution: fixed
 archive/issue_events_009097.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-05-27T12:01:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8943",

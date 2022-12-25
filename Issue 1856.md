@@ -163,7 +163,7 @@ Merged trac-1856.patch in Sage 2.10.1.alpha. mhansen's patch gave rejects.
 archive/issue_events_002014.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-21T04:19:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1856",

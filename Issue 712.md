@@ -191,7 +191,7 @@ Attachment [j](tarball://root/attachments/some-uuid/ticket712/j) by mabshoff cre
 archive/issue_events_000785.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-01-19T13:30:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/712",

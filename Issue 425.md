@@ -105,7 +105,7 @@ Resolution: invalid
 archive/issue_events_000452.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2008-08-23T23:19:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/425",

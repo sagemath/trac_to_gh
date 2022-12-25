@@ -165,7 +165,7 @@ Please remember to update the Author(s) and Reviewer(s) fields.  I've entered gu
 archive/issue_events_009722.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-08-09T09:46:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9575",

@@ -136,7 +136,7 @@ Closing as obsolete...
 archive/issue_events_004126.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2017-03-08T13:18:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3899",

@@ -156,7 +156,7 @@ Merged in Sage 2.11.alpha0 - all doctests pass [except know issues]
 archive/issue_events_002803.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-22T04:02:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2613",

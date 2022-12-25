@@ -135,7 +135,7 @@ BTW, It compiles fine with gcc without the c99 flag, but I figured I'd put it th
 archive/issue_events_005864.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-03-31T06:18:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5622",

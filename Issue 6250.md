@@ -217,7 +217,7 @@ The second patch applied cleanly to 4.0.1.a0 but failed sage -testall. However, 
 archive/issue_events_006494.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-13T21:38:17Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6250",

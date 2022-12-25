@@ -312,7 +312,7 @@ Close as a duplicate of #8056.
 archive/issue_events_008024.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-17T05:07:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7810",

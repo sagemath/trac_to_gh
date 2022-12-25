@@ -387,7 +387,7 @@ I'm still changing this to positive review since the patch fixes a bug and a mor
 archive/issue_events_008778.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-06T08:28:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",

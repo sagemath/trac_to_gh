@@ -105,7 +105,7 @@ Looks good, applies to 2.11.alpha1 + #2683, passes doctests.
 archive/issue_events_002897.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-29T00:01:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2708",

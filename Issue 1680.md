@@ -186,7 +186,7 @@ Yep, this has been fixed.
 archive/issue_events_001839.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-07T04:03:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1680",

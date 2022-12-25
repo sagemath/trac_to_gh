@@ -111,7 +111,7 @@ Anyway, this patch applies (after #6568) and is clearly correct, so positive rev
 archive/issue_events_007086.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-03T08:16:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6853",

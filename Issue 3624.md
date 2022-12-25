@@ -487,7 +487,7 @@ I really thought I had tested this.
 archive/issue_events_003843.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-08-16T09:32:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3624",

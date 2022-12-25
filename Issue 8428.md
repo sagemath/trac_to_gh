@@ -254,7 +254,7 @@ Merged "trac_8428_rational_points_iterator.patch" into 4.4.alpha0.
 archive/issue_events_008613.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-15T23:51:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8428",

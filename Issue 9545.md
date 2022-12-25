@@ -49,7 +49,7 @@ Attachment [flintqs-20070817.p5.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_events_009694.json:
 ```json
 {
-    "actor": "@peterjeremy",
+    "actor": "https://github.com/peterjeremy",
     "created_at": "2010-07-18T20:51:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9545",

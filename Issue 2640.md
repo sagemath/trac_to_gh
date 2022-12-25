@@ -80,7 +80,7 @@ I think http://www.sagemath.org/lists.html looks good.
 archive/issue_events_002831.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-22T01:23:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2640",

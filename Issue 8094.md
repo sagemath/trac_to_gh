@@ -785,7 +785,7 @@ Attached rebased versions of two patches because of fuzz 2.
 archive/issue_events_008302.json:
 ```json
 {
-    "actor": "@nexttime",
+    "actor": "https://github.com/nexttime",
     "created_at": "2011-09-18T09:37:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",

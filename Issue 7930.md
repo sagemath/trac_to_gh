@@ -335,7 +335,7 @@ Resolution: fixed
 archive/issue_events_008146.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-20T07:12:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",

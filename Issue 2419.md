@@ -623,7 +623,7 @@ Resolution: fixed
 archive/issue_events_002595.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-12T19:45:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
@@ -657,7 +657,7 @@ Changing status from closed to reopened.
 archive/issue_events_002596.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-03-12T19:47:46Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
@@ -990,7 +990,7 @@ Applies and passes tests against 3.0alpha5.  Looks good to me.
 archive/issue_events_002597.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-21T00:41:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2419",

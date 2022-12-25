@@ -140,7 +140,7 @@ Changing status from needs_review to positive_review.
 archive/issue_events_009521.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-06-29T16:15:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9368",
@@ -222,7 +222,7 @@ Changing status from closed to needs_work.
 archive/issue_events_009522.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2010-07-15T12:22:55Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9368",
@@ -406,7 +406,7 @@ Another good idea, would be to change the sage build system, so that when if spk
 archive/issue_events_009523.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-07-15T13:18:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9368",

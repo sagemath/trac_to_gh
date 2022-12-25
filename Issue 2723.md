@@ -92,7 +92,7 @@ patch looks good.
 archive/issue_events_002911.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-29T19:19:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2723",

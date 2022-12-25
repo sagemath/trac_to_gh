@@ -130,7 +130,7 @@ This has already been resolved included in Sage.
 archive/issue_events_001737.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2008-01-15T06:14:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1581",

@@ -89,7 +89,7 @@ fixed by patch:
 archive/issue_events_000660.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-07T01:53:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/602",

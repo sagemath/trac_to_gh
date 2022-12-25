@@ -328,7 +328,7 @@ In particular, a SageNB-rebased patch for #5447 will also touch `sagenb/data/sag
 archive/issue_events_006699.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-10-17T07:32:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6459",

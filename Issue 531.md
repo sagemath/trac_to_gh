@@ -89,7 +89,7 @@ http://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-20070830.spkg
 archive/issue_events_000570.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-09-05T21:02:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/531",

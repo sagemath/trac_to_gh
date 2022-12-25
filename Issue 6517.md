@@ -971,7 +971,7 @@ Resolution: fixed
 archive/issue_events_006753.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-20T05:42:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
@@ -1045,7 +1045,7 @@ Changing status from closed to new.
 archive/issue_events_006754.json:
 ```json
 {
-    "actor": "@hemmecke",
+    "actor": "https://github.com/hemmecke",
     "created_at": "2010-06-17T15:07:01Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
@@ -1426,7 +1426,7 @@ Adam
 archive/issue_events_006755.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-27T20:07:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",

@@ -131,7 +131,7 @@ Resolution: duplicate
 archive/issue_events_005729.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2013-07-22T14:38:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5475",

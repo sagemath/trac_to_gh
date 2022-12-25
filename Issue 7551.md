@@ -62,7 +62,7 @@ make fortran a prerequisite on all platforms except OS X. Remove g95 binaries fr
 archive/issue_events_007781.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2009-12-06T10:44:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7551",

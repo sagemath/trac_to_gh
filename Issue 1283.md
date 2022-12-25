@@ -105,7 +105,7 @@ Resolution: duplicate
 archive/issue_events_001426.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2008-03-04T22:24:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1283",

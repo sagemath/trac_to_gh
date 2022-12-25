@@ -164,7 +164,7 @@ Given http://comments.gmane.org/gmane.comp.mathematics.sage.devel/67430 , I thin
 archive/issue_events_006164.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2013-07-23T14:55:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5910",

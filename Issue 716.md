@@ -211,7 +211,7 @@ Attachment [change_arc_to_edge.hg](tarball://root/attachments/some-uuid/ticket71
 archive/issue_events_000793.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-09-21T02:06:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
@@ -337,7 +337,7 @@ Changing status from closed to reopened.
 archive/issue_events_000794.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-10-24T19:04:22Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
@@ -371,7 +371,7 @@ Resolution: fixed
 archive/issue_events_000795.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-10-24T19:04:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/716",

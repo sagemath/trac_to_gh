@@ -149,7 +149,7 @@ My fault. Latest version is correct. This can be closed.
 archive/issue_events_009231.json:
 ```json
 {
-    "actor": "ralle",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/ralle",
     "created_at": "2010-05-31T11:03:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9078",
@@ -221,7 +221,7 @@ Changing status from closed to new.
 archive/issue_events_009232.json:
 ```json
 {
-    "actor": "johanbosman",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/johanbosman",
     "created_at": "2010-05-31T11:40:58Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9078",
@@ -273,7 +273,7 @@ Resolution: invalid
 archive/issue_events_009233.json:
 ```json
 {
-    "actor": "johanbosman",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/johanbosman",
     "created_at": "2010-05-31T11:41:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9078",
@@ -307,7 +307,7 @@ Changing status from closed to needs_work.
 archive/issue_events_009234.json:
 ```json
 {
-    "actor": "johanbosman",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/johanbosman",
     "created_at": "2010-05-31T11:42:26Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9078",
@@ -341,7 +341,7 @@ So it can be closed as 'invalid'.
 archive/issue_events_009235.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-05-31T18:33:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9078",

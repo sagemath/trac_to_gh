@@ -68,7 +68,7 @@ Attachment [is_subgraph.patch](tarball://root/attachments/some-uuid/ticket1551/i
 archive/issue_events_001705.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-12-18T02:15:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1551",

@@ -256,7 +256,7 @@ Doctests pass with the latter patch and the one in #7532, so I'll mark both as p
 archive/issue_events_007765.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-23T19:54:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7535",

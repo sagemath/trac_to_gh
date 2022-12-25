@@ -948,7 +948,7 @@ Resolution: duplicate
 archive/issue_events_001462.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-03-09T23:46:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",

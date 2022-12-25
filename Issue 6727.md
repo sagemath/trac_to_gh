@@ -69,7 +69,7 @@ Looks good.  I think "PNG's" should be "PNGs", but I still give this a positive 
 archive/issue_events_006961.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-13T07:50:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6727",

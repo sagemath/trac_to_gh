@@ -271,7 +271,7 @@ Merged conjugate-partition.4.patch in Sage 2.10.1.rc3
 archive/issue_events_002127.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-30T02:51:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
@@ -341,7 +341,7 @@ Changing status from closed to reopened.
 archive/issue_events_002128.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-30T04:07:09Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
@@ -508,7 +508,7 @@ Resolution: fixed
 archive/issue_events_002129.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-01T04:24:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",

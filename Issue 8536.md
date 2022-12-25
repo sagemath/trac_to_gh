@@ -310,7 +310,7 @@ Merged "trac_8536-SAGE.2.patch" in 4.4.alpha0.
 archive/issue_events_008715.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-16T18:40:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8536",

@@ -179,7 +179,7 @@ Works for me and fixes the problem in Sage 4.3.1. Tests passed. Thanks for the p
 archive/issue_events_008290.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-30T23:47:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8084",

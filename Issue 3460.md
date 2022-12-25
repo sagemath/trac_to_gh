@@ -77,7 +77,7 @@ Merged in Sage 3.1.alpha1
 archive/issue_events_003679.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-10T05:59:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
@@ -129,7 +129,7 @@ Changing status from closed to reopened.
 archive/issue_events_003680.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-10T06:02:03Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
@@ -269,7 +269,7 @@ Merged 3460-ncalexan-nf-power-basis-3.patch in Sage 3.1.alpha1
 archive/issue_events_003681.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-10T20:21:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",

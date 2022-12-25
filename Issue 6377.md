@@ -243,7 +243,7 @@ Note: I am giving partial positive review because I tested this patch against my
 archive/issue_events_006625.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-03T00:31:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6377",

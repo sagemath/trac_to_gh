@@ -181,7 +181,7 @@ Pass :)  Good catch.
 archive/issue_events_009772.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-05-03T12:28:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9633",

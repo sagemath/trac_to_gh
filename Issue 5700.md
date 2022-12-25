@@ -149,7 +149,7 @@ As mentioned above, this ticket will be superseded by #5555, so this ticket shou
 archive/issue_events_005942.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2009-04-09T20:53:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5700",

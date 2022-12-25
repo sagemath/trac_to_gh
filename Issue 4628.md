@@ -68,7 +68,7 @@ Yep, this is exactly the right fix. As one can see from the comments in the orig
 archive/issue_events_004875.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-27T02:02:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4628",

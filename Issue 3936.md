@@ -65,7 +65,7 @@ What about `1 == None` or `1 != None`, should those throw errors as well? (They 
 archive/issue_events_004165.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2009-01-23T07:38:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3936",

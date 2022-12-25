@@ -108,7 +108,7 @@ Image fonts are already included in sagenb. Please close this.
 archive/issue_events_001766.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-15T15:58:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
@@ -198,7 +198,7 @@ Changing status from closed to new.
 archive/issue_events_001767.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-11-16T19:15:52Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
@@ -331,7 +331,7 @@ Changing status from needs_review to needs_work.
 archive/issue_events_001768.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2020-03-29T02:02:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1608",

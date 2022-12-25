@@ -445,7 +445,7 @@ All tests pass on a clean install, so most probably my previous failure was due 
 archive/issue_events_008254.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-02-11T14:45:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8044",

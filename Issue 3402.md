@@ -123,7 +123,7 @@ The patch is obviously correct and I've also tested it.
 archive/issue_events_003618.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-06-16T04:30:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3402",

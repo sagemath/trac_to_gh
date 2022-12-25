@@ -347,7 +347,7 @@ Thanks, Jeroen!
 archive/issue_events_002689.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-08-09T09:50:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2508",

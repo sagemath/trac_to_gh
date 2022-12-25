@@ -209,7 +209,7 @@ Thanks for the explanation -- and sorry for delay, I did not get a message from 
 archive/issue_events_008780.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-16T18:52:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8609",

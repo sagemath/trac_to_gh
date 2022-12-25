@@ -274,7 +274,7 @@ I applied both patches, checked it out a bit and give a positive review.
 archive/issue_events_002402.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-04T18:14:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2232",

@@ -269,7 +269,7 @@ Exiting SAGE (CPU time 0m1.16s, Wall time 0m14.02s).
 archive/issue_events_002575.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-07T05:56:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2399",

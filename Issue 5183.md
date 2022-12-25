@@ -97,7 +97,7 @@ These two examples seem to work now, so I think we can close this.
 archive/issue_events_005437.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-02-20T00:49:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5183",

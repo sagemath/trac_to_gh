@@ -125,7 +125,7 @@ algebra book about localisation.
 archive/issue_events_003334.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2008-06-03T14:52:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3117",

@@ -312,7 +312,7 @@ If someone doesn't agree, feel free to open it back up or email to have a discus
 archive/issue_events_002184.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2008-02-18T21:22:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2028",

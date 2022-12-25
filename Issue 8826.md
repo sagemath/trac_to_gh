@@ -72,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8826
 archive/issue_events_008989.json:
 ```json
 {
-    "actor": "gostrc",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/gostrc",
     "created_at": "2010-05-04T01:36:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8826",
@@ -160,7 +160,7 @@ Changing status from closed to new.
 archive/issue_events_008990.json:
 ```json
 {
-    "actor": "gostrc",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/gostrc",
     "created_at": "2010-05-18T03:14:16Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8826",
@@ -176,7 +176,7 @@ archive/issue_events_008990.json:
 archive/issue_events_008991.json:
 ```json
 {
-    "actor": "gostrc",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/gostrc",
     "created_at": "2010-06-06T20:16:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8826",

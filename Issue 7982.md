@@ -462,7 +462,7 @@ dave
 archive/issue_events_008197.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-06-25T15:47:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7982",

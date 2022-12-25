@@ -111,7 +111,7 @@ there is just a "newline missing" note from mercurial at the bottom of the first
 archive/issue_events_006950.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-14T10:42:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6715",

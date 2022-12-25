@@ -71,7 +71,7 @@ Resolution: invalid
 archive/issue_events_008021.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-10-09T08:28:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7806",

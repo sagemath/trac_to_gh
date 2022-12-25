@@ -660,7 +660,7 @@ Dave
 archive/issue_events_009540.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-07-04T14:05:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
@@ -953,7 +953,7 @@ Changing status from closed to new.
 archive/issue_events_009541.json:
 ```json
 {
-    "actor": "olazo",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/olazo",
     "created_at": "2010-07-04T15:54:34Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
@@ -1263,7 +1263,7 @@ Resolution: invalid
 archive/issue_events_009542.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-07-13T00:35:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
@@ -1500,7 +1500,7 @@ Changing status from closed to new.
 archive/issue_events_009543.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-10-18T11:42:11Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
@@ -1781,7 +1781,7 @@ It's not clear whether there really is a problem, I don't know any recent report
 archive/issue_events_009544.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-05-24T12:25:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",

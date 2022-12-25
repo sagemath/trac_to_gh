@@ -685,7 +685,7 @@ I am very happy to endorse this decision.  When I looked at this some time ago I
 archive/issue_events_006820.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-01-04T04:02:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",

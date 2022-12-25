@@ -642,7 +642,7 @@ Jennifer: you should put the ticket number in your patch.
 archive/issue_events_008143.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-03T14:40:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",

@@ -187,7 +187,7 @@ LGTM.
 archive/issue_events_009840.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2019-03-14T18:14:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9707",

@@ -57,7 +57,7 @@ Duplicate of #9189.  I'm not sure why I didn't see this one before.
 archive/issue_events_008829.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-09T17:14:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8657",

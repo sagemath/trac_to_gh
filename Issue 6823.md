@@ -223,7 +223,7 @@ Nathann
 archive/issue_events_007057.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-15T16:25:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6823",

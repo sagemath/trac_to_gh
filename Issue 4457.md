@@ -202,7 +202,7 @@ I think that's fine.  We can just move it to the Sphinx milestone and close it t
 archive/issue_events_004703.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-24T17:55:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4457",

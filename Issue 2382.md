@@ -160,7 +160,7 @@ Merged trac_2382.3.patch in Sage 2.10.3.rc2
 archive/issue_events_002558.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-04T23:51:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2382",

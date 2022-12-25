@@ -202,7 +202,7 @@ Great, thank you!
 archive/issue_events_009749.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-01-17T10:03:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9606",

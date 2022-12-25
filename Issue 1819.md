@@ -630,7 +630,7 @@ Looks good. Fixes the documentation warning.
 archive/issue_events_001976.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-03-08T21:45:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1819",

@@ -141,7 +141,7 @@ Merged [trac_8877-k_bounded-as.2.patch](http://trac.sagemath.org/sage_trac/attac
 archive/issue_events_009035.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-05-08T21:44:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8877",

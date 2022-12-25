@@ -363,7 +363,7 @@ Merged 8087.patch and 8088.patch in Sage 2.10.1.rc3
 archive/issue_events_000829.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-29T12:29:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/740",

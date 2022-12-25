@@ -216,7 +216,7 @@ What a subtle bug. Thank you for tracking this down. The updated package [scipy-
 archive/issue_events_008117.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-03-07T00:11:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7902",

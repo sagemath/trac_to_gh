@@ -965,7 +965,7 @@ Time to give this the positive review it deserves. Looking forward to using atta
 archive/issue_events_000400.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-10T22:19:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/378",

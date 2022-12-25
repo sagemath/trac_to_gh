@@ -52,7 +52,7 @@ Resolution: fixed
 archive/issue_events_008812.json:
 ```json
 {
-    "actor": "boussica",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boussica",
     "created_at": "2010-04-02T14:52:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8643",

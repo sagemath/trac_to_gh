@@ -138,7 +138,7 @@ Applies cleanly to sage-4.6.alpha3.  I tried it out with various combinations of
 archive/issue_events_005745.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-01T10:05:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5492",

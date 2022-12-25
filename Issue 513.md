@@ -48,7 +48,7 @@ I did this -- didn't see anything interesting.
 archive/issue_events_000552.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-08-30T00:01:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/513",

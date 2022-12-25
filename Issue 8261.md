@@ -228,7 +228,7 @@ http://sage.math.washington.edu/home/mvngu/spkg/standard/mpfr/mpfr-2.4.2.spkg
 archive/issue_events_008460.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-03-06T08:18:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8261",

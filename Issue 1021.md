@@ -72,7 +72,7 @@ Attachment [1021.patch](tarball://root/attachments/some-uuid/ticket1021/1021.pat
 archive/issue_events_001145.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-28T17:43:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1021",

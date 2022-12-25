@@ -201,7 +201,7 @@ Jaap
 archive/issue_events_008124.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-01-14T03:03:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7909",

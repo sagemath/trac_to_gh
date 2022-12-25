@@ -68,7 +68,7 @@ From the documentation of PolynomialRing:
 archive/issue_events_009666.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2010-07-16T10:30:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9517",

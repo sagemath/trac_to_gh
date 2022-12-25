@@ -276,7 +276,7 @@ resolved due to patch set from #1183
 archive/issue_events_001384.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-15T13:43:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1242",

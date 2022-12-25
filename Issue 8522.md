@@ -236,7 +236,7 @@ Since much of this is against an old version of OpenMPI, I've closed this and op
 archive/issue_events_008702.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2011-03-03T12:09:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8522",

@@ -170,7 +170,7 @@ Looks good to me.  I'll make these changes in the ReST version too.
 archive/issue_events_003753.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-16T03:53:17Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3534",

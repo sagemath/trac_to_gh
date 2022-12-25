@@ -83,7 +83,7 @@ This is resolved in the matrix() rewrite in #2651.
 archive/issue_events_002849.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2008-03-25T21:23:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2658",
@@ -153,7 +153,7 @@ Changing status from closed to reopened.
 archive/issue_events_002850.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-25T23:39:01Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2658",
@@ -311,7 +311,7 @@ Closing this since it has been fixed and doctested by #2651.
 archive/issue_events_002851.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2008-04-14T19:07:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2658",

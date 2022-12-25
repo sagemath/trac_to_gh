@@ -122,7 +122,7 @@ Since this is a design decision and not a bug, I'm invalidating the ticket. If y
 archive/issue_events_004346.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2008-09-13T18:45:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4109",

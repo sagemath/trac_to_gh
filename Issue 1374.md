@@ -242,7 +242,7 @@ Merged in 2.8.15.rc0.
 archive/issue_events_001517.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-02T21:37:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
@@ -330,7 +330,7 @@ Changing status from closed to reopened.
 archive/issue_events_001518.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-12-02T23:20:43Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
@@ -388,7 +388,7 @@ Michael
 archive/issue_events_001519.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-03T00:28:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",

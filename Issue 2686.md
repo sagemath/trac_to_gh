@@ -796,7 +796,7 @@ Nathann
 archive/issue_events_002878.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-05-06T22:02:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2686",

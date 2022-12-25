@@ -108,7 +108,7 @@ They both apply and work for me.
 archive/issue_events_002002.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-21T05:57:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1843",

@@ -118,7 +118,7 @@ The attached patch should satisfy the requierement
 archive/issue_events_004829.json:
 ```json
 {
-    "actor": "gmoroz",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/gmoroz",
     "created_at": "2008-11-27T00:04:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4582",
@@ -196,7 +196,7 @@ Changing status from closed to reopened.
 archive/issue_events_004830.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-27T00:08:56Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4582",
@@ -357,7 +357,7 @@ Resolution: fixed
 archive/issue_events_004831.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-30T23:12:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4582",

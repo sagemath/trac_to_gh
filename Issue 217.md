@@ -152,7 +152,7 @@ Attachment [patch_trac217.hg](tarball://root/attachments/some-uuid/ticket217/pat
 archive/issue_events_000228.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-27T19:13:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/217",
@@ -248,7 +248,7 @@ Changing status from closed to reopened.
 archive/issue_events_000229.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-29T01:19:23Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/217",
@@ -401,7 +401,7 @@ Resolution: fixed
 archive/issue_events_000230.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-11-01T09:31:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/217",

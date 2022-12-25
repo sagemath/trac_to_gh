@@ -168,7 +168,7 @@ This patch does not fix the OS X 10.4 problem, but it does fix some other bugs i
 archive/issue_events_001262.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-15T14:10:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1137",
@@ -238,7 +238,7 @@ Changing status from closed to reopened.
 archive/issue_events_001263.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-16T14:27:11Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1137",
@@ -294,7 +294,7 @@ Michael
 archive/issue_events_001264.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2008-02-10T03:05:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1137",

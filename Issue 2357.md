@@ -523,7 +523,7 @@ I looked over the new patch added by Craig (the referee) and I'm happy with it.
 archive/issue_events_002534.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-07-02T19:07:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2357",

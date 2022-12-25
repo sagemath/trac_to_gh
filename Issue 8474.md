@@ -604,7 +604,7 @@ Resolution: fixed
 archive/issue_events_008658.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-03-08T20:56:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8474",

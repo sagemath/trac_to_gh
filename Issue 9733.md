@@ -962,7 +962,7 @@ First responde: the option `--without-bison` is not a valid option of Singular's
 archive/issue_events_009863.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-16T00:48:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
@@ -1074,7 +1074,7 @@ Changing status from closed to needs_work.
 archive/issue_events_009864.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-17T08:30:07Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
@@ -1445,7 +1445,7 @@ Hope you don't spend the weekend reading the build logs... ;-)
 archive/issue_events_009865.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-17T21:32:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",

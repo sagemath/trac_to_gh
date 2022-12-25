@@ -66,7 +66,7 @@ This is a duplicate of #3617 which should be fixed soon.
 archive/issue_events_008054.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-01-19T21:55:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7839",

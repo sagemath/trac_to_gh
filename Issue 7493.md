@@ -196,7 +196,7 @@ This is essentially all implemented in #12415.
 archive/issue_events_007722.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-02-22T21:35:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7493",

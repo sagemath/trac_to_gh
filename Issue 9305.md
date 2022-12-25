@@ -103,7 +103,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9305
 archive/issue_events_009463.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-06-22T07:50:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9305",

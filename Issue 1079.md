@@ -68,7 +68,7 @@ Resolution: fixed
 archive/issue_events_001201.json:
 ```json
 {
-    "actor": "@yqiang",
+    "actor": "https://github.com/yqiang",
     "created_at": "2007-11-03T20:23:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1079",
@@ -157,7 +157,7 @@ Changing status from closed to reopened.
 archive/issue_events_001202.json:
 ```json
 {
-    "actor": "@yqiang",
+    "actor": "https://github.com/yqiang",
     "created_at": "2007-11-03T20:28:33Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1079",
@@ -209,7 +209,7 @@ applied to 2.8.12.rc0
 archive/issue_events_001203.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-11-06T21:59:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1079",

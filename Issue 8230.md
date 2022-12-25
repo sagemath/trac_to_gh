@@ -130,7 +130,7 @@ Resolution: fixed
 archive/issue_events_008431.json:
 ```json
 {
-    "actor": "ylchapuy",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/ylchapuy",
     "created_at": "2010-08-15T18:01:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8230",

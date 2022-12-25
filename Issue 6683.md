@@ -92,7 +92,7 @@ This has already been fixed in #7786.
 archive/issue_events_006918.json:
 ```json
 {
-    "actor": "@TimDumol",
+    "actor": "https://github.com/TimDumol",
     "created_at": "2010-01-19T16:12:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6683",

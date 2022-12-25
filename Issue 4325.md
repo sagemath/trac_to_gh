@@ -240,7 +240,7 @@ Since this works now, and my original usage of `mathematica.eval` isn't supposed
 archive/issue_events_004570.json:
 ```json
 {
-    "actor": "@dandrake",
+    "actor": "https://github.com/dandrake",
     "created_at": "2009-04-22T07:24:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4325",
@@ -292,7 +292,7 @@ Changing status from closed to reopened.
 archive/issue_events_004571.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-04-22T07:33:17Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4325",
@@ -368,7 +368,7 @@ Resolution: wontfix
 archive/issue_events_004572.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-04-22T07:34:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4325",

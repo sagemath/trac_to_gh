@@ -74,7 +74,7 @@ Michael
 archive/issue_events_005076.json:
 ```json
 {
-    "actor": "@haraldschilly",
+    "actor": "https://github.com/haraldschilly",
     "created_at": "2008-12-19T13:06:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4830",

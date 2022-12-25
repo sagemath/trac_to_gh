@@ -85,7 +85,7 @@ http://sage.math.washington.edu/home/jkantor/spkgs/fortran-20071120.p2.spkg
 archive/issue_events_001803.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-04T10:44:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1643",

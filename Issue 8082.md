@@ -203,7 +203,7 @@ The patch commit string is insufficiently descriptive. I've refreshed it to `#80
 archive/issue_events_008288.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-02-11T14:57:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8082",

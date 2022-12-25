@@ -299,7 +299,7 @@ Looks good to me.
 archive/issue_events_004935.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-23T15:25:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4689",

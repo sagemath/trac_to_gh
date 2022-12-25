@@ -413,7 +413,7 @@ The patch looks good.  I'll add it first thing after 4.3, which should hopefully
 archive/issue_events_007492.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-01-04T03:24:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7271",

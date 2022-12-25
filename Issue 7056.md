@@ -154,7 +154,7 @@ agreed again
 archive/issue_events_007276.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-04-01T14:21:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7056",

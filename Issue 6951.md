@@ -137,7 +137,7 @@ http://sage.math.washington.edu/home/weberg/spkg/singular-3-1-0-4-20090818.p0.sp
 archive/issue_events_007175.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-27T04:02:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6951",

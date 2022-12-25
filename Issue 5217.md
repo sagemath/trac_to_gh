@@ -236,7 +236,7 @@ This works for me on an intel mac running 10.5.6.  I plotted and saved various 2
 archive/issue_events_005472.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-16T11:22:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5217",

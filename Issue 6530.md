@@ -75,7 +75,7 @@ maybe it works now better, but i'm not sure.
 archive/issue_events_006766.json:
 ```json
 {
-    "actor": "@haraldschilly",
+    "actor": "https://github.com/haraldschilly",
     "created_at": "2009-11-19T22:03:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6530",

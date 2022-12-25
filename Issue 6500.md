@@ -209,7 +209,7 @@ John's patch looks fine to me -- it applies without problems, the documentation 
 archive/issue_events_006738.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-20T13:49:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6500",

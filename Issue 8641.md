@@ -950,7 +950,7 @@ Merged attachment:trac_8641-doctest_exit_codes.3.patch in 4.5.2.alpha1.
 archive/issue_events_008810.json:
 ```json
 {
-    "actor": "@dandrake",
+    "actor": "https://github.com/dandrake",
     "created_at": "2010-07-22T07:39:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8641",

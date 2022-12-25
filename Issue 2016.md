@@ -53,7 +53,7 @@ Fixed in Sage 2.10.1rc4. No point in posting a spkg since it will be created vis
 archive/issue_events_002170.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-01T00:59:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2016",

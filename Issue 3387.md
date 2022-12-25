@@ -140,7 +140,7 @@ Doctests pass, code looks fine.
 archive/issue_events_003603.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-06-10T01:21:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3387",

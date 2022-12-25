@@ -126,7 +126,7 @@ The only change from .p1 is:
 archive/issue_events_007206.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-27T03:26:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6982",

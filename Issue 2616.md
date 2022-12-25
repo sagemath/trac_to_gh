@@ -90,7 +90,7 @@ Thanks! Patch looks good. I say apply!
 archive/issue_events_002806.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-14T20:39:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2616",

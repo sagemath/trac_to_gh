@@ -95,7 +95,7 @@ I tested this as before (with #6502). It applies fine to 4.1.1.rc2 in an intel m
 archive/issue_events_007051.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-02T16:08:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6817",

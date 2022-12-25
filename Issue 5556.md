@@ -275,7 +275,7 @@ Yup, those are all good changes.  I never know exactly how many characters are o
 archive/issue_events_005800.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-15T05:17:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5556",

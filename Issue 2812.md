@@ -126,7 +126,7 @@ Looks good to me.  I've combined all the need patches into 2812.patch so that is
 archive/issue_events_003003.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-05T22:00:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2812",

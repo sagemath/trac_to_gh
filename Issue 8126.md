@@ -160,7 +160,7 @@ Merged [trac_8126.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/81
 archive/issue_events_008336.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-31T00:17:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8126",

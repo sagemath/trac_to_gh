@@ -127,7 +127,7 @@ merged into sage-4.2.
 archive/issue_events_007274.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-10-25T06:48:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7054",

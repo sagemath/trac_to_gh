@@ -69,7 +69,7 @@ This is a simple patch for a simple bug.  I filed a duplicate ticket for this at
 archive/issue_events_007009.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-23T02:45:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6778",

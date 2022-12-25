@@ -98,7 +98,7 @@ Tested that the package built. Also did testall, all tests passed.
 archive/issue_events_002591.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-24T17:17:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2415",

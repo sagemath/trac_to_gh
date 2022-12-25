@@ -63,7 +63,7 @@ Resolution: duplicate
 archive/issue_events_000416.json:
 ```json
 {
-    "actor": "mhampton",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mhampton",
     "created_at": "2007-06-28T16:07:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/394",

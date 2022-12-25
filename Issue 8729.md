@@ -81,7 +81,7 @@ This is fixed in the maxima upgrade at #8731
 archive/issue_events_008899.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-06-25T11:23:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8729",

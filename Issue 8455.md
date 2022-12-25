@@ -71,7 +71,7 @@ I think the builds options are relevant to building the optional sage spkg that 
 archive/issue_events_008639.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-08-17T18:32:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8455",

@@ -961,7 +961,7 @@ New commits:
 archive/issue_events_008441.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2017-10-20T09:15:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8240",

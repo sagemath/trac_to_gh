@@ -165,7 +165,7 @@ This is still an issue in Sage 4.6.alpha3: it has not been fixed in matplotlib 1
 archive/issue_events_008333.json:
 ```json
 {
-    "actor": "mdboom",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mdboom",
     "created_at": "2011-03-23T23:48:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
@@ -239,7 +239,7 @@ Changing status from closed to new.
 archive/issue_events_008334.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2011-03-24T00:19:03Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
@@ -363,7 +363,7 @@ Resolution: worksforme
 archive/issue_events_008335.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-04-04T13:23:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8125",

@@ -776,7 +776,7 @@ Perfect.
 archive/issue_events_000266.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2015-08-26T03:00:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/252",

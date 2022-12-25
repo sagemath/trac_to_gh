@@ -48,7 +48,7 @@ Do you mean gap.eval('Read("myfile.txt")') is flaky? If so, can you give an exam
 archive/issue_events_000041.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-01-12T22:03:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/42",

@@ -182,7 +182,7 @@ Attachment [trac_2475-part5.patch](tarball://root/attachments/some-uuid/ticket24
 archive/issue_events_002654.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-15T08:32:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2475",

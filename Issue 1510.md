@@ -374,7 +374,7 @@ Yep, I think we can close this now that we're at Python 2.6.
 archive/issue_events_001664.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-07-16T21:05:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1510",

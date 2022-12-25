@@ -461,7 +461,7 @@ instead of what I had.  I've made this fix.
 archive/issue_events_007405.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-10-12T19:30:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7186",

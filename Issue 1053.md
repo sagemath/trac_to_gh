@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1053
 archive/issue_events_001176.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-11-01T21:46:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1053",

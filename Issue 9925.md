@@ -632,7 +632,7 @@ tested on Debian x64 and on MacOSX 10.5 PPC. Positive!
 archive/issue_events_010053.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-10-21T08:39:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9925",

@@ -111,7 +111,7 @@ This looks like a near duplicate of #2768, where it was decided that this functi
 archive/issue_events_002893.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-02T10:18:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2703",

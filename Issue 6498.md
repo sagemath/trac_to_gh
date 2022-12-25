@@ -192,7 +192,7 @@ Since the other ticket provides a fix I am filing this as duplicate.
 archive/issue_events_006736.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-07-09T18:20:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6498",

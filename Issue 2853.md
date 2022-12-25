@@ -272,7 +272,7 @@ Looks good to me.  Apply just 2853.1.patch.
 archive/issue_events_003045.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-09T00:11:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2853",

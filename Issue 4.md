@@ -60,7 +60,7 @@ Changing assignee from somebody to dmharvey.
 archive/issue_events_000004.json:
 ```json
 {
-    "actor": "@roed314",
+    "actor": "https://github.com/roed314",
     "created_at": "2007-04-13T03:59:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4",

@@ -128,7 +128,7 @@ Jaap
 archive/issue_events_008299.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-08-12T14:30:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8091",

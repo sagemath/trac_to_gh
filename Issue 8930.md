@@ -131,7 +131,7 @@ Simple patch; does what it claims, and what it claims is good; pass tests; posit
 archive/issue_events_009085.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-05T22:11:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8930",

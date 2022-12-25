@@ -133,7 +133,7 @@ I've attached a patch with these changes, and they look good to me.
 archive/issue_events_006376.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-05-27T20:40:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6126",

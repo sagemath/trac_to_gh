@@ -316,7 +316,7 @@ Merged `matplotlib-0.99.1.p2.spkg` in the standard packages repository.
 archive/issue_events_007244.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-30T12:05:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7022",

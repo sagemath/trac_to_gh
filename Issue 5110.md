@@ -182,7 +182,7 @@ Resolution: duplicate
 archive/issue_events_005357.json:
 ```json
 {
-    "actor": "@slel",
+    "actor": "https://github.com/slel",
     "created_at": "2019-12-27T22:09:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5110",

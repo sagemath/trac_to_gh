@@ -161,7 +161,7 @@ This no longer happens. The traceback could be more useful, but the paths pointe
 archive/issue_events_000878.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-01-23T02:53:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/775",

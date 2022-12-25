@@ -61,7 +61,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8812
 archive/issue_events_008977.json:
 ```json
 {
-    "actor": "acleone",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/acleone",
     "created_at": "2010-04-29T01:16:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8812",

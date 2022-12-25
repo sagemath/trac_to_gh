@@ -322,7 +322,7 @@ I really doubt Cygwin on XP would have a different behavior for this one, so let
 archive/issue_events_009329.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-02-08T13:20:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9172",

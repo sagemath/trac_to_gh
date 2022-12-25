@@ -72,7 +72,7 @@ I've tried this in a few installations with #5020 applied and cannot duplicate t
 archive/issue_events_003478.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-01-20T10:13:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3261",

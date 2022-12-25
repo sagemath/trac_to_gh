@@ -139,7 +139,7 @@ sage: region_plot([x^2+y^2<10, y< sin(x)], (x,-5,5), (y,-4,4),aspect_ratio=1)
 archive/issue_events_008022.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-02-11T14:58:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7807",

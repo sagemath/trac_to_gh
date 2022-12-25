@@ -59,7 +59,7 @@ I never remember allowing attaching of .pyx.  ????
 archive/issue_events_000440.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-14T02:57:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/414",
@@ -147,7 +147,7 @@ Changing status from closed to reopened.
 archive/issue_events_000441.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-09-14T09:14:06Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/414",
@@ -201,7 +201,7 @@ Fixed for sage-2.8.4.3.  Now both .spyx and .pyx files are accepted.
 archive/issue_events_000442.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-14T22:07:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/414",

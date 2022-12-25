@@ -221,7 +221,7 @@ This is fixed upstream and the updated spkg is in 2.8.9.alpha1
 archive/issue_events_001097.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-10-24T18:38:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/976",

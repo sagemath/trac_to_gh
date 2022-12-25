@@ -194,7 +194,7 @@ This patches cleanly onto 2.8.9.
 archive/issue_events_001058.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-27T02:42:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/938",

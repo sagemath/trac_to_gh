@@ -76,7 +76,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8401
 archive/issue_events_008586.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-03-06T23:11:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8401",

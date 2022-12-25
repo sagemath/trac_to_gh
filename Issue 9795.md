@@ -189,7 +189,7 @@ I suppose so, I do that all the time.
 archive/issue_events_009920.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-02-16T08:49:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9795",

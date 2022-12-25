@@ -178,7 +178,7 @@ The patch is OK by me. The remaining three warnings can be dealt with in another
 archive/issue_events_008673.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-12T04:51:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8492",

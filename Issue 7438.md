@@ -399,7 +399,7 @@ Outdated spkg or build system ticket, should be closed
 archive/issue_events_007663.json:
 ```json
 {
-    "actor": "@slel",
+    "actor": "https://github.com/slel",
     "created_at": "2020-08-22T07:17:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",

@@ -96,7 +96,7 @@ Resolution: duplicate
 archive/issue_events_004776.json:
 ```json
 {
-    "actor": "ronanpaixao",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/ronanpaixao",
     "created_at": "2008-11-15T19:03:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4530",

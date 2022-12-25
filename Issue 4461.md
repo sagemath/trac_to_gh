@@ -329,7 +329,7 @@ Resolution: wontfix
 archive/issue_events_004709.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-12T16:48:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4461",

@@ -169,7 +169,7 @@ Thank you very much!
 archive/issue_events_002315.json:
 ```json
 {
-    "actor": "@simon-king-jena",
+    "actor": "https://github.com/simon-king-jena",
     "created_at": "2008-08-14T11:38:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
@@ -245,7 +245,7 @@ Changing status from closed to reopened.
 archive/issue_events_002316.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-14T14:25:10Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
@@ -348,7 +348,7 @@ AFAIK no, there is repeated talk about a new Trac version which matches our proc
 archive/issue_events_002317.json:
 ```json
 {
-    "actor": "@simon-king-jena",
+    "actor": "https://github.com/simon-king-jena",
     "created_at": "2010-07-05T11:45:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2151",

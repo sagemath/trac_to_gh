@@ -104,7 +104,7 @@ Sorry... look at hecke.patch, not 12538.patch. The first one I posted accidental
 archive/issue_events_007000.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-26T22:14:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6768",

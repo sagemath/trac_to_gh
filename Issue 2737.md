@@ -272,7 +272,7 @@ Positive review to the second patch. I don't see an easy way to get rid of code 
 archive/issue_events_002925.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-25T23:28:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2737",

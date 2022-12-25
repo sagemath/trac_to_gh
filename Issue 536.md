@@ -91,7 +91,7 @@ I'm closing this as wontfix -- we don't know which doctest caused this, and it's
 archive/issue_events_000575.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2010-01-17T22:48:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/536",

@@ -97,7 +97,7 @@ Sorry about the ReST output.  I was trying to balance two things, and failed.  G
 archive/issue_events_005717.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-03-10T20:58:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5463",

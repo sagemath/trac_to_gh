@@ -179,7 +179,7 @@ So lets do it ... one ticket less to worry about :-)
 archive/issue_events_000088.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2008-02-27T11:08:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/88",

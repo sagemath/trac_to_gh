@@ -99,7 +99,7 @@ http://sage.math.washington.edu/home/boothby/sage/devel/sage
 archive/issue_events_000003.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2006-09-14T18:24:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3",

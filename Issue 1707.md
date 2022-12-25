@@ -398,7 +398,7 @@ Apply the last two patches: trac1707-combinat-matrices.patch and 1707-referee.pa
 archive/issue_events_001866.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-25T14:33:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1707",

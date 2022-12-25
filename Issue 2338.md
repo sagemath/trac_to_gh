@@ -143,7 +143,7 @@ Merged both patches in Sage 2.10.3.rc0
 archive/issue_events_002515.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-28T00:32:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2338",

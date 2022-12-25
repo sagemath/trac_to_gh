@@ -204,7 +204,7 @@ Changing status from needs_info to needs_review.
 archive/issue_events_008403.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-02-22T17:46:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8201",

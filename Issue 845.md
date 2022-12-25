@@ -190,7 +190,7 @@ applied to 2.8.11.rc1
 archive/issue_events_000958.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-11-01T23:22:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/845",

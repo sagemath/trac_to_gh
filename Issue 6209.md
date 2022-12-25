@@ -161,7 +161,7 @@ Sorry, my mistake. It's fixed in patches not src indeed!!
 archive/issue_events_006458.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-04T19:39:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6209",

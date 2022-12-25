@@ -118,7 +118,7 @@ Yes, it works for me now.
 archive/issue_events_008484.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2011-02-24T06:15:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8286",

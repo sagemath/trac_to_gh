@@ -171,7 +171,7 @@ This was long, long time ago (perhaps even in a galaxy far, far away ...). So I 
 archive/issue_events_008619.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-03-31T12:30:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8434",

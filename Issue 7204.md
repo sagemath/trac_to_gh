@@ -219,7 +219,7 @@ Patch v3 at #6673 subsumes v2 here.  If/when the former merges, please close thi
 archive/issue_events_007425.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-31T15:30:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7204",

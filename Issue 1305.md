@@ -115,7 +115,7 @@ I think we can close this ticket as it is very vague.  Additionally, there is no
 archive/issue_events_001447.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2008-12-02T10:15:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1305",

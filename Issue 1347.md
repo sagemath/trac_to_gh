@@ -50,7 +50,7 @@ The patch on #1349 implemented this.
 archive/issue_events_001489.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2007-12-02T05:18:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1347",

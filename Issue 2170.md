@@ -379,7 +379,7 @@ With apologies to zimmerma and Laurent Imbert for stealing their thunder, I atta
 archive/issue_events_002337.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-03T19:25:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2170",

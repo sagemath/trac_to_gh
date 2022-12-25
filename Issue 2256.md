@@ -177,7 +177,7 @@ The real way to do this is to have a rank function which works by looking at the
 archive/issue_events_002426.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-14T22:49:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2256",

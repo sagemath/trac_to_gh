@@ -554,7 +554,7 @@ Note that Maxima functions we didn't usually have a good precision interface wit
 archive/issue_events_009421.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2015-05-19T06:43:17Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9263",

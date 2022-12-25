@@ -154,7 +154,7 @@ Looks good to me.
 archive/issue_events_001882.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-25T23:21:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1724",

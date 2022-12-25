@@ -606,7 +606,7 @@ This is a known failure and has been reported before at ticket #6825. I then ins
 archive/issue_events_007235.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-23T09:05:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",

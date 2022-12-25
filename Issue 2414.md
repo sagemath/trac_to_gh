@@ -91,7 +91,7 @@ Yes, this example was fixed in 2.10.3 by #1186, and I can't find any other examp
 archive/issue_events_002590.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2008-03-21T06:20:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2414",

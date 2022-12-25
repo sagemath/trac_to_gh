@@ -294,7 +294,7 @@ also sage -t  devel/sage/sage/groups/matrix_gps/matrix_group.py passes with no e
 archive/issue_events_003188.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-05-11T13:10:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2983",

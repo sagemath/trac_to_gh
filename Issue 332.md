@@ -69,7 +69,7 @@ This vanished with the notebook rewrite during SD4.
 archive/issue_events_000356.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-21T02:28:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/332",

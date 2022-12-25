@@ -353,7 +353,7 @@ ok
 archive/issue_events_009668.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-09-21T16:41:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9519",

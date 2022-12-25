@@ -139,7 +139,7 @@ Great work!
 archive/issue_events_003998.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-13T00:03:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3776",

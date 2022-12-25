@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8548
 archive/issue_events_008729.json:
 ```json
 {
-    "actor": "giraudo",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/giraudo",
     "created_at": "2010-03-16T16:37:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8548",
@@ -120,7 +120,7 @@ Changing status from closed to needs_work.
 archive/issue_events_008730.json:
 ```json
 {
-    "actor": "@jbandlow",
+    "actor": "https://github.com/jbandlow",
     "created_at": "2010-03-16T16:48:42Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8548",
@@ -196,7 +196,7 @@ For the release manager: please close this as a duplicate.
 archive/issue_events_008731.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-04-19T03:07:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8548",

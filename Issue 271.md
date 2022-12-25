@@ -111,7 +111,7 @@ Same as ticket #228
 archive/issue_events_000286.json:
 ```json
 {
-    "actor": "TimothyClemans",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
     "created_at": "2007-03-26T03:35:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/271",
@@ -163,7 +163,7 @@ Changing status from closed to reopened.
 archive/issue_events_000287.json:
 ```json
 {
-    "actor": "kohel",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/kohel",
     "created_at": "2007-03-26T05:48:06Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/271",
@@ -233,7 +233,7 @@ Resolution: fixed
 archive/issue_events_000288.json:
 ```json
 {
-    "actor": "TimothyClemans",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
     "created_at": "2007-04-03T06:18:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/271",

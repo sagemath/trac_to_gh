@@ -102,7 +102,7 @@ Michael
 archive/issue_events_004773.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-15T19:03:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
@@ -172,7 +172,7 @@ Changing status from closed to reopened.
 archive/issue_events_004774.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-15T19:04:04Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
@@ -2840,7 +2840,7 @@ Ok, should be all set.
 archive/issue_events_004775.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-07-07T22:28:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",

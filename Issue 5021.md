@@ -59,7 +59,7 @@ Looks good.  I tested a command from each package and it seemed to work great.  
 archive/issue_events_005265.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-01-28T18:04:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5021",

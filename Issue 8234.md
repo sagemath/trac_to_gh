@@ -250,7 +250,7 @@ Resolution: fixed
 archive/issue_events_008435.json:
 ```json
 {
-    "actor": "@TimDumol",
+    "actor": "https://github.com/TimDumol",
     "created_at": "2010-05-04T04:42:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8234",

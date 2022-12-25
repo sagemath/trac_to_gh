@@ -47,7 +47,7 @@ Duplicate of #2094
 archive/issue_events_002252.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2008-02-08T01:29:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2092",

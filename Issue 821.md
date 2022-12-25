@@ -181,7 +181,7 @@ for number fields raise a clear exception (ValueError or NotImplementedError) th
 archive/issue_events_000932.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-20T05:52:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/821",

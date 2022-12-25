@@ -175,7 +175,7 @@ and so I assume it's Ports' dvipdf that is calling the ImageIO framework.
 archive/issue_events_004378.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-16T04:31:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4140",

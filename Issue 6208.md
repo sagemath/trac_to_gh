@@ -282,7 +282,7 @@ Merged in 4.0.1.rc1.
 archive/issue_events_006457.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-04T19:28:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6208",

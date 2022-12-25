@@ -828,7 +828,7 @@ Dave
 archive/issue_events_010074.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-29T08:40:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9945",

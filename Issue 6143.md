@@ -112,7 +112,7 @@ Seems to work fine on my mac, with Safari and Firefox.  Based on the previous re
 archive/issue_events_006392.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-03T02:19:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6143",

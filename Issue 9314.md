@@ -424,7 +424,7 @@ to sage-4.5.rc1.
 archive/issue_events_009471.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-07-13T16:33:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",

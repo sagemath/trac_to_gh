@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3953
 archive/issue_events_004181.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-12T16:35:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3953",

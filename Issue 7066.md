@@ -187,7 +187,7 @@ yup, that appears to be the case
 archive/issue_events_007286.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-03-21T11:36:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7066",

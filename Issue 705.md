@@ -171,7 +171,7 @@ three functions that allow plotting 2d surfaces and 3d isosurfaces.
 archive/issue_events_000777.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-09T02:12:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/705",

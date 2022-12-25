@@ -183,7 +183,7 @@ Jaap
 archive/issue_events_009347.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-09T02:14:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9189",

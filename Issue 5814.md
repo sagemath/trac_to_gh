@@ -145,7 +145,7 @@ I'm marking this ticket as invalid.
 archive/issue_events_006063.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-08-15T07:56:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
@@ -253,7 +253,7 @@ Changing status from closed to new.
 archive/issue_events_006064.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-09-11T11:58:14Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
@@ -671,7 +671,7 @@ Resolution: fixed
 archive/issue_events_006065.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-04-06T14:50:17Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",

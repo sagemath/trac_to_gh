@@ -235,7 +235,7 @@ So apply this safe package and close this.
 archive/issue_events_003631.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-06-15T18:39:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3415",

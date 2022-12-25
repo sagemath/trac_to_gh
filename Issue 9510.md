@@ -66,7 +66,7 @@ So I'm going to close this ticket.
 archive/issue_events_009657.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-07-15T20:11:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9510",

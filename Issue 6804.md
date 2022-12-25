@@ -140,7 +140,7 @@ Nathann
 archive/issue_events_007039.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-02-02T12:51:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6804",

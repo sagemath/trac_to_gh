@@ -104,7 +104,7 @@ Attachment [charpoly_for_graphs.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_events_001459.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-12-18T17:32:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1319",

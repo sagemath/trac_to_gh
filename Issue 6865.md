@@ -368,7 +368,7 @@ Merged `trac_6865-templates-css.3.patch`.
 archive/issue_events_007097.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-22T17:55:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6865",

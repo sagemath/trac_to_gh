@@ -156,7 +156,7 @@ Looks good to me. I like the new comparisons using == and `is` at the top, too.
 archive/issue_events_002071.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-15T03:54:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1915",

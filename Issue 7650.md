@@ -867,7 +867,7 @@ I applied the scripts patch and replaced makefile in SAGE_ROOT. Please post a `s
 archive/issue_events_007871.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-01-19T02:55:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",

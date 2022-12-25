@@ -75,7 +75,7 @@ This is a dup of #8455, as a search for "update mpi" in trac shows.
 archive/issue_events_008716.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2010-03-14T23:13:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
@@ -127,7 +127,7 @@ Changing status from closed to new.
 archive/issue_events_008717.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-03-14T23:25:02Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
@@ -524,7 +524,7 @@ Resolution: fixed
 archive/issue_events_008718.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-02-06T09:58:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8537",

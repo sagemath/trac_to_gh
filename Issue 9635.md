@@ -391,7 +391,7 @@ That isn't possible with the current Maxima setup (at least not in a useful way,
 archive/issue_events_009774.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2015-02-08T15:26:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9635",

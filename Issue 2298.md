@@ -286,7 +286,7 @@ Merged nf-from-algebraic-v2.patch and nf-from-algebraic-response.patch  in Sage 
 archive/issue_events_002473.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-02T20:47:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2298",

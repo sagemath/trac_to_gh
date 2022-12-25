@@ -148,7 +148,7 @@ Resolution: fixed
 archive/issue_events_001947.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-16T03:40:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1790",
@@ -236,7 +236,7 @@ Changing status from closed to reopened.
 archive/issue_events_001948.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2008-01-16T05:07:35Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1790",
@@ -310,7 +310,7 @@ If Carl Witty and others are already aware of the issue, I'm more confident abou
 archive/issue_events_001949.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2008-01-16T05:22:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1790",

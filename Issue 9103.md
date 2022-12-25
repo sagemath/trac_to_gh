@@ -105,7 +105,7 @@ Should be fixed by #10508.
 archive/issue_events_009262.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-05-24T12:20:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9103",

@@ -55,7 +55,7 @@ coLinux isn't used anymore.
 archive/issue_events_000049.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-08-09T21:50:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/50",

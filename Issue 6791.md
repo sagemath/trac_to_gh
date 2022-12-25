@@ -118,7 +118,7 @@ Resolution: duplicate
 archive/issue_events_007026.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-10-05T14:17:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6791",

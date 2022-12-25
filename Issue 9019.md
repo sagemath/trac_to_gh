@@ -195,7 +195,7 @@ Simon
 archive/issue_events_009171.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-05T21:59:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9019",

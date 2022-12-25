@@ -134,7 +134,7 @@ With the current release, 2.8.4.2.1, the output of valgrind for the given code d
 archive/issue_events_000676.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2007-09-21T00:30:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/619",
@@ -255,7 +255,7 @@ Changing status from closed to reopened.
 archive/issue_events_000677.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-10-16T03:03:17Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/619",
@@ -325,7 +325,7 @@ Changing status from new to assigned.
 archive/issue_events_000678.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-20T19:16:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/619",

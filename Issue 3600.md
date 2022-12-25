@@ -543,7 +543,7 @@ I think we are going to have trouble getting this rebased and merged, given it d
 archive/issue_events_003819.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2008-12-11T14:54:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3600",

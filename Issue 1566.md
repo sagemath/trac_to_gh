@@ -290,7 +290,7 @@ Attachment [1566.patch](tarball://root/attachments/some-uuid/ticket1566/1566.pat
 archive/issue_events_001720.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-12-22T17:47:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1566",

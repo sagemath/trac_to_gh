@@ -292,7 +292,7 @@ I agree with Jeroen, and Nick A's example also now works, so I have made the "po
 archive/issue_events_001175.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-01T10:21:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1052",

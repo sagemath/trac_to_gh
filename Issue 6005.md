@@ -199,7 +199,7 @@ Changing assignee from @williamstein to @loefflerd.
 archive/issue_events_006258.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2010-07-29T06:12:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6005",

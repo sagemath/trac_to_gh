@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5715
 archive/issue_events_005957.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2009-04-08T19:24:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5715",
@@ -240,7 +240,7 @@ Changing status from closed to reopened.
 archive/issue_events_005958.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2009-04-09T10:40:29Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5715",
@@ -316,7 +316,7 @@ Michael
 archive/issue_events_005959.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-04-13T09:13:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5715",

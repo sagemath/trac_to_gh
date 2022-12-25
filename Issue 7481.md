@@ -219,7 +219,7 @@ I've merged this in with the optional spkgs.
 archive/issue_events_007711.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-01-04T02:05:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7481",

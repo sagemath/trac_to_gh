@@ -126,7 +126,7 @@ Thanks for the review !
 archive/issue_events_009416.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-20T10:04:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9256",

@@ -628,7 +628,7 @@ So I'm closing this ticket as fixed.
 archive/issue_events_008794.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-12-06T12:11:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8624",

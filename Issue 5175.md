@@ -125,7 +125,7 @@ Changing assignee from tbd to @williamstein.
 archive/issue_events_005425.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-12T16:04:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5175",

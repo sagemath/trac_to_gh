@@ -48,7 +48,7 @@ This ticket is too vague to be useful at this point in time.  Please open up a m
 archive/issue_events_000232.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2008-11-14T04:51:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/219",

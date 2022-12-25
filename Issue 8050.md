@@ -150,7 +150,7 @@ Close as fixed by #8115.
 archive/issue_events_008259.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-20T17:31:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8050",

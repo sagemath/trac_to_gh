@@ -265,7 +265,7 @@ Second patch looks good, too.
 archive/issue_events_003318.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-28T07:31:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3102",

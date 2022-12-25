@@ -105,7 +105,7 @@ Note that one followup patch is needed.  After that everything works (all long d
 archive/issue_events_006358.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-05-21T13:40:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6107",

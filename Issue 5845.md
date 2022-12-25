@@ -209,7 +209,7 @@ Good.
 archive/issue_events_006097.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-13T21:12:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5845",

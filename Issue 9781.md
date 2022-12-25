@@ -187,7 +187,7 @@ Thanks, this fixes it and explains why it hasn't surfaced earlier: Tests usually
 archive/issue_events_009911.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-15T09:56:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9781",

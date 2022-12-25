@@ -83,7 +83,7 @@ GNUTLS is no longer part of Sage.
 archive/issue_events_007772.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-10-05T09:13:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7542",

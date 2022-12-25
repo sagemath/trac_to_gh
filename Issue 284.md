@@ -65,7 +65,7 @@ resolved a while ago.
 archive/issue_events_000301.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-08-09T21:40:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/284",

@@ -108,7 +108,7 @@ I believe this was taken care of in #3863.
 archive/issue_events_008920.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2010-04-23T18:21:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8752",

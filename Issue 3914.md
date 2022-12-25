@@ -269,7 +269,7 @@ Has been fixed by trac #385
 archive/issue_events_004141.json:
 ```json
 {
-    "actor": "@robert-marik",
+    "actor": "https://github.com/robert-marik",
     "created_at": "2009-10-25T20:53:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3914",

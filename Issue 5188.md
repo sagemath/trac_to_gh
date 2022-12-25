@@ -224,7 +224,7 @@ False
 archive/issue_events_005442.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-04T20:46:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5188",

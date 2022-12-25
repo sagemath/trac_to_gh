@@ -185,7 +185,7 @@ diff -r 4ee645ba1eb6 -r 931f47e34e11 sage/rings/rational.pyx
 archive/issue_events_000178.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-01-13T01:33:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/170",

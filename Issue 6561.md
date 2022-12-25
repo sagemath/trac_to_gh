@@ -149,7 +149,7 @@ Looks good.
 archive/issue_events_006798.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-24T05:51:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6561",

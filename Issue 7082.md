@@ -144,7 +144,7 @@ The changes in this patch have already been included.
 archive/issue_events_007304.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-15T14:15:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7082",

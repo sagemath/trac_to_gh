@@ -221,7 +221,7 @@ Although I have not been following all the details of this one, I applied all pa
 archive/issue_events_006336.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-07-04T02:09:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6083",

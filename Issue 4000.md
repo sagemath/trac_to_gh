@@ -2921,7 +2921,7 @@ Sebastian
 archive/issue_events_004228.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-15T11:13:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
@@ -2973,7 +2973,7 @@ Changing status from closed to new.
 archive/issue_events_004229.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-16T22:56:57Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
@@ -4544,7 +4544,7 @@ Changing status from needs_review to positive_review.
 archive/issue_events_004230.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-10-08T22:48:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",

@@ -49,7 +49,7 @@ archive/issue_comments_043479.json:
 archive/issue_events_005836.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-15T14:17:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5592",

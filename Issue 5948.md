@@ -383,7 +383,7 @@ Looks great!
 archive/issue_events_006204.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-01T05:33:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5948",

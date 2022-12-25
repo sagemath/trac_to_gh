@@ -89,7 +89,7 @@ Testing the whole library (without -long):  all test pass.   Positive review!
 archive/issue_events_008360.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-02-11T14:30:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8155",

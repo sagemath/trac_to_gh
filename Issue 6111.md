@@ -360,7 +360,7 @@ Merged in 4.0.rc1.
 archive/issue_events_006362.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-05-28T06:41:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6111",

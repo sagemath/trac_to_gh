@@ -203,7 +203,7 @@ I still feel safer putting it in there (for instance, if we switch to using Maxi
 archive/issue_events_007709.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-19T10:18:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7479",

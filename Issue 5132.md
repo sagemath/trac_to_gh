@@ -94,7 +94,7 @@ Looks good to me.  This also fixes the broken example reported at #825.
 archive/issue_events_005379.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-02T07:27:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5132",

@@ -106,7 +106,7 @@ Applies cleanly to 2.11.alpha1, passes doctests in `sage/combinat.` Looks good!
 archive/issue_events_002875.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-29T00:00:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2683",

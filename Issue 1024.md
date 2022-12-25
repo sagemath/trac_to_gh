@@ -192,7 +192,7 @@ Resolution: fixed
 archive/issue_events_001148.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-28T20:13:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1024",

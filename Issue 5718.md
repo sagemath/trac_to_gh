@@ -122,7 +122,7 @@ Looks good to me.  Merged in 4.0.1.rc1.
 archive/issue_events_005962.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-04T18:31:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5718",

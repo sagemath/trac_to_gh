@@ -82,7 +82,7 @@ I will fix this as part of #4681.
 archive/issue_events_003278.json:
 ```json
 {
-    "actor": "@loefflerd",
+    "actor": "https://github.com/loefflerd",
     "created_at": "2008-12-08T18:03:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3068",
@@ -176,7 +176,7 @@ Changing status from closed to reopened.
 archive/issue_events_003279.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-12-08T18:08:51Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3068",
@@ -275,7 +275,7 @@ Michael
 archive/issue_events_003280.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-12-10T11:27:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3068",

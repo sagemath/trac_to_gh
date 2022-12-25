@@ -377,7 +377,7 @@ I've opened another ticket, #8419, to resolve the issue which Jaap found - i.e. 
 archive/issue_events_008551.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-02T23:35:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8363",

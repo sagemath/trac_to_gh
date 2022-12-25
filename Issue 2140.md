@@ -112,7 +112,7 @@ Attachment [2140-typo.patch](tarball://root/attachments/some-uuid/ticket2140/214
 archive/issue_events_002302.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-13T08:05:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2140",

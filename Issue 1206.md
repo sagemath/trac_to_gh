@@ -259,7 +259,7 @@ Setting this to positive_review so the release manager will see it.
 archive/issue_events_001342.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-05-21T08:03:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1206",

@@ -121,7 +121,7 @@ LGTM.
 archive/issue_events_008210.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-01-25T01:01:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7996",
@@ -249,7 +249,7 @@ Changing status from closed to new.
 archive/issue_events_008211.json:
 ```json
 {
-    "actor": "acleone",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/acleone",
     "created_at": "2010-01-25T02:43:59Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7996",
@@ -375,7 +375,7 @@ Resolution: fixed
 archive/issue_events_008212.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-01-25T03:40:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7996",

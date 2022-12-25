@@ -108,7 +108,7 @@ has been removed.
 archive/issue_events_001718.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-12-23T02:58:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1564",

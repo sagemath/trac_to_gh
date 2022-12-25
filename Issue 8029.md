@@ -260,7 +260,7 @@ That's a lot of confirmation.
 archive/issue_events_008240.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-12-24T01:04:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8029",

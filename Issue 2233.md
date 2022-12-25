@@ -76,7 +76,7 @@ Attachment [trac2233_padics2.patch](tarball://root/attachments/some-uuid/ticket2
 archive/issue_events_002403.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-20T17:20:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2233",

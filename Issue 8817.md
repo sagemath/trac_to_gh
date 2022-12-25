@@ -225,7 +225,7 @@ Attachment [trac_8817-wstein.patch](tarball://root/attachments/some-uuid/ticket8
 archive/issue_events_008982.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-05-02T23:57:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8817",

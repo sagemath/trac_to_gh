@@ -179,7 +179,7 @@ Can anybody replicate this?
 archive/issue_events_000652.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-13T07:36:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/596",
@@ -271,7 +271,7 @@ Changing status from closed to reopened.
 archive/issue_events_000653.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-11-02T18:30:24Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/596",
@@ -287,7 +287,7 @@ archive/issue_events_000653.json:
 archive/issue_events_000654.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2008-02-10T03:16:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/596",

@@ -92,7 +92,7 @@ Is it possible to add a doctest illustrating the suggestion to "try an_padic ins
 archive/issue_events_006651.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-06-29T21:10:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6406",

@@ -59,7 +59,7 @@ As we don't get the URL at the beginning with the startup token, I'm going to ma
 archive/issue_events_002277.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-01-23T13:22:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2117",
@@ -111,7 +111,7 @@ Changing status from closed to reopened.
 archive/issue_events_002278.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-01-23T16:25:59Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2117",
@@ -167,7 +167,7 @@ Resolution changed from invalid to
 archive/issue_events_002279.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-01-24T01:50:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2117",

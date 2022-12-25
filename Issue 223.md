@@ -137,7 +137,7 @@ Graphics object consisting of 4 graphics primitives
 archive/issue_events_000236.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-08-21T12:36:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/223",

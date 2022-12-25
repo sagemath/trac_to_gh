@@ -61,7 +61,7 @@ Resolution: duplicate
 archive/issue_events_004104.json:
 ```json
 {
-    "actor": "@saliola",
+    "actor": "https://github.com/saliola",
     "created_at": "2008-08-16T08:52:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3879",

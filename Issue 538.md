@@ -126,7 +126,7 @@ Attachment [c_lib_fixes.hg](tarball://root/attachments/some-uuid/ticket538/c_lib
 archive/issue_events_000577.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-01T17:45:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/538",

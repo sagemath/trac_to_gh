@@ -318,7 +318,7 @@ Nathann
 archive/issue_events_005283.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-04-01T10:37:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5039",

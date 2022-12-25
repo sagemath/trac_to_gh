@@ -123,7 +123,7 @@ Merged trac-1970-notebook-gnutls.2.patch in Sage 2.10.1.rc3
 archive/issue_events_002124.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-29T16:19:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1970",

@@ -329,7 +329,7 @@ Ok, thanks!
 archive/issue_events_005744.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-03-04T21:19:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5491",

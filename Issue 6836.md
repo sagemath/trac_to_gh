@@ -259,7 +259,7 @@ Merged in 4.4.alpha0:
 archive/issue_events_007069.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-15T05:57:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6836",

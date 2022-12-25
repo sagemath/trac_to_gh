@@ -92,7 +92,7 @@ Wed Sep 13 08:17:07 PDT 2006  dmharvey`@`math.harvard.edu
 archive/issue_events_000048.json:
 ```json
 {
-    "actor": "dmharvey",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
     "created_at": "2006-09-16T05:06:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/49",

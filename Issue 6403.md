@@ -136,7 +136,7 @@ I'm closing this, since #6559 just got merged. It adds a `latex_name` keyword ar
 archive/issue_events_006648.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2010-02-19T11:56:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6403",

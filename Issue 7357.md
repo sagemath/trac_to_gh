@@ -309,7 +309,7 @@ Changing status from needs_work to positive_review.
 archive/issue_events_007580.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-06-19T13:28:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7357",

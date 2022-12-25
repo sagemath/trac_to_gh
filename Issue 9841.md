@@ -198,7 +198,7 @@ Resolution: fixed
 archive/issue_events_009967.json:
 ```json
 {
-    "actor": "gagansekhon",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/gagansekhon",
     "created_at": "2011-01-08T01:12:17Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9841",
@@ -232,7 +232,7 @@ Changing status from closed to needs_work.
 archive/issue_events_009968.json:
 ```json
 {
-    "actor": "gagansekhon",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/gagansekhon",
     "created_at": "2011-01-08T02:08:40Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9841",
@@ -267,7 +267,7 @@ I didn't know stating resolved would close the ticket. I just email Jeroen to cl
 archive/issue_events_009969.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-08T05:11:17Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9841",

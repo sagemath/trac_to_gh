@@ -324,7 +324,7 @@ To release manager: please close this as a duplicate of #7327, where a patch inc
 archive/issue_events_007050.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-06T05:53:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6816",

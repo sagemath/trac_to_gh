@@ -911,7 +911,7 @@ Apply trac-8807_induced_morphisms.patch
 archive/issue_events_008972.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-12T06:31:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",

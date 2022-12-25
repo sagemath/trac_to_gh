@@ -111,7 +111,7 @@ Attachment [trees.patch](tarball://root/attachments/some-uuid/ticket1309/trees.p
 archive/issue_events_001449.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-03T02:07:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1309",

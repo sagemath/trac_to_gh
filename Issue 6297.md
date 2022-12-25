@@ -118,7 +118,7 @@ Fine by me.
 archive/issue_events_006539.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2009-06-18T00:07:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6297",

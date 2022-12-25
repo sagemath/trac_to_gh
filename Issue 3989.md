@@ -156,7 +156,7 @@ Looks good. I don't have an Itanium to test on, but Michael assures me that it w
 archive/issue_events_004218.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-29T09:11:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3989",

@@ -357,7 +357,7 @@ Cheers, gsw
 archive/issue_events_000902.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-04-01T23:54:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/793",

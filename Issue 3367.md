@@ -149,7 +149,7 @@ I think the alias is fine too.  Since CachedFunction is a class, it conforms to 
 archive/issue_events_003583.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2009-02-04T21:35:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3367",

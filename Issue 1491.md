@@ -140,7 +140,7 @@ Merged in 2.9.rc0.
 archive/issue_events_001645.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-15T05:40:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1491",

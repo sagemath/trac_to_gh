@@ -124,7 +124,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3690
 archive/issue_events_003912.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-13T19:41:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3690",

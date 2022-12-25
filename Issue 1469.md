@@ -89,7 +89,7 @@ Resolution: wontfix
 archive/issue_events_001620.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2007-12-12T12:17:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1469",

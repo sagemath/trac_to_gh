@@ -175,7 +175,7 @@ argh!  I'm always forgetting that.  I'll try to do it soon (in the next two week
 archive/issue_events_007213.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-31T01:00:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6989",

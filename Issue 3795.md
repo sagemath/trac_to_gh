@@ -155,7 +155,7 @@ Resolution: fixed
 archive/issue_events_004017.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-11T08:19:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3795",

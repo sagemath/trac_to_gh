@@ -292,7 +292,7 @@ Resolution: duplicate
 archive/issue_events_002693.json:
 ```json
 {
-    "actor": "@haikona",
+    "actor": "https://github.com/haikona",
     "created_at": "2011-03-23T00:55:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",

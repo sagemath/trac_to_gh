@@ -155,7 +155,7 @@ sage: final3.show(aspect_ratio = 1)
 archive/issue_events_008007.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-02-11T14:56:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7793",

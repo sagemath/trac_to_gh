@@ -128,7 +128,7 @@ This ticket is a duplicate of #6585. The typo was fixed by that ticket.
 archive/issue_events_006876.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-29T13:05:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6640",

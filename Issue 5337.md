@@ -70,7 +70,7 @@ Resolution: fixed
 archive/issue_events_005592.json:
 ```json
 {
-    "actor": "@mezzarobba",
+    "actor": "https://github.com/mezzarobba",
     "created_at": "2009-03-05T20:09:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5337",
@@ -144,7 +144,7 @@ Changing status from closed to reopened.
 archive/issue_events_005593.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-03-05T20:13:20Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5337",
@@ -225,7 +225,7 @@ And now #5850 has been closed, so I think this ticket should be closed too.
 archive/issue_events_005594.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-09T07:59:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5337",

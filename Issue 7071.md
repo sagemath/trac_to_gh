@@ -368,7 +368,7 @@ If you disagree we can discuss this on the sage-devel, but its such a pervasive 
 archive/issue_events_007293.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-03-04T21:19:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7071",

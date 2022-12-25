@@ -117,7 +117,7 @@ Resolution: worksforme
 archive/issue_events_003097.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2009-05-18T21:45:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
@@ -245,7 +245,7 @@ Changing status from closed to reopened.
 archive/issue_events_003098.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-05-19T04:56:59Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
@@ -370,7 +370,7 @@ Michael
 archive/issue_events_003099.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-05-19T16:33:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
@@ -422,7 +422,7 @@ Changing status from closed to reopened.
 archive/issue_events_003100.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-05-19T20:48:17Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
@@ -480,7 +480,7 @@ There are doctests.
 archive/issue_events_003101.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2010-01-16T23:47:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2899",

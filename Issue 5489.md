@@ -382,7 +382,7 @@ I have made some small changes that I suggested, in a new patch. The bot is gree
 archive/issue_events_005742.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-09-03T12:51:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5489",

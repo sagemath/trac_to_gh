@@ -417,7 +417,7 @@ Apply `track_8974_added_eigenfunctions_module.patch`, `track_8974_solved_nonimpl
 archive/issue_events_009128.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-20T08:21:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8974",

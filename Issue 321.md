@@ -67,7 +67,7 @@ There is no execute button anymore, so this bug is closed.
 archive/issue_events_000341.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-08-19T02:03:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/321",

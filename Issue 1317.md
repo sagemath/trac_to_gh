@@ -218,7 +218,7 @@ I'd say this could be closed.  Eventually we should figure out how to make it a 
 archive/issue_events_001457.json:
 ```json
 {
-    "actor": "@nathanncohen",
+    "actor": "https://github.com/nathanncohen",
     "created_at": "2010-02-27T13:33:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1317",

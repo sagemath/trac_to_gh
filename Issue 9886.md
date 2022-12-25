@@ -567,7 +567,7 @@ Resolution: worksforme
 archive/issue_events_010013.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-08-13T08:43:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9886",

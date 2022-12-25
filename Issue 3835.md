@@ -126,7 +126,7 @@ Looks good to me.
 archive/issue_events_004059.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-08T10:17:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3835",

@@ -99,7 +99,7 @@ I'm marking this ticket as invalid unless you see a good reason to totally chang
 archive/issue_events_005692.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-03-06T15:45:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5442",

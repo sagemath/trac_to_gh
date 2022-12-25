@@ -174,7 +174,7 @@ positive review by was in IRC.
 archive/issue_events_001840.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-05T02:36:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1681",

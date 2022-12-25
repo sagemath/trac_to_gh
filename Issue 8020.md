@@ -163,7 +163,7 @@ Oops ... yep, that was totally a typo on my part while moving things around in t
 archive/issue_events_008231.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-24T22:29:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8020",

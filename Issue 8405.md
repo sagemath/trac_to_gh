@@ -88,7 +88,7 @@ Nathann
 archive/issue_events_008590.json:
 ```json
 {
-    "actor": "mike3050",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mike3050",
     "created_at": "2010-04-22T22:16:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8405",

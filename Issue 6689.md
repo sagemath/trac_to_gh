@@ -69,7 +69,7 @@ Attachment [trac_6689-spell-check-categories.patch](tarball://root/attachments/s
 archive/issue_events_006924.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-12T04:21:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6689",

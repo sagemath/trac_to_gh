@@ -89,7 +89,7 @@ Resolution: worksforme
 archive/issue_events_005694.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2009-05-18T21:54:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
@@ -163,7 +163,7 @@ Changing status from closed to reopened.
 archive/issue_events_005695.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-05-19T04:57:15Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
@@ -237,7 +237,7 @@ Doctest looks fine to me.
 archive/issue_events_005696.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-13T21:50:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5444",

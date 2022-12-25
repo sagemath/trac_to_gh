@@ -30,7 +30,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9328
 archive/issue_events_009483.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2010-06-25T09:00:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9328",

@@ -230,7 +230,7 @@ agreed
 archive/issue_events_010122.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-04-01T14:09:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9998",

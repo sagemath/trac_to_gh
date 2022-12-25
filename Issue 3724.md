@@ -202,7 +202,7 @@ Merged in Sage 3.1.2.alpha1
 archive/issue_events_003944.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-26T09:53:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
@@ -273,7 +273,7 @@ Changing status from closed to reopened.
 archive/issue_events_003945.json:
 ```json
 {
-    "actor": "@simon-king-jena",
+    "actor": "https://github.com/simon-king-jena",
     "created_at": "2008-08-26T13:06:19Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
@@ -455,7 +455,7 @@ Merged m4ri_hash2.patch in Sage 3.1.2.alpha1
 archive/issue_events_003946.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-26T21:50:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
@@ -525,7 +525,7 @@ Changing status from closed to reopened.
 archive/issue_events_003947.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2008-08-27T16:59:34Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
@@ -601,7 +601,7 @@ Resolution: fixed
 archive/issue_events_003948.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2008-08-27T19:51:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",

@@ -298,7 +298,7 @@ Docstring #random-ed, follow up ticket at #6265.
 archive/issue_events_006306.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-12T08:02:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6051",

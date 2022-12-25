@@ -345,7 +345,7 @@ merged just 13535.patch
 archive/issue_events_007955.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-01-13T09:12:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7743",

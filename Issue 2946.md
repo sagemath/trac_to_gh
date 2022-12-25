@@ -123,7 +123,7 @@ Looks good to me.
 archive/issue_events_003150.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-18T06:15:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2946",
@@ -244,7 +244,7 @@ Changing status from closed to reopened.
 archive/issue_events_003151.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-18T06:19:30Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2946",
@@ -296,7 +296,7 @@ Resolution: fixed
 archive/issue_events_003152.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-18T06:49:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2946",

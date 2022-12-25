@@ -120,7 +120,7 @@ Resolution: invalid
 archive/issue_events_007780.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2009-11-28T23:42:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7550",

@@ -70,7 +70,7 @@ Resolution: duplicate
 archive/issue_events_003385.json:
 ```json
 {
-    "actor": "@NathanDunfield",
+    "actor": "https://github.com/NathanDunfield",
     "created_at": "2008-05-12T00:54:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3166",

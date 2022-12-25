@@ -66,7 +66,7 @@ Resolution: duplicate
 archive/issue_events_007364.json:
 ```json
 {
-    "actor": "@robert-marik",
+    "actor": "https://github.com/robert-marik",
     "created_at": "2009-10-07T11:43:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7144",

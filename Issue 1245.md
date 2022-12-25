@@ -180,7 +180,7 @@ I'm stuck with this bug, I don't know where to look. Robert, can you take a look
 archive/issue_events_001387.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2008-11-14T09:41:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1245",

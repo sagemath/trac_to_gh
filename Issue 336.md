@@ -147,7 +147,7 @@ Positive review with doctestfix patch. I didn't really do 5 except I did look at
 archive/issue_events_000360.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-05-11T07:25:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/336",

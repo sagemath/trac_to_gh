@@ -138,7 +138,7 @@ This should be brought up as a thread on sage-devel.
 archive/issue_events_003221.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2008-06-20T04:51:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3016",

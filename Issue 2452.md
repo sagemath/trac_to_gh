@@ -804,7 +804,7 @@ Sorry for the inconvenience.
 archive/issue_events_002629.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-07-04T19:54:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2452",

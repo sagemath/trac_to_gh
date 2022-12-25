@@ -51,7 +51,7 @@ Looks good.  I assume Jonathan knows how to spell his own name... :)
 archive/issue_events_002287.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-10T00:57:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2125",

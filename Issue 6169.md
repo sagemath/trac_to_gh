@@ -71,7 +71,7 @@ http://sage.math.washington.edu/home/wstein/release/4.0.1/alpha0/stuff/mpir-1.2.
 archive/issue_events_006418.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-04T06:17:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6169",

@@ -157,7 +157,7 @@ archive/issue_comments_046201.json:
 archive/issue_events_006114.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-15T23:28:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5858",

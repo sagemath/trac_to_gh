@@ -75,7 +75,7 @@ Merged in Sage 2.10.alpha4
 archive/issue_events_001963.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-17T20:17:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1806",

@@ -82,7 +82,7 @@ The patch at #4644 fixes this problem, according to this thread: http://groups.g
 archive/issue_events_005759.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-02T06:55:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5507",

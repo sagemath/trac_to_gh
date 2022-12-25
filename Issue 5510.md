@@ -383,7 +383,7 @@ With the spkg, works perfectly.  Sorry for the confusion.
 archive/issue_events_005762.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-13T23:25:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5510",

@@ -243,7 +243,7 @@ And here is the positive review!
 archive/issue_events_007754.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-29T05:48:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7526",

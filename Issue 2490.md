@@ -51,7 +51,7 @@ Japp, I'm marking this as duplicate since it is a duplicate of #2372 . Reviews f
 archive/issue_events_002669.json:
 ```json
 {
-    "actor": "@dfdeshom",
+    "actor": "https://github.com/dfdeshom",
     "created_at": "2008-03-12T12:47:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2490",

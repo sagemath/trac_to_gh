@@ -53,7 +53,7 @@ Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3032/9607.pat
 archive/issue_events_003239.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-26T21:21:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3032",

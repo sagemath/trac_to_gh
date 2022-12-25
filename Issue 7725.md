@@ -89,7 +89,7 @@ Changing assignee from @robertwb to @dwbump.
 archive/issue_events_007939.json:
 ```json
 {
-    "actor": "@dwbump",
+    "actor": "https://github.com/dwbump",
     "created_at": "2009-12-20T19:01:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7725",

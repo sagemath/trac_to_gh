@@ -374,7 +374,7 @@ The patch `trac_6545-rebased.patch` is a rebase of `trac_6545_mpolynomial_ideal_
 archive/issue_events_006781.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-09T06:37:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6545",

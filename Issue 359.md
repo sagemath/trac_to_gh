@@ -70,7 +70,7 @@ Resolution: duplicate
 archive/issue_events_000381.json:
 ```json
 {
-    "actor": "acleone",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/acleone",
     "created_at": "2010-03-29T21:14:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/359",

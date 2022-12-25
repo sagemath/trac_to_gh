@@ -308,7 +308,7 @@ All documentation now builds without error or warning, so positive review for [a
 archive/issue_events_009633.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-19T22:21:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9481",

@@ -284,7 +284,7 @@ Positive review. This took me a while, since I didn't really know how to use -sd
 archive/issue_events_006743.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-27T08:11:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6505",

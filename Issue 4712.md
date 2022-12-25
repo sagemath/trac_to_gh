@@ -94,7 +94,7 @@ Fine by me.
 archive/issue_events_004957.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2009-06-26T17:46:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4712",

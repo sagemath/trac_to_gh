@@ -250,7 +250,7 @@ Since #4547 was what Dan needed, I can give this a positive review.
 archive/issue_events_005466.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-03-23T21:36:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5211",

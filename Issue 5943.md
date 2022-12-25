@@ -358,7 +358,7 @@ Sounds good to me.
 archive/issue_events_006197.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-12-17T09:12:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5943",
@@ -410,7 +410,7 @@ Changing status from closed to new.
 archive/issue_events_006198.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-12-21T09:18:30Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5943",
@@ -721,7 +721,7 @@ Resolution: worksforme
 archive/issue_events_006199.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-04-22T19:53:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5943",

@@ -238,7 +238,7 @@ Attachment [trac_7324_order_from_multiple-spelling.patch](tarball://root/attachm
 archive/issue_events_007546.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-07T12:15:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7324",

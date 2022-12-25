@@ -131,7 +131,7 @@ I suggest to close this ticket as "invalid" because this is essentially impossib
 archive/issue_events_008665.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2010-11-23T17:35:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8483",

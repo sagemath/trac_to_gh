@@ -118,7 +118,7 @@ I provide a partial fix for the issues mentioned above. The patch does not fix a
 archive/issue_events_003018.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-06T14:09:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2828",

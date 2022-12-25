@@ -340,7 +340,7 @@ Thanks for pointing this out.  I didn't see that.
 archive/issue_events_008973.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-05-14T21:30:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8808",

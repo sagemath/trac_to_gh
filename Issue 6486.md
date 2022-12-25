@@ -135,7 +135,7 @@ This looks good. **Tons** of nice cleanup, and it's clearly the right fix for th
 archive/issue_events_006722.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-23T06:11:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6486",

@@ -158,7 +158,7 @@ Nice.  +1 to the optional spkg
 archive/issue_events_004448.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-27T23:02:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4211",

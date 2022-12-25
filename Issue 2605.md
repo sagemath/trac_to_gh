@@ -79,7 +79,7 @@ JV
 archive/issue_events_002795.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-05-10T21:22:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2605",

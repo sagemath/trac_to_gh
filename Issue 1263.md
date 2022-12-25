@@ -161,7 +161,7 @@ If this is a sage-duplicate/invalid/wontfix, then I believe that this ticket can
 archive/issue_events_001407.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-05-17T15:51:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1263",

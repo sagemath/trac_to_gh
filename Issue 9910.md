@@ -311,7 +311,7 @@ Thanksssssss !! `:-)`
 archive/issue_events_010037.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-19T22:21:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9910",

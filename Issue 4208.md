@@ -75,7 +75,7 @@ Builds for me, mabshoff claims all tests pass on sage.math.
 archive/issue_events_004445.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-27T21:40:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4208",

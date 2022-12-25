@@ -108,7 +108,7 @@ Attachment [trac-1064.patch](tarball://root/attachments/some-uuid/ticket1064/tra
 archive/issue_events_001186.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-12-21T00:28:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1064",

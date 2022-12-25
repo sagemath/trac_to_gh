@@ -346,7 +346,7 @@ Looking at the above, it seems g++ was used, not the Sun compiler, since g++ was
 archive/issue_events_007288.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-01-05T03:43:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7068",
@@ -434,7 +434,7 @@ Changing status from closed to new.
 archive/issue_events_007289.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-01-05T03:46:08Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7068",
@@ -548,7 +548,7 @@ The goal of these tickets is laudable, but:
 archive/issue_events_007290.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-07-15T07:18:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7068",

@@ -140,7 +140,7 @@ No longer valid since sagenb is a different project.
 archive/issue_events_003783.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-06-02T12:39:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3565",

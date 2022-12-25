@@ -147,7 +147,7 @@ This fixes the problem for me.  TimothyClemans, you need a bunch of things for t
 archive/issue_events_002054.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-01-23T09:39:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1897",

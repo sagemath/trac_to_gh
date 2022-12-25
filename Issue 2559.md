@@ -152,7 +152,7 @@ Nick doesn't remember how to reproduce this, so he said to invalidate it.
 archive/issue_events_002742.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2009-01-23T20:43:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2559",

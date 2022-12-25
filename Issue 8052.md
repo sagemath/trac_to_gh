@@ -380,7 +380,7 @@ Merged [prereq-0.7-install](http://boxen.math.washington.edu/home/kirkby/portabi
 archive/issue_events_008261.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-31T22:30:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8052",

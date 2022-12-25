@@ -90,7 +90,7 @@ Yep, this is a great idea. There's no hg repository there, but I've added the ch
 archive/issue_events_006537.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2009-06-18T00:03:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6295",

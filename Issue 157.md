@@ -178,7 +178,7 @@ The crash was a div by zero error--gmp was trying to compute 5 mod 0.
 archive/issue_events_000163.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2006-10-27T20:56:17Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/157",

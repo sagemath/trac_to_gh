@@ -184,7 +184,7 @@ The bug in `is_integral_domain` for generic quotient rings is now the subject of
 archive/issue_events_009943.json:
 ```json
 {
-    "actor": "fwclarke",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/fwclarke",
     "created_at": "2010-11-05T12:22:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9820",

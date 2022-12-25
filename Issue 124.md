@@ -133,7 +133,7 @@ Fixed in patch #1410:d981cce6baa2
 archive/issue_events_000130.json:
 ```json
 {
-    "actor": "@bobmoretti",
+    "actor": "https://github.com/bobmoretti",
     "created_at": "2006-10-10T23:29:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/124",

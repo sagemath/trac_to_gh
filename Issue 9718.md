@@ -326,7 +326,7 @@ is *there* (integrated into iconv-1.13.1.p3).
 archive/issue_events_009852.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-06-26T18:50:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9718",

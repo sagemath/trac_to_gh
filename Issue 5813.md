@@ -160,7 +160,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5813
 archive/issue_events_006062.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2011-01-17T00:33:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5813",

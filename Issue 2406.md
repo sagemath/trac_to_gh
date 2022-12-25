@@ -54,7 +54,7 @@ I can't find this in the latex version of the file in sage-2.10.3.rc2.
 archive/issue_events_002582.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-07T21:01:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2406",

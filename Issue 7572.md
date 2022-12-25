@@ -156,7 +156,7 @@ Nathann
 archive/issue_events_007799.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2009-12-01T17:05:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7572",

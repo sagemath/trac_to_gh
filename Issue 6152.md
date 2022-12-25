@@ -71,7 +71,7 @@ Merged in 4.0.rc2.
 archive/issue_events_006401.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-05-28T18:36:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6152",

@@ -78,7 +78,7 @@ Resolution: fixed
 archive/issue_events_000491.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2007-08-30T03:38:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/462",

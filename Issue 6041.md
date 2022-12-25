@@ -562,7 +562,7 @@ There is another patch at #6085 now: You should be working on top of `part-1` an
 archive/issue_events_006296.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-12-05T23:29:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6041",

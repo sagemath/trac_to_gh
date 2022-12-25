@@ -748,7 +748,7 @@ Merged scripts-3761-3.2.alpha3.patch and scripts-3761-PART2-bdist.patch in Sage 
 archive/issue_events_003983.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-15T04:58:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3761",

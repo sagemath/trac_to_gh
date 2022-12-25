@@ -220,7 +220,7 @@ archive/issue_comments_094099.json:
 archive/issue_events_009830.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-10-17T20:52:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9697",

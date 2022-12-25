@@ -51,7 +51,7 @@ Attachment [sf_fix.patch](tarball://root/attachments/some-uuid/ticket1025/sf_fix
 archive/issue_events_001149.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-29T03:42:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1025",

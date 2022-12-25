@@ -146,7 +146,7 @@ Resolution: duplicate
 archive/issue_events_000198.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-07-08T14:17:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/191",
@@ -216,7 +216,7 @@ Changing status from closed to new.
 archive/issue_events_000199.json:
 ```json
 {
-    "actor": "@loefflerd",
+    "actor": "https://github.com/loefflerd",
     "created_at": "2010-07-08T19:20:26Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/191",
@@ -324,7 +324,7 @@ I'm resolving this as a "duplicate," simply because the only relevant milestone 
 archive/issue_events_000200.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-20T09:40:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/191",

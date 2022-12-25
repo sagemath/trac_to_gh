@@ -72,7 +72,7 @@ This is already handled by #8844.
 archive/issue_events_009307.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-05T17:37:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9147",

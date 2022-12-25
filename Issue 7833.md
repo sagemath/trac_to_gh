@@ -230,7 +230,7 @@ Ticket #6532 incorporates the patch on this ticket, so no need to merge the patc
 archive/issue_events_008048.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-25T23:30:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7833",

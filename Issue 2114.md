@@ -1817,7 +1817,7 @@ FWIW, I was going to give the previous spkgs positive review right when Jeroen s
 archive/issue_events_002274.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-06-10T08:41:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2114",

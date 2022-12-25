@@ -416,7 +416,7 @@ Positive review for your changes, but I've added a new patch that moves the modu
 archive/issue_events_003297.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-01-25T00:57:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3083",

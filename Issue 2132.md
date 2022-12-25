@@ -90,7 +90,7 @@ I'm not sure where that memory is [not] allocated.
 archive/issue_events_002294.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2009-01-23T10:43:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2132",

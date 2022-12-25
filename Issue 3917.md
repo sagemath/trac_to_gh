@@ -68,7 +68,7 @@ Jason, you should probably just use TinyMCE text cells for this.
 archive/issue_events_004144.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-01-22T06:47:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3917",

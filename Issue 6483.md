@@ -247,7 +247,7 @@ Resolution: invalid
 archive/issue_events_006719.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-10-01T05:49:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6483",

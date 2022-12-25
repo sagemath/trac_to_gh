@@ -290,7 +290,7 @@ Resolution: duplicate
 archive/issue_events_009581.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-11-09T09:31:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9426",

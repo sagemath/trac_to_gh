@@ -1626,7 +1626,7 @@ Milestone sage-4.7.3 deleted
 archive/issue_events_009488.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-11-07T10:11:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",

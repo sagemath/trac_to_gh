@@ -91,7 +91,7 @@ Looks good. This should be merged in the optional packages repository.
 archive/issue_events_007270.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-23T09:09:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7049",

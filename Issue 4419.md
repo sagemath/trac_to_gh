@@ -203,7 +203,7 @@ The new ticket is here: #4569
 archive/issue_events_004664.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-21T10:56:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4419",

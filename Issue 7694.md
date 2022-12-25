@@ -126,7 +126,7 @@ Cool.
 archive/issue_events_007911.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2010-06-03T04:09:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7694",

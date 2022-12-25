@@ -306,7 +306,7 @@ Merged trac_2840-good-hunks.patch and trac_2840-manually_merged-hunks.patch in S
 archive/issue_events_003030.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-07T19:47:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2840",

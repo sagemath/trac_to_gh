@@ -121,7 +121,7 @@ I take it that "sage -testall" has been done?  With or without "-long"?  Assumin
 archive/issue_events_004325.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-19T00:18:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4087",

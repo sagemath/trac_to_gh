@@ -972,7 +972,7 @@ Resolution: fixed
 archive/issue_events_008196.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-25T08:13:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",

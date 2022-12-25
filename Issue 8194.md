@@ -190,7 +190,7 @@ It seems okay compared to 0.7.4, but it sure would be nice to fix #8231...
 archive/issue_events_008397.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-02-14T03:39:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8194",

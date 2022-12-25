@@ -366,7 +366,7 @@ In 4.3, we can upgrade to 0.7.1 when we can get more rounds of testing on variou
 archive/issue_events_007059.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-12T07:04:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6825",

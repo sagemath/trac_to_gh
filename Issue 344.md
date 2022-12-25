@@ -97,7 +97,7 @@ e1p._cmp(e2p)
 archive/issue_events_000368.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-08-14T07:48:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/344",

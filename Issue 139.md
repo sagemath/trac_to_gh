@@ -107,7 +107,7 @@ Is this still a valid ticket? We do check dependencies now, right?
 archive/issue_events_000145.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-02-27T12:21:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/139",

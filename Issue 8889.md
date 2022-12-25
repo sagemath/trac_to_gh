@@ -256,7 +256,7 @@ I'm going to close this as invalid for now.  If we have a discussion and decide 
 archive/issue_events_009046.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-22T21:57:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8889",

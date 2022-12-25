@@ -89,7 +89,7 @@ Changing status from new to assigned.
 archive/issue_events_000921.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-10-21T21:25:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/811",
@@ -181,7 +181,7 @@ Changing status from closed to reopened.
 archive/issue_events_000922.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-10-21T21:26:07Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/811",
@@ -197,7 +197,7 @@ archive/issue_events_000922.json:
 archive/issue_events_000923.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-10-21T21:26:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/811",

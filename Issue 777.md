@@ -98,7 +98,7 @@ so this ticket should be closed, presumably as a duplicate.
 archive/issue_events_000880.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-10T16:17:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/777",

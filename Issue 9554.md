@@ -318,7 +318,7 @@ I've merged the patch into SageNB 0.8.2, which awaits review at #9572.
 archive/issue_events_009702.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-23T07:19:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9554",

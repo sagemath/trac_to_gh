@@ -79,7 +79,7 @@ See #9017
 archive/issue_events_006650.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2010-07-11T16:00:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6405",

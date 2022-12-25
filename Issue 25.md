@@ -49,7 +49,7 @@ I made this change for sage-1.5.  It's the right thing to do.
 archive/issue_events_000024.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2006-11-06T08:33:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/25",

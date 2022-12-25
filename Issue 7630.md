@@ -458,7 +458,7 @@ I think this should be closed since the notebook is now a separate project and i
 archive/issue_events_007857.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-02-08T13:23:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",

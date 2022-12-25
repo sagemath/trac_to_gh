@@ -1704,7 +1704,7 @@ I don't think so.  I originally tested them all without #9221.
 archive/issue_events_004589.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-10-03T06:35:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",

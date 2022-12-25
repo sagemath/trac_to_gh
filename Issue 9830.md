@@ -228,7 +228,7 @@ Now, I would like to send this to review, because I see no more error (maybe I o
 archive/issue_events_009952.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2013-07-22T15:28:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9830",

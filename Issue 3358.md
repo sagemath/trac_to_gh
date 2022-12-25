@@ -600,7 +600,7 @@ Changing keywords from "editor_mabshoff" to "".
 archive/issue_events_003575.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-08-06T13:13:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3358",

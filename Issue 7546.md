@@ -539,7 +539,7 @@ Sorry, that is not the right ticket, so I guess I'll leave it here.
 archive/issue_events_007776.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-12-09T02:41:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7546",

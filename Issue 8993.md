@@ -368,7 +368,7 @@ It certainly does. Thanks for fixing this! It should get merged in 4.5.2.alpha1.
 archive/issue_events_009148.json:
 ```json
 {
-    "actor": "@dandrake",
+    "actor": "https://github.com/dandrake",
     "created_at": "2010-07-22T23:51:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",

@@ -154,7 +154,7 @@ Resolution: wontfix
 archive/issue_events_003707.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-03-19T04:41:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3487",

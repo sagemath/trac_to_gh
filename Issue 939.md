@@ -271,7 +271,7 @@ Fix.
 archive/issue_events_001059.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-10-21T02:39:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/939",

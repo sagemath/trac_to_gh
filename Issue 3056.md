@@ -253,7 +253,7 @@ Looks good.
 archive/issue_events_003266.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-01-24T18:42:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3056",

@@ -177,7 +177,7 @@ Merged "trac_8639.patch" in 4.4.alpha0.
 archive/issue_events_008808.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-16T18:55:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8639",

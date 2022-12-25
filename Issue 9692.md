@@ -121,7 +121,7 @@ I think this ticket is a duplicate of #9735, #9689, and/or #9693.  Is that right
 archive/issue_events_009824.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-08-16T22:09:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9692",

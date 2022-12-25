@@ -385,7 +385,7 @@ http://www.sagemath.org/packages/optional/cbc-2.3.spkg
 archive/issue_events_006842.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-02T08:50:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6603",

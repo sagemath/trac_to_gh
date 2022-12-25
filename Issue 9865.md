@@ -186,7 +186,7 @@ Resolution: invalid
 archive/issue_events_009995.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-04-06T08:01:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9865",
@@ -357,7 +357,7 @@ Changing status from closed to new.
 archive/issue_events_009996.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-04-11T08:27:25Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9865",

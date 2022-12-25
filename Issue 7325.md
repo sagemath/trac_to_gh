@@ -1430,7 +1430,7 @@ Merged only [trac_7325-final-for-real.patch](http://trac.sagemath.org/sage_trac/
 archive/issue_events_007547.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-30T23:39:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",

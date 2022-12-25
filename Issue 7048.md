@@ -171,7 +171,7 @@ Changing status from new to needs_review.
 archive/issue_events_007269.json:
 ```json
 {
-    "actor": "@slel",
+    "actor": "https://github.com/slel",
     "created_at": "2020-08-22T07:16:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7048",

@@ -87,7 +87,7 @@ The patch `trac_6704-spell-check-graphs.patch` is a rebase; it depends on #6684.
 archive/issue_events_006939.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-12T05:41:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6704",

@@ -70,7 +70,7 @@ Resolution: duplicate
 archive/issue_events_001815.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-03T13:34:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1655",

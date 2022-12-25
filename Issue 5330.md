@@ -323,7 +323,7 @@ All of the above changes are reference.patch and fixes.patch.
 archive/issue_events_005583.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-24T19:24:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5330",

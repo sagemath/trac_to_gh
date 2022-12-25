@@ -144,7 +144,7 @@ We're now using jmol for everything.
 archive/issue_events_001567.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2009-05-18T21:38:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1419",

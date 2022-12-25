@@ -83,7 +83,7 @@ Resolution: duplicate
 archive/issue_events_000132.json:
 ```json
 {
-    "actor": "dmharvey",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
     "created_at": "2006-10-11T16:33:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/126",

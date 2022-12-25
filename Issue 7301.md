@@ -1147,7 +1147,7 @@ Thanks again Nathann!
 archive/issue_events_007523.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-01-13T08:56:17Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",

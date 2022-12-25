@@ -85,7 +85,7 @@ Changing priority from major to blocker.
 archive/issue_events_006320.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-05-21T00:36:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6065",

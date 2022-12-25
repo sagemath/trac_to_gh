@@ -185,7 +185,7 @@ Resolution: fixed
 archive/issue_events_003059.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-10T01:52:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2865",
@@ -261,7 +261,7 @@ Changing status from closed to reopened.
 archive/issue_events_003060.json:
 ```json
 {
-    "actor": "PolyBoRi",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi",
     "created_at": "2008-04-10T04:54:15Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2865",
@@ -295,7 +295,7 @@ Resolution: fixed
 archive/issue_events_003061.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-10T12:43:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2865",

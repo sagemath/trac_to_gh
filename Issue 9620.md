@@ -176,7 +176,7 @@ thank you
 archive/issue_events_009761.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-12-24T17:36:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9620",

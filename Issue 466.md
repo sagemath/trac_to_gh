@@ -241,7 +241,7 @@ Applied for sage-2.8.3
 archive/issue_events_000495.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-08-29T02:54:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/466",

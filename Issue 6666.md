@@ -496,7 +496,7 @@ Actually, in the case of `c = ...`, I would personally prefer the "no" option or
 archive/issue_events_006902.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2015-01-25T16:25:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",

@@ -239,7 +239,7 @@ obsolete ?
 archive/issue_events_006564.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2022-10-08T07:33:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6317",

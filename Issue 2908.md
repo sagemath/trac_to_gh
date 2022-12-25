@@ -115,7 +115,7 @@ Resolution: invalid
 archive/issue_events_003110.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2008-04-13T18:51:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2908",

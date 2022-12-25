@@ -169,7 +169,7 @@ Changing keywords from "" to "Developer's Guide patching spkg".
 archive/issue_events_008285.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-14T14:36:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8079",

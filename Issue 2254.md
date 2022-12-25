@@ -260,7 +260,7 @@ They are ready to be tested for integration.
 archive/issue_events_002424.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-03T04:42:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2254",

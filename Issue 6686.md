@@ -104,7 +104,7 @@ The second patch is fine, and makes more sense (the whole thing is centered afte
 archive/issue_events_006921.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-26T21:13:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6686",

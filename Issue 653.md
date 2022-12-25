@@ -102,7 +102,7 @@ Hopefully we don't have to re-implement every computer algebra algorithm that us
 archive/issue_events_000719.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-26T05:05:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/653",

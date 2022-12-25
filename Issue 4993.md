@@ -95,7 +95,7 @@ archive/issue_comments_038032.json:
 archive/issue_events_005237.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-01-23T00:19:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4993",

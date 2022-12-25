@@ -163,7 +163,7 @@ Works for me with sage-5.3.rc0...
 archive/issue_events_010031.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-08-23T18:46:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9903",

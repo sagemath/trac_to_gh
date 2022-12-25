@@ -384,7 +384,7 @@ Reviewer patch, apply on top of previous
 archive/issue_events_009784.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-01T21:43:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9648",

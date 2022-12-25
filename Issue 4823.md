@@ -70,7 +70,7 @@ Resolution: fixed
 archive/issue_events_005067.json:
 ```json
 {
-    "actor": "@ClementPernet",
+    "actor": "https://github.com/ClementPernet",
     "created_at": "2008-12-18T00:30:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4823",
@@ -122,7 +122,7 @@ Changing status from closed to reopened.
 archive/issue_events_005068.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2008-12-18T00:37:27Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4823",
@@ -232,7 +232,7 @@ Merged in Sage 3.2.2.rc2
 archive/issue_events_005069.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-12-18T14:58:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4823",

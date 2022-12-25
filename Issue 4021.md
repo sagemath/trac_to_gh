@@ -220,7 +220,7 @@ Merged all three patches in Sage 3.1.3.alpha2 and this time I closed the ticket 
 archive/issue_events_004251.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-28T19:22:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4021",

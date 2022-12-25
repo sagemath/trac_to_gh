@@ -317,7 +317,7 @@ Michael
 archive/issue_events_001121.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-11-25T05:49:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/998",

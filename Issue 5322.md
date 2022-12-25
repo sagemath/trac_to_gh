@@ -98,7 +98,7 @@ Closing since this refers to a very old version.
 archive/issue_events_005576.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-04-11T16:19:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5322",

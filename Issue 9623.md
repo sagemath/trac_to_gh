@@ -1189,7 +1189,7 @@ I assume that is positive review of Jeroen's changes, and I don't think such a t
 archive/issue_events_009764.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-05-03T12:28:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",

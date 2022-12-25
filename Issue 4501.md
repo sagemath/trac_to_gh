@@ -229,7 +229,7 @@ See #5079
 archive/issue_events_004747.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2009-01-24T11:42:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4501",

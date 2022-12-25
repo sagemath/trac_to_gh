@@ -176,7 +176,7 @@ The last test will be to actually roll an alpha and make sure everything still w
 archive/issue_events_006363.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-06-24T09:58:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6112",

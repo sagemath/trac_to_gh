@@ -398,7 +398,7 @@ I give a positive review to Nicolas's changes.
 archive/issue_events_006037.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-18T15:44:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5790",

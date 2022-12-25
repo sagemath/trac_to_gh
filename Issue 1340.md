@@ -142,7 +142,7 @@ Anyway, I'll invalidate it for now.
 archive/issue_events_001480.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-11-29T14:35:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1340",
@@ -194,7 +194,7 @@ Changing status from closed to reopened.
 archive/issue_events_001481.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-11-29T14:40:33Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1340",
@@ -268,7 +268,7 @@ Michael
 archive/issue_events_001482.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-14T05:14:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1340",

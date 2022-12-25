@@ -116,7 +116,7 @@ The patch **trac_4682.patch** is an updated contributors list as found on the de
 archive/issue_events_004928.json:
 ```json
 {
-    "actor": "@haraldschilly",
+    "actor": "https://github.com/haraldschilly",
     "created_at": "2008-12-04T21:55:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4682",

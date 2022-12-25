@@ -217,7 +217,7 @@ I've attached a rebased patch that fixes a failed "hunk."
 archive/issue_events_009308.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-10-04T01:34:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9148",

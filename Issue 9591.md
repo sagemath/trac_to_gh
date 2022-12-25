@@ -769,7 +769,7 @@ New complete patch including trac_9591-g2red_remove_dist.patch
 archive/issue_events_009735.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-10T10:39:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9591",

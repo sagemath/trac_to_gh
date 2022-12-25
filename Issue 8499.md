@@ -375,7 +375,7 @@ I tried the added examples with Sage 6.1 and they work, thus positive review for
 archive/issue_events_008680.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-02-07T00:50:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8499",

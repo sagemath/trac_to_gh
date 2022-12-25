@@ -203,7 +203,7 @@ Ondrej
 archive/issue_events_008743.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-21T03:31:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8564",

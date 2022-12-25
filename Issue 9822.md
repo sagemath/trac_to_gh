@@ -240,7 +240,7 @@ Looks great to me!
 archive/issue_events_009945.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-29T08:38:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9822",

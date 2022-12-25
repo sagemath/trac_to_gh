@@ -116,7 +116,7 @@ Thanks!
 archive/issue_events_006993.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-07T04:59:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6761",

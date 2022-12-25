@@ -51,7 +51,7 @@ Looks good to me.
 archive/issue_events_004541.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-10-26T00:47:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4298",

@@ -234,7 +234,7 @@ Much less intrusive--too bad we didn't pursue this just a bit more back in June.
 archive/issue_events_006241.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-15T07:05:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5986",

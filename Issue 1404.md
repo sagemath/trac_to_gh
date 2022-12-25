@@ -118,7 +118,7 @@ Attachment [trac-1404.patch](tarball://root/attachments/some-uuid/ticket1404/tra
 archive/issue_events_001552.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-15T13:27:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1404",

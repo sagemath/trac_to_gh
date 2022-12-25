@@ -187,7 +187,7 @@ Merged Sage-2.10.1.rc2-Solaris-build-fixes-for-sage.spkg.patch in Sage 2.10.1.rc
 archive/issue_events_001469.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-30T07:55:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1329",

@@ -349,7 +349,7 @@ Please include the ticket number in your commit messages! Also, Jeremy, you migh
 archive/issue_events_009559.json:
 ```json
 {
-    "actor": "@dandrake",
+    "actor": "https://github.com/dandrake",
     "created_at": "2010-07-27T00:50:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9403",

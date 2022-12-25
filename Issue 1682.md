@@ -758,7 +758,7 @@ The above patch makes this optional via an `implicit_multiplication(...)` functi
 archive/issue_events_001841.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-15T06:05:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1682",

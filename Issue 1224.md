@@ -102,7 +102,7 @@ next attempt, patch updated
 archive/issue_events_001362.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-11-21T15:26:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1224",

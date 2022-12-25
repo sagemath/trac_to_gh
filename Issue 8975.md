@@ -144,7 +144,7 @@ When you want the release manager to close a ticket, you should set it to positi
 archive/issue_events_009129.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-05-21T08:06:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8975",

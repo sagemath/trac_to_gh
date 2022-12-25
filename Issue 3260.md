@@ -215,7 +215,7 @@ Determined to be invalid/duplicate/wontfix (closing as "wontfix" as a catch-all 
 archive/issue_events_003477.json:
 ```json
 {
-    "actor": "@embray",
+    "actor": "https://github.com/embray",
     "created_at": "2016-08-30T13:32:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3260",

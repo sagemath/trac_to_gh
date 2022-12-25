@@ -91,7 +91,7 @@ Resolution: duplicate
 archive/issue_events_010084.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2010-09-21T06:22:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9955",

@@ -573,7 +573,7 @@ Apply v3 only.
 archive/issue_events_009261.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-07-06T08:09:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9102",

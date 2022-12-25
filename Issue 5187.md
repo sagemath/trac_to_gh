@@ -130,7 +130,7 @@ I believe this ticket can be closed as it is superceded by #7870.
 archive/issue_events_005441.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2011-08-23T05:19:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5187",

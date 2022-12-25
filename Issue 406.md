@@ -258,7 +258,7 @@ Since this is a second opinion I think it is time to give a full positive review
 archive/issue_events_000432.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-05-12T10:59:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/406",

@@ -238,7 +238,7 @@ Resolution: duplicate
 archive/issue_events_009343.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-06-25T11:18:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
@@ -308,7 +308,7 @@ Changing status from closed to new.
 archive/issue_events_009344.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-12T01:29:44Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
@@ -869,7 +869,7 @@ http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.2.1.p1.spkg
 archive/issue_events_009345.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-07-13T18:38:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9187",

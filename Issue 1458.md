@@ -132,7 +132,7 @@ I'll dig deeper.
 archive/issue_events_001609.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-01-23T02:43:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1458",

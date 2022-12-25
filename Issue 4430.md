@@ -135,7 +135,7 @@ By the way, the patch here appears to be for a different ticket.
 archive/issue_events_004674.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-01-25T16:05:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4430",

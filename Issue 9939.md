@@ -657,7 +657,7 @@ Well, I was helped a lot by Mitesh's pointer to the Python docs for `__cmp__`.
 archive/issue_events_010066.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-12-02T16:09:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9939",

@@ -99,7 +99,7 @@ Great stuff!  Works well, and makes the code cleaner!
 archive/issue_events_001891.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-05-12T11:03:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1733",

@@ -113,7 +113,7 @@ sage: imag(complex(0,1))
 archive/issue_events_005675.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-26T02:37:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5420",

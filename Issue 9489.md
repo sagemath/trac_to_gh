@@ -211,7 +211,7 @@ Resolution: invalid
 archive/issue_events_009640.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-08-16T00:48:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9489",

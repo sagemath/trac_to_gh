@@ -86,7 +86,7 @@ archive/issue_comments_006451.json:
 archive/issue_events_001189.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-11-04T00:02:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1067",

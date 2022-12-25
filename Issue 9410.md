@@ -240,7 +240,7 @@ Done!
 archive/issue_events_009566.json:
 ```json
 {
-    "actor": "@embray",
+    "actor": "https://github.com/embray",
     "created_at": "2016-08-30T13:32:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9410",

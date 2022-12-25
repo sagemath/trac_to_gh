@@ -197,7 +197,7 @@ The issues raised here have all been sorted under other tickets.  This one can b
 archive/issue_events_001247.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-06T14:11:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1121",

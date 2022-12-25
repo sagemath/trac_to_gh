@@ -223,7 +223,7 @@ All right. Hope this will be fixed with #15260.
 archive/issue_events_002190.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2016-01-23T20:42:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2034",

@@ -88,7 +88,7 @@ Also, based on the presentation I saw from these two people, it is questionable 
 archive/issue_events_004156.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2008-08-26T14:39:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3929",

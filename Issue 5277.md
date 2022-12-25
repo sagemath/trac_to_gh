@@ -108,7 +108,7 @@ This seems to work fine for me, on an intel mac running 10.5.6.
 archive/issue_events_005532.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-16T11:31:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5277",

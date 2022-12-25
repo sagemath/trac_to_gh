@@ -307,7 +307,7 @@ Resolution: wontfix
 archive/issue_events_001420.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-06T23:14:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1276",

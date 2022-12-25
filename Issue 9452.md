@@ -142,7 +142,7 @@ This patch is undoing a mysterious "fix" from a long time ago, which was require
 archive/issue_events_009608.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-03-08T21:45:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9452",

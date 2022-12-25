@@ -292,7 +292,7 @@ See #6913 for a follow-up to this ticket. It addresses the issue of writing thos
 archive/issue_events_007101.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-10T11:36:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6869",

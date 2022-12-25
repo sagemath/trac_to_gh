@@ -93,7 +93,7 @@ archive/issue_comments_004351.json:
 archive/issue_events_000835.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2007-10-25T21:02:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/744",

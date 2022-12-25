@@ -299,7 +299,7 @@ Nice work!  V3 is just a rebase of V2.
 archive/issue_events_003370.json:
 ```json
 {
-    "actor": "@TimDumol",
+    "actor": "https://github.com/TimDumol",
     "created_at": "2010-01-20T03:45:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
@@ -387,7 +387,7 @@ Changing status from closed to needs_work.
 archive/issue_events_003371.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-02-06T19:27:11Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
@@ -531,7 +531,7 @@ Changing status from needs_review to positive_review.
 archive/issue_events_003372.json:
 ```json
 {
-    "actor": "@TimDumol",
+    "actor": "https://github.com/TimDumol",
     "created_at": "2010-05-04T04:42:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",

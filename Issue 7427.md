@@ -108,7 +108,7 @@ This should be moved to ipywidgets.
 archive/issue_events_007651.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2017-07-04T14:27:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7427",

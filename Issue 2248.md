@@ -80,7 +80,7 @@ Attachment [trac_2248.patch](tarball://root/attachments/some-uuid/ticket2248/tra
 archive/issue_events_002418.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-21T19:23:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2248",

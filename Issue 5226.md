@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5226
 archive/issue_events_005483.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-24T19:18:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5226",

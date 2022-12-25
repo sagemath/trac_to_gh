@@ -1286,7 +1286,7 @@ Resolution: fixed
 archive/issue_events_003617.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-08-23T12:45:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",

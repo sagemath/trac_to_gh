@@ -189,7 +189,7 @@ Resolution: invalid
 archive/issue_events_007229.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-04-27T17:37:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7005",

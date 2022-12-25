@@ -150,7 +150,7 @@ contains the fixes.
 archive/issue_events_004284.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-04T01:39:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4052",

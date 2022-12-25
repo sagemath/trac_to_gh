@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7139
 archive/issue_events_007359.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-01-02T06:52:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7139",

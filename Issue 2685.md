@@ -67,7 +67,7 @@ Attachment [2685-girth.patch](tarball://root/attachments/some-uuid/ticket2685/26
 archive/issue_events_002877.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-28T04:50:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2685",

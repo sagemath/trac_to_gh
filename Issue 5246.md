@@ -106,7 +106,7 @@ This is apparently fixed by #6532.
 archive/issue_events_005502.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-25T23:24:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5246",

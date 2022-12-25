@@ -537,7 +537,7 @@ Indeed the dependencies are already in, Nick must have forgotten to `sage -b` ?
 archive/issue_events_006289.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-12T07:43:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6034",

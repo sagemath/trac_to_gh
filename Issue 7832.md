@@ -369,7 +369,7 @@ Indeed, see #13237.
 archive/issue_events_008047.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-09-13T22:37:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7832",

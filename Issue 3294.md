@@ -353,7 +353,7 @@ Attachment [trac_3294.patch](tarball://root/attachments/some-uuid/ticket3294/tra
 archive/issue_events_003513.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-01-24T16:28:17Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3294",

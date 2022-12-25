@@ -314,7 +314,7 @@ Resolution: invalid
 archive/issue_events_009413.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2019-05-22T19:51:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9252",

@@ -89,7 +89,7 @@ Applies against 3.0.2.alpha0 and passes tests.  Looks good to me.
 archive/issue_events_003505.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-05-25T03:37:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3286",

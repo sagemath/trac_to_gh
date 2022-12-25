@@ -2033,7 +2033,7 @@ Apply trac_9972_add_cone_embedding.patch, trac_9972_improve_element_constructors
 archive/issue_events_010099.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-12T06:33:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9971",

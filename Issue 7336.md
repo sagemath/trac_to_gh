@@ -221,7 +221,7 @@ I rebased Mike's spkg, reviewed it, built it on Cygwin (winxp1 on boxen.math). T
 archive/issue_events_007558.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-16T04:57:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7336",

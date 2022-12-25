@@ -159,7 +159,7 @@ Michael
 archive/issue_events_003606.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-27T07:38:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3391",
@@ -229,7 +229,7 @@ Changing status from closed to reopened.
 archive/issue_events_003607.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-27T22:21:54Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3391",
@@ -399,7 +399,7 @@ spkg and patch merged in 4.0.2.alpha0.
 archive/issue_events_003608.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2009-06-12T06:58:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3391",

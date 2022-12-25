@@ -71,7 +71,7 @@ But please *don't* include it, because Sage tests didn't run for me. I need to i
 archive/issue_events_001792.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-16T09:52:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1633",

@@ -87,7 +87,7 @@ clisp build error fixed by installing GNU sed instead of the BusyBox version.
 archive/issue_events_000847.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2008-11-14T09:48:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/754",

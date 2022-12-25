@@ -124,7 +124,7 @@ I'm closing this, since the directory above points to an old version of cython.
 archive/issue_events_000681.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-20T18:14:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/623",

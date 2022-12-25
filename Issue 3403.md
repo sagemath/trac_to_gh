@@ -49,7 +49,7 @@ Attachment [sage-3403.patch](tarball://root/attachments/some-uuid/ticket3403/sag
 archive/issue_events_003619.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-06-26T03:27:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3403",

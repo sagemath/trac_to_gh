@@ -396,7 +396,7 @@ Resolution: fixed
 archive/issue_events_006350.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-17T06:18:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
@@ -466,7 +466,7 @@ Changing status from closed to new.
 archive/issue_events_006351.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-17T14:56:30Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",
@@ -718,7 +718,7 @@ rebased version of patch. apply only this file.
 archive/issue_events_006352.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-29T04:55:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6099",

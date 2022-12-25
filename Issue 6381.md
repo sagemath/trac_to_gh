@@ -216,7 +216,7 @@ When using Mercurial queue, one has to be careful about the commit message. I wo
 archive/issue_events_006629.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-23T08:02:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6381",

@@ -201,7 +201,7 @@ Release manager:  please apply both patches.
 archive/issue_events_009816.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-15T11:38:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9684",

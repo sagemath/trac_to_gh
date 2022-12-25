@@ -110,7 +110,7 @@ Forgot to say this, but I think only my changes need review at this point, I'm h
 archive/issue_events_009318.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-07T05:06:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9161",

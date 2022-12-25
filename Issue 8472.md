@@ -80,7 +80,7 @@ Resolution: duplicate
 archive/issue_events_008656.json:
 ```json
 {
-    "actor": "@dandrake",
+    "actor": "https://github.com/dandrake",
     "created_at": "2010-03-11T01:48:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8472",

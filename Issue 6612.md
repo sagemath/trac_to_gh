@@ -1055,7 +1055,7 @@ Merged patches in the script repository in this order:
 archive/issue_events_006852.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-30T04:05:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6612",

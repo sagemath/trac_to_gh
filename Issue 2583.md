@@ -121,7 +121,7 @@ Merged in Sage 2.11.alpha0
 archive/issue_events_002770.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-19T00:39:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2583",
@@ -191,7 +191,7 @@ Changing status from closed to reopened.
 archive/issue_events_002771.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-19T10:13:22Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2583",
@@ -275,7 +275,7 @@ Michael
 archive/issue_events_002772.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-19T13:29:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2583",

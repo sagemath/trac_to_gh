@@ -93,7 +93,7 @@ Changing component from algebraic geometry to basic arithmetic.
 archive/issue_events_001139.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-28T18:03:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1015",

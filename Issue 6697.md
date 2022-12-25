@@ -51,7 +51,7 @@ based on Sage 4.1.1.rc2
 archive/issue_events_006932.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-12T05:24:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6697",

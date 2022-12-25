@@ -235,7 +235,7 @@ With the Fortran issues in #7485 cleared up, #6532 seems to now work to fix this
 archive/issue_events_005200.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-25T23:26:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4959",

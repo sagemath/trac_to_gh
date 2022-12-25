@@ -153,7 +153,7 @@ I've tested in `sage/rings`, and the changes look good to me.
 archive/issue_events_008051.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-01-13T05:22:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7836",

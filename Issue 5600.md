@@ -250,7 +250,7 @@ Thanks much for fixing all those typos! positive review on your reviewer's patch
 archive/issue_events_005844.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-23T01:04:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5600",

@@ -1153,7 +1153,7 @@ In part, the patch "v2" at #5360 is an attempt to include some `server/` docstri
 archive/issue_events_006805.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-30T11:32:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",

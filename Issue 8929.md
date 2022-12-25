@@ -91,7 +91,7 @@ Resolution: invalid
 archive/issue_events_009084.json:
 ```json
 {
-    "actor": "jasonbhill",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jasonbhill",
     "created_at": "2010-05-23T19:22:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8929",

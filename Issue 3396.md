@@ -75,7 +75,7 @@ apply this after the other patch
 archive/issue_events_003613.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-06-15T20:07:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3396",

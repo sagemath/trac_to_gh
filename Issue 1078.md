@@ -96,7 +96,7 @@ Reported as fixed by jvoight in 2.8.11.
 archive/issue_events_001200.json:
 ```json
 {
-    "actor": "@yqiang",
+    "actor": "https://github.com/yqiang",
     "created_at": "2007-11-03T20:23:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1078",

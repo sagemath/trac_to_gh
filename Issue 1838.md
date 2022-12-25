@@ -149,7 +149,7 @@ Resolution: invalid
 archive/issue_events_001997.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2008-01-29T00:02:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1838",

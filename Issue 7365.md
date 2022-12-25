@@ -208,7 +208,7 @@ Attachment [trac_7365-doctest.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_events_007588.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-12-19T22:59:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7365",

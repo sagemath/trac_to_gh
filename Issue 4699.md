@@ -276,7 +276,7 @@ Merged trac_4699_fix.patch and trac_4699_new_bin.patch in Sage 3.2.2.alpha2
 archive/issue_events_004944.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-12-11T15:07:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4699",

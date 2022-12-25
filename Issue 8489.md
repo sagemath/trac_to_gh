@@ -507,7 +507,7 @@ This ticket is marked as "needs review", but is there anything still to review h
 archive/issue_events_008670.json:
 ```json
 {
-    "actor": "@dandrake",
+    "actor": "https://github.com/dandrake",
     "created_at": "2010-07-28T03:23:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",

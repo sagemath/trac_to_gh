@@ -123,7 +123,7 @@ Merged both patches in Sage 2.11.alpha0
 archive/issue_events_002766.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-18T10:23:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
@@ -195,7 +195,7 @@ Changing status from closed to reopened.
 archive/issue_events_002767.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-03-18T23:55:59Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
@@ -336,7 +336,7 @@ I think this looks good and should be applied.  I think that means part3 should 
 archive/issue_events_002768.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-19T23:58:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2581",

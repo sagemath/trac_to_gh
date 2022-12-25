@@ -211,7 +211,7 @@ The original patch uses TABs, so I changed them to spaces leaving the rest the s
 archive/issue_events_008169.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-01T10:05:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7953",

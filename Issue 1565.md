@@ -216,7 +216,7 @@ This is fixed as of 3.0.3.alpha2.  Please close
 archive/issue_events_001719.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-06-16T19:05:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1565",

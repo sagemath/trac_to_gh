@@ -152,7 +152,7 @@ merged in 2.9.1 alpha3
 archive/issue_events_000738.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-12-22T01:08:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/670",

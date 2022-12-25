@@ -103,7 +103,7 @@ I don't really know where I got the `-a` argument -- I think I was copying it fr
 archive/issue_events_004788.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-18T18:46:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4543",

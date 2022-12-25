@@ -129,7 +129,7 @@ Closely related: #378, #1484
 archive/issue_events_005419.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-02-16T00:05:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5169",

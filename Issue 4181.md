@@ -208,7 +208,7 @@ Resolution: duplicate
 archive/issue_events_004418.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-22T22:26:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
@@ -371,7 +371,7 @@ Changing status from closed to reopened.
 archive/issue_events_004419.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-23T22:47:57Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
@@ -471,7 +471,7 @@ Michael
 archive/issue_events_004420.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-24T19:38:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",

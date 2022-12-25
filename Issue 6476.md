@@ -339,7 +339,7 @@ OK, I think this is good to go.  Positive review.
 archive/issue_events_006713.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-24T04:46:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6476",

@@ -187,7 +187,7 @@ No patch, so deferring...
 archive/issue_events_007907.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-07-08T18:33:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7690",

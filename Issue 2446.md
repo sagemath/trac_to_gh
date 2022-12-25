@@ -52,7 +52,7 @@ This duplicates #2445 and can be deleted.  Sorry.
 archive/issue_events_002623.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-09T21:30:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2446",

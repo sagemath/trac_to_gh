@@ -1196,7 +1196,7 @@ Due to differences in the interface of uni- and multivariate polynomials, a bug 
 archive/issue_events_005707.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-04T18:14:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5453",

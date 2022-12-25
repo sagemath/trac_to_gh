@@ -182,7 +182,7 @@ applied to 2.8.11.alpha0: this should have been fixed via the new Singular.spkg 
 archive/issue_events_001081.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-11-01T10:36:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/959",

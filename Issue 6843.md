@@ -192,7 +192,7 @@ This was fixed in my rewrite of how notebook evaluates code.  In particular "Whe
 archive/issue_events_007076.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-12-08T20:08:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6843",

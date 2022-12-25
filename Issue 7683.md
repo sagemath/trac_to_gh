@@ -250,7 +250,7 @@ I also give this a positive review.  I tested the code and also read it, and it 
 archive/issue_events_007900.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-12-16T02:23:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7683",

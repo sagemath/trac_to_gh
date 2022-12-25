@@ -176,7 +176,7 @@ diff -r e7e66d37ff7a -r c7164849d131 sage/rings/polynomial_element.py
 archive/issue_events_000161.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-01-13T00:18:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/155",

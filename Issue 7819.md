@@ -137,7 +137,7 @@ but anyway wanted to point it out in case this is considered something that shou
 archive/issue_events_008034.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-01-13T05:14:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7819",

@@ -347,7 +347,7 @@ New spkg link for the record: ​http://sage.math.washington.edu/home/vbraun/spk
 archive/issue_events_005741.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-11-28T18:38:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5488",

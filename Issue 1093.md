@@ -313,7 +313,7 @@ These three patches together look good to me.
 archive/issue_events_001219.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-08T02:07:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1093",

@@ -111,7 +111,7 @@ Michael
 archive/issue_events_001727.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-12-20T18:07:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1573",

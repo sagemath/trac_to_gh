@@ -342,7 +342,7 @@ Apply the last three patches in order.
 archive/issue_events_001543.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-24T21:19:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1399",

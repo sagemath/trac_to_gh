@@ -261,7 +261,7 @@ Done.
 archive/issue_events_009045.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-05T22:23:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8888",

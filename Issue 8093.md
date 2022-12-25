@@ -151,7 +151,7 @@ Alright with the modifs as far as I'm concerned.
 archive/issue_events_008301.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-02-11T14:47:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8093",

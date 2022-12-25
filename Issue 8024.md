@@ -129,7 +129,7 @@ This is solved by #8052, which currently needs review
 archive/issue_events_008235.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-31T22:31:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8024",

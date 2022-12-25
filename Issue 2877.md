@@ -155,7 +155,7 @@ Resolution: invalid
 archive/issue_events_003073.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-09-09T14:52:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
@@ -227,7 +227,7 @@ Changing status from closed to new.
 archive/issue_events_003074.json:
 ```json
 {
-    "actor": "@embray",
+    "actor": "https://github.com/embray",
     "created_at": "2019-07-05T16:41:48Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
@@ -900,7 +900,7 @@ Resolution: fixed
 archive/issue_events_003075.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2021-10-28T22:40:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",

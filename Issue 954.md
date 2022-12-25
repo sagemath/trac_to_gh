@@ -172,7 +172,7 @@ fi
 archive/issue_events_001074.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-12-20T21:32:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/954",

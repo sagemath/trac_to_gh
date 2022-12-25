@@ -77,7 +77,7 @@ Merged in Sage 3.0.2.alpha0
 archive/issue_events_003321.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-05-05T20:35:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3105",
@@ -129,7 +129,7 @@ Changing status from closed to reopened.
 archive/issue_events_003322.json:
 ```json
 {
-    "actor": "fwclarke",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/fwclarke",
     "created_at": "2008-05-06T09:13:05Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3105",
@@ -215,7 +215,7 @@ It also simplifies  !__repr!__  for such elements slightly.
 archive/issue_events_003323.json:
 ```json
 {
-    "actor": "fwclarke",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/fwclarke",
     "created_at": "2008-05-06T09:37:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3105",

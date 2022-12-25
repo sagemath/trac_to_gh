@@ -70,7 +70,7 @@ Attachment [2115.patch](tarball://root/attachments/some-uuid/ticket2115/2115.pat
 archive/issue_events_002275.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-14T09:38:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2115",

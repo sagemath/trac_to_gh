@@ -224,7 +224,7 @@ Resolution: fixed
 archive/issue_events_008295.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-06-12T21:20:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8089",
@@ -276,7 +276,7 @@ Changing status from closed to new.
 archive/issue_events_008296.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-06-18T11:53:37Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8089",
@@ -348,7 +348,7 @@ Resolution: duplicate
 archive/issue_events_008297.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-06-25T11:20:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8089",

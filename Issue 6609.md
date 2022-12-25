@@ -766,7 +766,7 @@ The point is that lcalc now builds on t2.math. So fine by me. Merged in the stan
 archive/issue_events_006849.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-16T01:10:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6609",

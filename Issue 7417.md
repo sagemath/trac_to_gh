@@ -427,7 +427,7 @@ I'll close this.  It is in the spkg at #7430.
 archive/issue_events_007641.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-12T07:26:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7417",

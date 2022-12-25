@@ -66,7 +66,7 @@ sage: b.dot_product(u)
 archive/issue_events_000326.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-03-04T21:22:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/307",

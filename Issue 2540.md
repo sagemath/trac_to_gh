@@ -92,7 +92,7 @@ Merged in Sage 2.10.4.rc0
 archive/issue_events_002721.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-16T02:31:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2540",

@@ -1057,7 +1057,7 @@ Resolution: fixed
 archive/issue_events_009122.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-06T07:42:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
@@ -1109,7 +1109,7 @@ Changing status from closed to needs_work.
 archive/issue_events_009123.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-06T08:19:19Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
@@ -1452,7 +1452,7 @@ I don't know if the patch would still apply (probably not), but at least I verif
 archive/issue_events_009124.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-11-30T08:59:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
@@ -1486,7 +1486,7 @@ Changing status from closed to new.
 archive/issue_events_009125.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-11-30T09:00:13Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
@@ -2837,7 +2837,7 @@ Thanks. LGTM.
 archive/issue_events_009126.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2021-03-01T00:21:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",

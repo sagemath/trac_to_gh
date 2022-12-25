@@ -386,7 +386,7 @@ Looks good to me.  William's patch also fixes a few other unrelated documentatio
 archive/issue_events_003337.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-05-11T09:59:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3121",

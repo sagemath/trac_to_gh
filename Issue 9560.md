@@ -221,7 +221,7 @@ Anyway, positive review.  It would have been nice to have an example with `False
 archive/issue_events_009705.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-06-14T21:08:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9560",

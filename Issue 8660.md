@@ -1540,7 +1540,7 @@ Resolution: invalid
 archive/issue_events_008832.json:
 ```json
 {
-    "actor": "@mkoeppe",
+    "actor": "https://github.com/mkoeppe",
     "created_at": "2021-09-02T18:48:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8660",

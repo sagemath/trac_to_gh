@@ -161,7 +161,7 @@ Works great and looks good to me. Resolves the problems too (now 0 is returned 2
 archive/issue_events_002146.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-29T19:18:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1990",

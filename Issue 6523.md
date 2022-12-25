@@ -197,7 +197,7 @@ Merged trac_6523-derivative_is_zero.patch.
 archive/issue_events_006761.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-12-06T08:33:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6523",

@@ -327,7 +327,7 @@ Thanks for catching those two lines Sébastien. Positive review.
 archive/issue_events_007131.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-18T02:50:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6903",

@@ -68,7 +68,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4815
 archive/issue_events_005057.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-12-16T16:39:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4815",
@@ -156,7 +156,7 @@ Changing status from closed to reopened.
 archive/issue_events_005058.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-12-16T16:48:52Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4815",
@@ -316,7 +316,7 @@ Resolution: fixed
 archive/issue_events_005059.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-20T07:43:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4815",

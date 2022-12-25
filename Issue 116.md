@@ -86,7 +86,7 @@ Is this a duplicate of #6357 ? This one is older, but #6357 has useful comments 
 archive/issue_events_000122.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-11T06:16:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/116",

@@ -164,7 +164,7 @@ Attachment [test_paths.sage](tarball://root/attachments/some-uuid/ticket2752/tes
 archive/issue_events_002938.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-02T01:36:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2752",

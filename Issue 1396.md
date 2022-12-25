@@ -493,7 +493,7 @@ Rebased for 4.5.2.alpha0 queue.  See comment 9.  Replaces all previous patches.
 archive/issue_events_001540.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-21T01:46:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",

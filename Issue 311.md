@@ -183,7 +183,7 @@ I have moved the Python API request to #2630.  #679 provides statistics and bett
 archive/issue_events_000330.json:
 ```json
 {
-    "actor": "@garyfurnish",
+    "actor": "https://github.com/garyfurnish",
     "created_at": "2008-03-21T16:09:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/311",

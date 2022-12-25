@@ -89,7 +89,7 @@ I think this is fixed in #8492 (which I tried to cc you on).
 archive/issue_events_008726.json:
 ```json
 {
-    "actor": "@dwbump",
+    "actor": "https://github.com/dwbump",
     "created_at": "2010-03-15T22:32:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8545",

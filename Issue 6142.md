@@ -49,7 +49,7 @@ The fix converts underlying data structure (back) to a list.
 archive/issue_events_006391.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-05-28T06:41:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6142",

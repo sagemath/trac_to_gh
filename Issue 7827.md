@@ -259,7 +259,7 @@ Merged [atlas-3.8.3.p11.spkg](http://sage.math.washington.edu/home/mvngu/spkg/st
 archive/issue_events_008042.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-01T00:40:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7827",

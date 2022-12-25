@@ -142,7 +142,7 @@ Attachment [trac_7541.patch](tarball://root/attachments/some-uuid/ticket7541/tra
 archive/issue_events_007771.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-12-19T21:26:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7541",

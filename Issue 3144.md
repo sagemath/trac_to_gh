@@ -145,7 +145,7 @@ stupid mistake by me, since var is defined in the list...
 archive/issue_events_003360.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-01-22T02:30:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3144",

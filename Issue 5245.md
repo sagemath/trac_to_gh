@@ -136,7 +136,7 @@ Resolution: invalid
 archive/issue_events_005501.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2020-03-29T02:08:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5245",

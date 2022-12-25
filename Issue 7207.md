@@ -369,7 +369,7 @@ Rebased for SageNB 0.6 + queue in comment.  Replaces previous.
 archive/issue_events_007428.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-01-25T00:52:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7207",

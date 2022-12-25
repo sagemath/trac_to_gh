@@ -265,7 +265,7 @@ Resolution: duplicate
 archive/issue_events_000667.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-04-30T00:56:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/610",

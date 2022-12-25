@@ -122,7 +122,7 @@ I am closing this as `worksforme`. We've gone several releases with maxima-5.19.
 archive/issue_events_007030.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2009-12-17T20:14:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6795",

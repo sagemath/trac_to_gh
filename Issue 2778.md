@@ -75,7 +75,7 @@ This is a duplicate of #2744.
 archive/issue_events_002966.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2009-04-16T11:25:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2778",

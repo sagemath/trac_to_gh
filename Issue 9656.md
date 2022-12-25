@@ -309,7 +309,7 @@ cell_output_nowrap.innerHTML;
 archive/issue_events_009791.json:
 ```json
 {
-    "actor": "@embray",
+    "actor": "https://github.com/embray",
     "created_at": "2018-08-10T09:46:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9656",

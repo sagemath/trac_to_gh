@@ -86,7 +86,7 @@ I've checked it on a Mac with Safari and Firefox, and also on a linux box with F
 archive/issue_events_003281.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2008-05-13T19:30:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3069",
@@ -164,7 +164,7 @@ Changing status from closed to reopened.
 archive/issue_events_003282.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-05-13T19:34:38Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3069",
@@ -256,7 +256,7 @@ Resolution: fixed
 archive/issue_events_003283.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-05-17T18:41:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3069",

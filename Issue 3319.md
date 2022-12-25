@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3319
 archive/issue_events_003537.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2008-09-20T15:59:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3319",

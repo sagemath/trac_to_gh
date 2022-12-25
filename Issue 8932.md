@@ -87,7 +87,7 @@ So we can close this ticket.
 archive/issue_events_009087.json:
 ```json
 {
-    "actor": "@mkoeppe",
+    "actor": "https://github.com/mkoeppe",
     "created_at": "2021-10-04T23:44:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8932",

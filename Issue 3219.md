@@ -55,7 +55,7 @@ Also, isn't there an LGPLv3 issue with gmp-4.2.2?
 archive/issue_events_003438.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-05-23T02:01:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3219",

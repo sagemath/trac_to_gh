@@ -109,7 +109,7 @@ I agree. Passes tests for me, so let's merge it.
 archive/issue_events_000380.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-06T17:06:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/358",

@@ -150,7 +150,7 @@ Added parse() method to take several kinds of inputs, re-enabled doctest for sol
 archive/issue_events_000618.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2007-09-06T19:20:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/570",
@@ -238,7 +238,7 @@ Changing status from closed to reopened.
 archive/issue_events_000619.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2007-09-06T20:21:48Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/570",
@@ -272,7 +272,7 @@ Resolution: fixed
 archive/issue_events_000620.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-07T04:34:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/570",

@@ -121,7 +121,7 @@ Is this still a problem, post-#7238?
 archive/issue_events_006887.json:
 ```json
 {
-    "actor": "@TimDumol",
+    "actor": "https://github.com/TimDumol",
     "created_at": "2010-01-19T20:19:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6651",

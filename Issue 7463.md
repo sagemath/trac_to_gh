@@ -112,7 +112,7 @@ I couldn't resist to review this right on the spot. What should I say? I even te
 archive/issue_events_007689.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-17T06:01:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7463",

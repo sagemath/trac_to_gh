@@ -51,7 +51,7 @@ Patch applies cleanly to 3.33.alpha2 and all tests pass.  Code looks good, so pa
 archive/issue_events_005399.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-02T02:56:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5149",

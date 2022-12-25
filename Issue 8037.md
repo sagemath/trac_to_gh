@@ -190,7 +190,7 @@ It can result in Mercurial ignoring your commit message, so that your commit mes
 archive/issue_events_008248.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-02T22:11:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8037",

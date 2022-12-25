@@ -277,7 +277,7 @@ Fill in the reviewer name...
 archive/issue_events_008502.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-01-10T07:29:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8305",

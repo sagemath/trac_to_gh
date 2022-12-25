@@ -242,7 +242,7 @@ In the meantime, it's better to get the things on this ticket going.
 archive/issue_events_009381.json:
 ```json
 {
-    "actor": "@dandrake",
+    "actor": "https://github.com/dandrake",
     "created_at": "2010-07-22T07:48:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9223",

@@ -119,7 +119,7 @@ Let's close this?
 archive/issue_events_006176.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-01T01:46:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5922",

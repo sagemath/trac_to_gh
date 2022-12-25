@@ -197,7 +197,7 @@ Looks good to me.  Michael says that the values in the doctest agree with those 
 archive/issue_events_006218.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-05-04T09:31:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5963",

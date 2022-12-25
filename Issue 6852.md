@@ -97,7 +97,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6852
 archive/issue_events_007085.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-20T13:54:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6852",

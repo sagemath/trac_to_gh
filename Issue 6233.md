@@ -68,7 +68,7 @@ Note that I think this was merged into 4.0.1 already, over a week ago in order t
 archive/issue_events_006478.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-20T01:59:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6233",

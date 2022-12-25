@@ -93,7 +93,7 @@ Resolution: duplicate
 archive/issue_events_003940.json:
 ```json
 {
-    "actor": "@JohnCremona",
+    "actor": "https://github.com/JohnCremona",
     "created_at": "2008-07-25T16:44:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3720",

@@ -531,7 +531,7 @@ Thanks!
 archive/issue_events_000284.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2016-07-27T20:24:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/269",

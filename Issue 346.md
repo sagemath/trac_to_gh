@@ -132,7 +132,7 @@ This hasn't been an issue since we removed syntax hilighting.
 archive/issue_events_000370.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2008-03-17T04:48:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/346",

@@ -247,7 +247,7 @@ a proposal for a docstring
 archive/issue_events_008065.json:
 ```json
 {
-    "actor": "olazo",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/olazo",
     "created_at": "2010-01-24T19:35:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7850",

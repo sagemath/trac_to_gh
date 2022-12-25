@@ -83,7 +83,7 @@ Apply only trac_4247.patch -- it is rebased against the latest plot.py.  Otherwi
 archive/issue_events_004486.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-10-07T23:21:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4247",

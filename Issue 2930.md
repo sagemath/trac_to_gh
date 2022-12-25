@@ -235,7 +235,7 @@ Resolution: invalid
 archive/issue_events_003132.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-12-02T13:01:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2930",

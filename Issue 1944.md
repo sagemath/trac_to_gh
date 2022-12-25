@@ -110,7 +110,7 @@ This will be fixed in the Sphinx reference manual.
 archive/issue_events_002099.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-02-28T04:20:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1944",

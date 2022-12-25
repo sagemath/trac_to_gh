@@ -68,7 +68,7 @@ Closing this as a duplicate of #8183.
 archive/issue_events_008245.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-05T00:29:17Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8034",

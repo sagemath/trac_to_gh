@@ -169,7 +169,7 @@ This ancient ticket should definitely be closed.  Setting positive review.
 archive/issue_events_002820.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-03-28T15:21:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2629",

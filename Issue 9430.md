@@ -314,7 +314,7 @@ Moving to positive review. I'm about to release rc0, so this will get plenty of 
 archive/issue_events_009585.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-07-08T19:53:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9430",

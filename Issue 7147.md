@@ -108,7 +108,7 @@ I'm closing this as invalid, as the variable can take on 3 values - 0, 1 and 2, 
 archive/issue_events_007367.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2009-12-03T04:51:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7147",

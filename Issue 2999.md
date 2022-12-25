@@ -457,7 +457,7 @@ That was #6437 as mentioned above.
 archive/issue_events_003204.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-03-04T21:25:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2999",

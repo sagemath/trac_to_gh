@@ -713,7 +713,7 @@ Since all tests pass and all I did was to rebase Martin's patches and fix trivia
 archive/issue_events_009917.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2015-10-16T18:42:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",

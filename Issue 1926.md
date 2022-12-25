@@ -239,7 +239,7 @@ Resolution: fixed
 archive/issue_events_002081.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-28T02:45:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1926",
@@ -327,7 +327,7 @@ Changing status from closed to reopened.
 archive/issue_events_002082.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2008-01-29T09:16:41Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1926",
@@ -381,7 +381,7 @@ New patch looks good to me.
 archive/issue_events_002083.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-01T03:48:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1926",

@@ -192,7 +192,7 @@ Yeah, let's close a 4 digits eight years old combinat ticket for cheap :-)
 archive/issue_events_003584.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2017-01-21T18:03:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3368",

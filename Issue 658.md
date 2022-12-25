@@ -100,7 +100,7 @@ The randstate framework essentially fixes this.  It doesn't print the seed on st
 archive/issue_events_000726.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2008-08-23T20:54:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/658",

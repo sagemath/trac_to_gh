@@ -111,7 +111,7 @@ Review: Looks good, applies ok to 3.4.alpha0 and tests in sage/matrix (plus a wh
 archive/issue_events_005665.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-03-08T06:16:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5408",

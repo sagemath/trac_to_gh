@@ -414,7 +414,7 @@ Actually, I just noticed that I get the same failures with 3.1.1.
 archive/issue_events_004353.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-16T06:21:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4116",

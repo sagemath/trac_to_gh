@@ -453,7 +453,7 @@ It looks like this will never happen.
 archive/issue_events_002975.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2009-01-22T23:05:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2785",

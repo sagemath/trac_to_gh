@@ -80,7 +80,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5663
 archive/issue_events_005905.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-05T03:07:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5663",

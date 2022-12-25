@@ -88,7 +88,7 @@ Merged in 2.8.15.rc0.
 archive/issue_events_001516.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-03T01:52:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1373",

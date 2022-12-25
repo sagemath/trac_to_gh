@@ -80,7 +80,7 @@ Resolution: invalid
 archive/issue_events_004597.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-10-23T20:27:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4351",

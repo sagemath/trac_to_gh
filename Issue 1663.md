@@ -330,7 +330,7 @@ Resolution: fixed
 archive/issue_events_001822.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2010-01-19T12:46:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1663",

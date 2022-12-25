@@ -94,7 +94,7 @@ Thanks Jim -- you could give the patch a positive review now, and it might get i
 archive/issue_events_006261.json:
 ```json
 {
-    "actor": "stankewicz",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/stankewicz",
     "created_at": "2009-05-09T21:15:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6008",
@@ -146,7 +146,7 @@ Changing status from closed to reopened.
 archive/issue_events_006262.json:
 ```json
 {
-    "actor": "stankewicz",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/stankewicz",
     "created_at": "2009-05-09T21:18:56Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6008",
@@ -294,7 +294,7 @@ Michael
 archive/issue_events_006263.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-05-12T21:03:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6008",

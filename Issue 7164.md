@@ -282,7 +282,7 @@ Doh! I will write "I will check the hg repo" 100 times now on my blackboard.
 archive/issue_events_007383.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-12-09T02:35:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7164",

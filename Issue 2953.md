@@ -116,7 +116,7 @@ This works on a wide range of architectures where I tested it, and of course the
 archive/issue_events_003159.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-19T05:06:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2953",

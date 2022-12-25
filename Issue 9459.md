@@ -212,7 +212,7 @@ Attachment [9459.patch](tarball://root/attachments/some-uuid/ticket9459/9459.pat
 archive/issue_events_009614.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-12T06:32:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9459",

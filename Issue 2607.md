@@ -1710,7 +1710,7 @@ As I understand that ticket moved to sage-pending together with #13109 because i
 archive/issue_events_002797.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-08-01T12:08:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",

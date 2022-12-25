@@ -56,7 +56,7 @@ However, at this point in time, I'm not aware of whether that will solve the pro
 archive/issue_events_007362.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-20T06:21:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7142",

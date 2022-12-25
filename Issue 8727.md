@@ -144,7 +144,7 @@ Out of sync with latest package.
 archive/issue_events_008897.json:
 ```json
 {
-    "actor": "@TimDumol",
+    "actor": "https://github.com/TimDumol",
     "created_at": "2010-07-05T10:39:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8727",

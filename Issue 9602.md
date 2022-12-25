@@ -255,7 +255,7 @@ I'll take that as a "positive review"
 archive/issue_events_009746.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-03-15T13:02:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9602",

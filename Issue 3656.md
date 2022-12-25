@@ -60,7 +60,7 @@ Resolution: invalid
 archive/issue_events_003875.json:
 ```json
 {
-    "actor": "@syazdani77",
+    "actor": "https://github.com/syazdani77",
     "created_at": "2008-07-15T04:27:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3656",

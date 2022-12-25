@@ -122,7 +122,7 @@ Why "no"? --- I wanted to merge #3133, or any ticket with a positive review, as 
 archive/issue_events_007186.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-22T22:07:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6963",

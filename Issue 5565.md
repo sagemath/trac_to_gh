@@ -159,7 +159,7 @@ It seems that problem has gone away with Sage 4.3.1.
 archive/issue_events_005811.json:
 ```json
 {
-    "actor": "@zimmermann6",
+    "actor": "https://github.com/zimmermann6",
     "created_at": "2010-02-05T20:17:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5565",

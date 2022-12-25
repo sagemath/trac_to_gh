@@ -195,7 +195,7 @@ Apply after initial patch.
 archive/issue_events_010009.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-10-06T03:20:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9880",

@@ -1101,7 +1101,7 @@ That is correct.  Only the two patches listed at the end of the description are 
 archive/issue_events_009394.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-04-07T13:48:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9232",

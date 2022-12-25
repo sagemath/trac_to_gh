@@ -283,7 +283,7 @@ There is an spkg-check in #9343 and it seems to work, so positive review.
 archive/issue_events_009667.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-10T10:47:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9518",

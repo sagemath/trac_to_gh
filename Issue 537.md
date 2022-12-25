@@ -152,7 +152,7 @@ I'm closing this one, for pretty much the same reasons as #536. It's too bad we 
 archive/issue_events_000576.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2010-01-20T06:36:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/537",

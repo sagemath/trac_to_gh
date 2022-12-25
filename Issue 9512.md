@@ -131,7 +131,7 @@ Resolution: fixed
 archive/issue_events_009659.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-23T07:18:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9512",
@@ -206,7 +206,7 @@ Changing status from closed to new.
 archive/issue_events_009660.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-25T07:28:25Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9512",
@@ -294,7 +294,7 @@ Changing status from needs_work to needs_review.
 archive/issue_events_009661.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-09-11T10:41:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9512",

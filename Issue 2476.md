@@ -122,7 +122,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2476
 archive/issue_events_002655.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-04T21:26:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2476",

@@ -122,7 +122,7 @@ Changing component from distribution to notebook.
 archive/issue_events_001954.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2021-10-11T07:02:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1796",

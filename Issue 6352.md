@@ -220,7 +220,7 @@ Resolution: duplicate
 archive/issue_events_006596.json:
 ```json
 {
-    "actor": "@maxthemouse",
+    "actor": "https://github.com/maxthemouse",
     "created_at": "2010-09-21T10:44:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6352",

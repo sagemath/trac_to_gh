@@ -155,7 +155,7 @@ We should add a "timeout=-1" to that url so it waits for the computation to fini
 archive/issue_events_007330.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-10-07T12:47:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7108",

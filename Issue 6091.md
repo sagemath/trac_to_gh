@@ -162,7 +162,7 @@ replaces previous
 archive/issue_events_006344.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-04T19:08:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6091",

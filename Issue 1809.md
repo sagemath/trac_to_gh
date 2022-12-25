@@ -48,7 +48,7 @@ Resolution: duplicate
 archive/issue_events_001966.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2008-01-17T22:14:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1809",

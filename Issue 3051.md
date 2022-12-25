@@ -925,7 +925,7 @@ Apply only the last two patches.
 archive/issue_events_003261.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-05-18T00:13:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3051",

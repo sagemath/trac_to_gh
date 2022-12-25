@@ -97,7 +97,7 @@ See #6419 for a patch to get rid of the sage.misc.misc warnings (rather brutally
 archive/issue_events_006661.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2009-06-26T17:41:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6418",

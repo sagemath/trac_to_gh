@@ -171,7 +171,7 @@ This works for me in Sage 3.1.1 on 32-bit and 64-bit x86; maybe the "mwrank wrap
 archive/issue_events_001390.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2008-08-23T19:14:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1248",

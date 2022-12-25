@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/168
 archive/issue_events_000174.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-01-17T21:05:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/168",

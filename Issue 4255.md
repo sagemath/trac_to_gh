@@ -417,7 +417,7 @@ That patch enables easy creation of text cells--just shift-click on the "new cel
 archive/issue_events_004494.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-12-06T06:37:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4255",

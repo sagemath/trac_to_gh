@@ -268,7 +268,7 @@ Changing status from needs_review to positive_review.
 archive/issue_events_008591.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-11T04:44:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",

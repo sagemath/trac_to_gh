@@ -849,7 +849,7 @@ archive/issue_comments_047445.json:
 archive/issue_events_006237.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-05-03T12:28:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5982",

@@ -86,7 +86,7 @@ Resolution: invalid
 archive/issue_events_007048.json:
 ```json
 {
-    "actor": "spancratz",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/spancratz",
     "created_at": "2010-01-19T12:26:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6814",

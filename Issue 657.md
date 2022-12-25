@@ -197,7 +197,7 @@ archive/issue_comments_003404.json:
 archive/issue_events_000723.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-10-24T20:24:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/657",
@@ -303,7 +303,7 @@ Changing status from closed to reopened.
 archive/issue_events_000724.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-10-24T21:49:45Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/657",
@@ -357,7 +357,7 @@ Resolution: fixed
 archive/issue_events_000725.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-27T02:42:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/657",

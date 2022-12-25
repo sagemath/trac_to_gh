@@ -112,7 +112,7 @@ See #6906 for apparently the solution (upgrade mercurial)
 archive/issue_events_006681.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-15T09:44:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6440",

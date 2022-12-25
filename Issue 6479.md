@@ -505,7 +505,7 @@ Thanks Robert!!
 archive/issue_events_006716.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-29T10:10:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6479",

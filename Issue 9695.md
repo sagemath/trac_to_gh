@@ -133,7 +133,7 @@ As part of working on other documentation items, I have addressed this at #9783.
 archive/issue_events_009826.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-08-23T09:42:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
@@ -203,7 +203,7 @@ Changing status from closed to new.
 archive/issue_events_009827.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-08-23T09:49:17Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
@@ -332,7 +332,7 @@ Resolution: duplicate
 archive/issue_events_009828.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-05T03:22:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9695",

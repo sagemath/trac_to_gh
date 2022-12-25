@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3114
 archive/issue_events_003332.json:
 ```json
 {
-    "actor": "@wjp",
+    "actor": "https://github.com/wjp",
     "created_at": "2010-01-17T06:32:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3114",

@@ -268,7 +268,7 @@ See #8502
 archive/issue_events_008679.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-12T04:53:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8498",

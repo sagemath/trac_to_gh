@@ -789,7 +789,7 @@ Resolution: fixed
 archive/issue_events_007511.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-15T05:58:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7288",

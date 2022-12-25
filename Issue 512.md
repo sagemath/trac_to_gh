@@ -70,7 +70,7 @@ done for sage-2.8.3.
 archive/issue_events_000549.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-08-29T22:40:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/512",
@@ -104,7 +104,7 @@ Changing status from closed to reopened.
 archive/issue_events_000550.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-08-30T06:48:27Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/512",
@@ -285,7 +285,7 @@ I've upgraded everything to gap-4.4.10, and fixed the insanely bloated 4.4.10 sp
 archive/issue_events_000551.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-20T20:51:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/512",

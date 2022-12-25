@@ -213,7 +213,7 @@ Resolution: wontfix
 archive/issue_events_006817.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-06-02T12:32:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6580",

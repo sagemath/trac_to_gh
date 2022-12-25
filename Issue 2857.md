@@ -106,7 +106,7 @@ Apply 2857.2.patch after #1763
 archive/issue_events_003049.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-15T00:28:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2857",

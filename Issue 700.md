@@ -56,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/700
 archive/issue_events_000766.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-21T02:08:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/700",
@@ -126,7 +126,7 @@ Changing status from closed to reopened.
 archive/issue_events_000767.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-21T02:21:54Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/700",
@@ -230,7 +230,7 @@ Michael
 archive/issue_events_000768.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-20T20:21:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/700",

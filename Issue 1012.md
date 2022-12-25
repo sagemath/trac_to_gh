@@ -170,7 +170,7 @@ Changing status from new to assigned.
 archive/issue_events_001136.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-27T21:10:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1012",

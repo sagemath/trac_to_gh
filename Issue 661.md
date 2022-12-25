@@ -55,7 +55,7 @@ Michael
 archive/issue_events_000729.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2008-08-23T23:12:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/661",

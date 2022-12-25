@@ -73,7 +73,7 @@ Attachment [trac-2035.patch](tarball://root/attachments/some-uuid/ticket2035/tra
 archive/issue_events_002191.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-02-03T00:46:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2035",

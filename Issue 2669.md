@@ -50,7 +50,7 @@ Resolution: duplicate
 archive/issue_events_002861.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2008-03-25T22:48:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2669",

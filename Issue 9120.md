@@ -301,7 +301,7 @@ incorporates all of the patches, based on sage 4.4.2
 archive/issue_events_009276.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-06T19:49:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9120",

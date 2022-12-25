@@ -102,7 +102,7 @@ Looks good to me; and this patch was already applied in 2.9.2.
 archive/issue_events_001805.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2008-01-15T03:21:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1645",

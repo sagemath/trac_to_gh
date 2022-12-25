@@ -132,7 +132,7 @@ I don't see this problem any more. The process of "-bdist", unpack at a differen
 archive/issue_events_006022.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-02T23:50:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5775",

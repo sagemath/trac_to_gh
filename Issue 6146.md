@@ -170,7 +170,7 @@ This isn't a patch etc. so it cannot be reviewed yet. I'll change the status to 
 archive/issue_events_006395.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-08-18T21:37:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6146",

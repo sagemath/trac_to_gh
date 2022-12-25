@@ -180,7 +180,7 @@ Resolution: fixed
 archive/issue_events_001082.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-27T02:51:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/960",

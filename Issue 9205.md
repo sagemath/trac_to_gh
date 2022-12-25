@@ -176,7 +176,7 @@ Replying to [comment:2 cremona]:
 archive/issue_events_009359.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-20T07:18:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9205",

@@ -75,7 +75,7 @@ This works on 2.10.2, I was using 2.10 at the time. Sorry for the noise.
 archive/issue_events_002584.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2008-03-06T18:07:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2408",

@@ -317,7 +317,7 @@ That seems like a good compromise.
 archive/issue_events_006658.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2016-06-12T12:02:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6414",

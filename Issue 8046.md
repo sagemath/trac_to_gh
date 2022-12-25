@@ -290,7 +290,7 @@ Interesting.  In any case, that was clearly an unrelated error.
 archive/issue_events_008256.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-01-18T08:14:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8046",

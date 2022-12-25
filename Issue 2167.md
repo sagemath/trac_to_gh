@@ -81,7 +81,7 @@ Sorry, I realized I was giving the wrong input. It appears to be implemented.
 archive/issue_events_002334.json:
 ```json
 {
-    "actor": "@bobmoretti",
+    "actor": "https://github.com/bobmoretti",
     "created_at": "2008-02-15T00:35:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2167",

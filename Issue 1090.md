@@ -71,7 +71,7 @@ This is a dupe of #1628.
 archive/issue_events_001216.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-06-26T06:58:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1090",

@@ -187,7 +187,7 @@ I think we can close this as invalid as all of the doctests in the patch currenl
 archive/issue_events_006010.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2013-07-22T15:07:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5763",

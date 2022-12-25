@@ -160,7 +160,7 @@ Resolution: wontfix
 archive/issue_events_008707.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2019-06-06T18:35:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8527",

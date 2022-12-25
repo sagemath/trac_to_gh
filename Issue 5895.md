@@ -292,7 +292,7 @@ I applied this against 4.0.rc2, and it performs as advertised (and doesn't break
 archive/issue_events_006149.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-01T06:30:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5895",

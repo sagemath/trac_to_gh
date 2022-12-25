@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6753
 archive/issue_events_006984.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-10-02T16:18:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6753",

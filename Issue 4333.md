@@ -150,7 +150,7 @@ Looks good and breaks no doctests.
 archive/issue_events_004580.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-10-26T00:49:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4333",

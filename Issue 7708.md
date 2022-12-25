@@ -257,7 +257,7 @@ version 0.29 now in experimental and I removed the obsolete old optional spkg. t
 archive/issue_events_007925.json:
 ```json
 {
-    "actor": "@haraldschilly",
+    "actor": "https://github.com/haraldschilly",
     "created_at": "2010-08-18T16:21:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7708",

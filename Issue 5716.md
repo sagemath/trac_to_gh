@@ -217,7 +217,7 @@ It passes doctests (and everything is tested).  Looks good to me.  Positive revi
 archive/issue_events_005960.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-05-31T23:47:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5716",

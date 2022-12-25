@@ -274,7 +274,7 @@ Remove assignee edward.scheinerman.
 archive/issue_events_009861.json:
 ```json
 {
-    "actor": "@dandrake",
+    "actor": "https://github.com/dandrake",
     "created_at": "2010-09-08T02:20:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9727",

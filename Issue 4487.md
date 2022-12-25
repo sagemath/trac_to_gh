@@ -476,7 +476,7 @@ Yep, William added a patch late in the 3.2 game which adds some canonicalization
 archive/issue_events_004734.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-21T19:15:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4487",

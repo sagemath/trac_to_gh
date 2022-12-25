@@ -130,7 +130,7 @@ Also, re: William's note above about "hacking the Python/C API" -- that's not fo
 archive/issue_events_000989.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-27T19:45:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/875",

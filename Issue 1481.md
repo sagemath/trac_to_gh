@@ -112,7 +112,7 @@ Changing component from algebraic geometry to linear algebra.
 archive/issue_events_001633.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2008-01-19T07:22:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1481",
@@ -202,7 +202,7 @@ Changing status from closed to reopened.
 archive/issue_events_001634.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-19T07:26:34Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1481",

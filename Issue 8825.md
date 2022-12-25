@@ -444,7 +444,7 @@ No, that was my (or Mercurial's) mistake. It just happened that I'd changed the 
 archive/issue_events_008988.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-28T09:08:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8825",

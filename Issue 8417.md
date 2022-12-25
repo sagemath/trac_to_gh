@@ -203,7 +203,7 @@ Can you see any way to make the overhead from checking in this case any better? 
 archive/issue_events_008602.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-15T23:49:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8417",

@@ -54,7 +54,7 @@ this probably fixes the problem, though it is hard to test.  time will tell.
 archive/issue_events_001115.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-25T07:56:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/992",

@@ -150,7 +150,7 @@ Looks good to me.  One of the doctests failed on my machine due to numerical noi
 archive/issue_events_001611.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-15T04:45:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1460",

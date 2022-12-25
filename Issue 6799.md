@@ -85,7 +85,7 @@ The issue of ever-slowing comparisons doesn't occur anymore.
 archive/issue_events_007034.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-12-05T08:24:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6799",

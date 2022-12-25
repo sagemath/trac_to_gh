@@ -303,7 +303,7 @@ Note that this is still fixed by lowering the optimization level, so i'm lowerin
 archive/issue_events_006485.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-04-20T20:57:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6240",

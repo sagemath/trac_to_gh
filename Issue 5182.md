@@ -126,7 +126,7 @@ These errors do not occur with sage 4.6.2.
 archive/issue_events_005436.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2011-03-14T21:43:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5182",

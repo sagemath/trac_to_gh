@@ -171,7 +171,7 @@ The attached patch fixes the issue for me. I've added a second patch which docum
 archive/issue_events_005374.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-02T02:46:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5125",

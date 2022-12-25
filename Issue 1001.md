@@ -110,7 +110,7 @@ Resolution: invalid
 archive/issue_events_001124.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-10-28T06:47:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1001",

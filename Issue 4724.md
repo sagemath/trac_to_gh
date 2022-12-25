@@ -203,7 +203,7 @@ The code looks good to me and is nicely documented.  Positive review.
 archive/issue_events_004969.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-04-13T09:02:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4724",

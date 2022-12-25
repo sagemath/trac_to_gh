@@ -139,7 +139,7 @@ Looks good to me.  Apply both patches.
 archive/issue_events_003874.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-26T22:54:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3655",

@@ -463,7 +463,7 @@ Dave
 archive/issue_events_006832.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-12-24T07:12:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
@@ -566,7 +566,7 @@ Changing status from closed to needs_work.
 archive/issue_events_006833.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-12-24T17:36:50Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
@@ -776,7 +776,7 @@ Changing status from needs_review to positive_review.
 archive/issue_events_006834.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-01-03T21:56:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6595",

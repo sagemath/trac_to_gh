@@ -286,7 +286,7 @@ It would be nice if there was an easy way to pack things in various ways.  It al
 archive/issue_events_009111.json:
 ```json
 {
-    "actor": "@TimDumol",
+    "actor": "https://github.com/TimDumol",
     "created_at": "2010-07-11T06:06:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8959",

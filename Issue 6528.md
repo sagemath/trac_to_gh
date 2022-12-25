@@ -149,7 +149,7 @@ http://sage.math.washington.edu/home/mvngu/patch/polybori-0.5rc.p9.spkg
 archive/issue_events_006764.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-24T00:29:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6528",

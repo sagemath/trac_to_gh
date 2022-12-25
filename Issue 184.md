@@ -64,7 +64,7 @@ Resolution: fixed
 archive/issue_events_000191.json:
 ```json
 {
-    "actor": "dmharvey",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
     "created_at": "2006-12-17T22:28:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/184",

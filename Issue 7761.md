@@ -609,7 +609,7 @@ Too late for sage-3.4.1, but we'll still merge it ;-)
 archive/issue_events_007975.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-01-13T06:10:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
@@ -661,7 +661,7 @@ Changing status from closed to needs_work.
 archive/issue_events_007976.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2010-01-29T23:59:54Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7761",
@@ -1145,7 +1145,7 @@ Merged [python-2.6.4.p6.spkg](http://boxen.math.washington.edu/home/jsp/ports/py
 archive/issue_events_007977.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-02T23:31:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7761",

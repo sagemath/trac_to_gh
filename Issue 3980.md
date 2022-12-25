@@ -332,7 +332,7 @@ and an empty plot.  It would be nice to speed up that failure if you know an eas
 archive/issue_events_004210.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-10-01T10:32:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3980",

@@ -102,7 +102,7 @@ Changing status from new to needs_review.
 archive/issue_events_009450.json:
 ```json
 {
-    "actor": "stumpc5",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/stumpc5",
     "created_at": "2015-06-05T19:20:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9288",

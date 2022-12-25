@@ -123,7 +123,7 @@ applied to 2.8.9.alpha0
 archive/issue_events_001089.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-10-23T22:18:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/968",

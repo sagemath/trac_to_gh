@@ -349,7 +349,7 @@ Resolution: invalid
 archive/issue_events_008468.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-07-22T17:22:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8269",

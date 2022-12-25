@@ -70,7 +70,7 @@ Don't know how this made it so long without being hit...
 archive/issue_events_006635.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-07-03T17:22:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6387",

@@ -960,7 +960,7 @@ Apply trac_7886_conjugacy_classes_combined.patch trac_7886-conjugacy_classes-rev
 archive/issue_events_008101.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-02-28T10:32:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7886",

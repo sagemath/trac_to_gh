@@ -145,7 +145,7 @@ Resolution: wontfix
 archive/issue_events_002049.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2010-06-25T04:12:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1891",

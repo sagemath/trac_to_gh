@@ -186,7 +186,7 @@ Merged trac_4063.patch in Sage 3.1.2.rc5
 archive/issue_events_004297.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-16T06:53:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4063",

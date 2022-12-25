@@ -226,7 +226,7 @@ This is more than a reviewer patch, so changing to author as well.  Positive rev
 archive/issue_events_008970.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-05-08T21:50:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8805",

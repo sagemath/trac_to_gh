@@ -133,7 +133,7 @@ I am splitting this ticket into smallers ones
 archive/issue_events_006915.json:
 ```json
 {
-    "actor": "@nathanncohen",
+    "actor": "https://github.com/nathanncohen",
     "created_at": "2009-12-04T18:31:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6680",

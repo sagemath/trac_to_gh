@@ -69,7 +69,7 @@ Applies OK against the "post-final" sage-3.4.2. Positive review.
 archive/issue_events_006244.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-05-12T22:17:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5989",

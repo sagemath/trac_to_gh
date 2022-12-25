@@ -587,7 +587,7 @@ OK, the build finished successfully, so yes positive review.
 archive/issue_events_009053.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-15T23:24:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8898",

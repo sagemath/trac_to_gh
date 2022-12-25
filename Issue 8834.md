@@ -370,7 +370,7 @@ Making the specified doctests optional mean we're postponing a fix for the failu
 archive/issue_events_008999.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-05-02T23:49:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8834",

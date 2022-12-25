@@ -273,7 +273,7 @@ Resolution: fixed
 archive/issue_events_008170.json:
 ```json
 {
-    "actor": "@slel",
+    "actor": "https://github.com/slel",
     "created_at": "2020-08-22T07:20:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7954",

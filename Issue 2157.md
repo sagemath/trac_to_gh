@@ -50,7 +50,7 @@ This will be resolved by ticket #3541, which I am currently working on.
 archive/issue_events_002323.json:
 ```json
 {
-    "actor": "ekirkman",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/ekirkman",
     "created_at": "2009-01-25T01:48:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2157",

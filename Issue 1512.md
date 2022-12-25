@@ -158,7 +158,7 @@ The next major release of OpenOffice will have LaTeX capabilities so a LaTeX to 
 archive/issue_events_001666.json:
 ```json
 {
-    "actor": "tkosan",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/tkosan",
     "created_at": "2008-02-21T07:43:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1512",

@@ -686,7 +686,7 @@ This ticket can probably be closed once #6140 and #3391 are closed.
 archive/issue_events_004443.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2009-06-12T06:57:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4205",

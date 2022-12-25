@@ -49,7 +49,7 @@ Resolution: fixed
 archive/issue_events_000388.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2007-05-17T21:53:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/366",

@@ -52,7 +52,7 @@ Reimplements introspection.
 archive/issue_events_007298.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-09-29T20:14:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7076",

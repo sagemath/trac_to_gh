@@ -211,7 +211,7 @@ I agree. I intended to close this ticket once you (David) fixed up that code, bu
 archive/issue_events_004586.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2010-01-21T18:20:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4339",

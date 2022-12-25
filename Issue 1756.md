@@ -78,7 +78,7 @@ See #1793 for a patch, copying mabshoff's comment over to that ticket now and cl
 archive/issue_events_001914.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2008-01-16T15:47:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1756",

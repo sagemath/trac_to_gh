@@ -559,7 +559,7 @@ Resolution: invalid
 archive/issue_events_002254.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-09-08T18:07:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2094",

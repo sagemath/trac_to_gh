@@ -160,7 +160,7 @@ Log at [http://sage.math.washington.edu/home/ncalexan/gmp-mpir-0.9.rc4.log](http
 archive/issue_events_005465.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-11T05:09:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5210",

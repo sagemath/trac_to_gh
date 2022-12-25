@@ -152,7 +152,7 @@ Dear release manager, I leave it up to you to close this now. :-)
 archive/issue_events_007259.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-04-04T13:23:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7038",

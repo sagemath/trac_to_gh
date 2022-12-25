@@ -227,7 +227,7 @@ I guess my one last comment is to compute len(self.name) outside of the inner lo
 archive/issue_events_004442.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-10-25T21:22:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4203",

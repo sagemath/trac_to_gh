@@ -300,7 +300,7 @@ Applies okay to 4.0.2.rc3 and passes sage -testall on an intel macbook running 1
 archive/issue_events_002029.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-06-24T09:48:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1871",

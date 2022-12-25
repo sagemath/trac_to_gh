@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/241
 archive/issue_events_000255.json:
 ```json
 {
-    "actor": "@roed314",
+    "actor": "https://github.com/roed314",
     "created_at": "2007-04-13T03:55:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/241",

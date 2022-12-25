@@ -106,7 +106,7 @@ Looks good to me.
 archive/issue_events_009135.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-06T01:30:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8982",

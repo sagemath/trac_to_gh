@@ -257,7 +257,7 @@ Resolution: fixed
 archive/issue_events_005430.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2011-06-23T23:48:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5178",
@@ -309,7 +309,7 @@ Changing status from closed to new.
 archive/issue_events_005431.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2011-06-24T03:40:27Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5178",
@@ -536,7 +536,7 @@ Possible follow-up improvements:
 archive/issue_events_005432.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2020-09-23T21:27:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5178",

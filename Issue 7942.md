@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7942
 archive/issue_events_008158.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2010-01-16T09:12:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7942",

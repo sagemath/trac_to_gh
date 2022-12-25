@@ -152,7 +152,7 @@ Code looks good, docstrings and tests seem appropriate.
 archive/issue_events_001812.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-21T05:50:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1652",

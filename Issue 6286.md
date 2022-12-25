@@ -193,7 +193,7 @@ Fixed by #7490
 archive/issue_events_006530.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-12-04T06:58:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6286",

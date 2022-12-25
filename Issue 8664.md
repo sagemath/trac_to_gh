@@ -2485,7 +2485,7 @@ in fact this bug is already fixed upstream (in revision 1516), see
 archive/issue_events_008834.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-11T13:02:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",
@@ -2537,7 +2537,7 @@ Changing status from closed to new.
 archive/issue_events_008835.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-12T13:07:10Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",
@@ -3714,7 +3714,7 @@ Changing keywords from "sd32, GMP ECM execstack Fedora 14 extension module libra
 archive/issue_events_008836.json:
 ```json
 {
-    "actor": "@nexttime",
+    "actor": "https://github.com/nexttime",
     "created_at": "2011-09-12T19:03:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",
@@ -3918,7 +3918,7 @@ Changing status from closed to new.
 archive/issue_events_008837.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-10-11T07:36:14Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",
@@ -4035,7 +4035,7 @@ Ooops, #11896 of course. XD
 archive/issue_events_008838.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-10-14T09:41:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8664",

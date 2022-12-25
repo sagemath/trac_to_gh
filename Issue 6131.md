@@ -69,7 +69,7 @@ Duplicate of #6132
 archive/issue_events_006380.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-05-26T20:06:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6131",

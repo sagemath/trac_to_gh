@@ -576,7 +576,7 @@ Resolution: fixed
 archive/issue_events_009652.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-02-22T06:45:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9505",

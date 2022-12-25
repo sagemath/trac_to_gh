@@ -608,7 +608,7 @@ Changing keywords from "" to "sd32".
 archive/issue_events_010102.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-10-05T09:11:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9974",

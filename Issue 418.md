@@ -882,7 +882,7 @@ There is a problem with `sage/sat/solvers/cryptominisat/solverconf_helper.cpp` n
 archive/issue_events_000445.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-08-12T18:57:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/418",

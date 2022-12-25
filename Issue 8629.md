@@ -105,7 +105,7 @@ Then it's settled.
 archive/issue_events_008798.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-30T09:32:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8629",

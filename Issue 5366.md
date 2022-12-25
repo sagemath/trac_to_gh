@@ -209,7 +209,7 @@ I was testing in parallel, so that must have been what happened, since testing t
 archive/issue_events_005621.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-28T15:57:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5366",

@@ -175,7 +175,7 @@ The new package is now being mirrored.
 archive/issue_events_009966.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-01T11:21:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9840",

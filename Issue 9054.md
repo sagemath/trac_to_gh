@@ -637,7 +637,7 @@ I am moving this entirely out of Sage and into the psage library.   See
 archive/issue_events_009205.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2010-10-26T22:47:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
@@ -707,7 +707,7 @@ Changing status from closed to new.
 archive/issue_events_009206.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2010-10-27T16:05:50Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
@@ -3099,7 +3099,7 @@ Resolution: fixed
 archive/issue_events_009207.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-02-02T12:52:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",

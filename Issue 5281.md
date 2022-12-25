@@ -1440,7 +1440,7 @@ FYI, I've just created a `.p1` based on this package to #10609, fixing a bug in 
 archive/issue_events_005536.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-19T22:19:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",

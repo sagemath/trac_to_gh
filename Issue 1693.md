@@ -129,7 +129,7 @@ Merged in Sage 2.10.alpha1.
 archive/issue_events_001852.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-08T23:24:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1693",

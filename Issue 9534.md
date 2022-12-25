@@ -124,7 +124,7 @@ Attachment [trac_9534-permgroup_base.patch](tarball://root/attachments/some-uuid
 archive/issue_events_009682.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-07-22T12:49:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9534",
@@ -212,7 +212,7 @@ Changing status from closed to new.
 archive/issue_events_009683.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-08-01T11:37:36Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9534",
@@ -284,7 +284,7 @@ In case it does, one should set it to "needs work", otherwise the milestone shou
 archive/issue_events_009684.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-10-07T19:11:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9534",

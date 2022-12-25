@@ -352,7 +352,7 @@ Uploaded bundle which applies against 2.9.alpha7 and doctests pass.
 archive/issue_events_001101.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-12-20T23:38:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
@@ -440,7 +440,7 @@ Changing status from closed to reopened.
 archive/issue_events_001102.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-12-21T00:24:46Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
@@ -702,7 +702,7 @@ Merged random_element.hg  in Sage 2.10.1.rc1
 archive/issue_events_001103.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-27T02:20:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/980",

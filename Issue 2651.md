@@ -400,7 +400,7 @@ Merged all five patches in Sage 3.0.alpha0
 archive/issue_events_002842.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-31T19:15:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2651",

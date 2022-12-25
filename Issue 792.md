@@ -73,7 +73,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/792
 archive/issue_events_000901.json:
 ```json
 {
-    "actor": "justin",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/justin",
     "created_at": "2007-10-03T03:15:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/792",

@@ -78,7 +78,7 @@ Resolution: worksforme
 archive/issue_events_009562.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-07-18T19:12:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9406",

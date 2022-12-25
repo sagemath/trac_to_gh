@@ -422,7 +422,7 @@ As far as I can see this is ready to go in.
 archive/issue_events_004429.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-14T18:48:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4190",

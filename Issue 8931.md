@@ -271,7 +271,7 @@ Not sure what to do on the author; fstan is the person I have put, as the person
 archive/issue_events_009086.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-04-05T15:56:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8931",

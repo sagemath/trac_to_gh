@@ -200,7 +200,7 @@ The attached patch will be in 2.8.10.
 archive/issue_events_001075.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-27T18:02:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/955",

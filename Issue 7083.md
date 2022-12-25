@@ -106,7 +106,7 @@ Passes sage -testall on ubuntu 9.04 32 bit. It seems to pass on an imac running 
 archive/issue_events_007305.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-31T15:31:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7083",

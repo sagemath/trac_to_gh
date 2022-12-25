@@ -71,7 +71,7 @@ NOTE: I updated a comment that should be updated because of this patch, but that
 archive/issue_events_003044.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-08T15:33:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2852",

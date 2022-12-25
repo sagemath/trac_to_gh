@@ -54,7 +54,7 @@ Attachment [2147-ncalexan-cyclotomic-polynomial-1.patch](tarball://root/attachme
 archive/issue_events_002311.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-13T07:56:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2147",

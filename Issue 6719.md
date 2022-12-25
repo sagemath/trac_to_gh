@@ -100,7 +100,7 @@ I will produce a revised ecl .spkg file, as per trac #6564
 archive/issue_events_006954.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-11T08:03:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6719",

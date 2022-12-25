@@ -51,7 +51,7 @@ I've decided against this.  Instead I added a prominent easy-to-find link to sta
 archive/issue_events_002970.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-04-08T18:18:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2782",

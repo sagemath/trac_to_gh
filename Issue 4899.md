@@ -157,7 +157,7 @@ Merged both patches in Sage 3.2.3.final
 archive/issue_events_005142.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-01-03T06:03:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4899",

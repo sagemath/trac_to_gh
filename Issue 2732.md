@@ -115,7 +115,7 @@ Closing this, since we've dropped support for a Debian package.
 archive/issue_events_002920.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-04-19T10:00:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2732",

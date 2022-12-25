@@ -152,7 +152,7 @@ The four missing hunks that were in the previous patch
 archive/issue_events_003019.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-06T16:25:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2829",

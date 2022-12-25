@@ -85,7 +85,7 @@ http://groups.google.com/group/sage-devel/browse_thread/thread/89313eebbcc37bf2
 archive/issue_events_001576.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-13T18:47:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1429",

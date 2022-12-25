@@ -79,7 +79,7 @@ The default behavior is to call repr on the return value of the last line (if no
 archive/issue_events_003914.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-07-21T20:01:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3692",

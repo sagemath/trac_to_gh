@@ -93,7 +93,7 @@ Resolution: fixed
 archive/issue_events_008471.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-07-19T07:39:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8272",

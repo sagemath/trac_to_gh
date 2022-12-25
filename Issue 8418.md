@@ -380,7 +380,7 @@ I just added a new patch for my review. I had forgotten the word "reduced" and I
 archive/issue_events_008603.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-03-06T09:37:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8418",

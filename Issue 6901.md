@@ -161,7 +161,7 @@ Tests pass, no warnings for this file when building the reference manual.
 archive/issue_events_007129.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-23T07:08:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6901",

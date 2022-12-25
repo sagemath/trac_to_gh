@@ -200,7 +200,7 @@ I applied this to sage-4.6.alpha1 with #9898 and #9753 installed. Changes look s
 archive/issue_events_009893.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-28T10:56:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9763",

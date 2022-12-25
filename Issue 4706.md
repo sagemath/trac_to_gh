@@ -111,7 +111,7 @@ Resolution: invalid
 archive/issue_events_004951.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2011-12-17T20:46:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4706",

@@ -416,7 +416,7 @@ Close as fixed by #8163.
 archive/issue_events_008148.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-01T01:53:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7932",

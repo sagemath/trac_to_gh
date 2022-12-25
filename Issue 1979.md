@@ -128,7 +128,7 @@ Merged in Sage 2.10.1.rc3. This ticket should be reopened if it turns out that t
 archive/issue_events_002135.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-30T09:42:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1979",

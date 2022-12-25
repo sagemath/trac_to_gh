@@ -634,7 +634,7 @@ Attachment [trac_7197.patch](tarball://root/attachments/some-uuid/ticket7197/tra
 archive/issue_events_007416.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-29T05:07:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7197",

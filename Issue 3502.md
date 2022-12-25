@@ -125,7 +125,7 @@ I read through the additional patch, applied it, doctested it, and I'm happy acr
 archive/issue_events_003722.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-20T21:59:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3502",

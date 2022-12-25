@@ -60,7 +60,7 @@ Looks good to me.
 archive/issue_events_002984.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-04T20:07:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2795",
@@ -199,7 +199,7 @@ Changing status from closed to reopened.
 archive/issue_events_002985.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-04-05T20:26:10Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2795",
@@ -260,7 +260,7 @@ Never mind:
 archive/issue_events_002986.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-04-05T20:28:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2795",

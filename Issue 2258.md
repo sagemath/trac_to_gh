@@ -55,7 +55,7 @@ William
 archive/issue_events_002428.json:
 ```json
 {
-    "actor": "@yqiang",
+    "actor": "https://github.com/yqiang",
     "created_at": "2008-03-07T05:19:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2258",
@@ -125,7 +125,7 @@ Changing status from closed to reopened.
 archive/issue_events_002429.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-07T05:29:20Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2258",
@@ -238,7 +238,7 @@ Michael
 archive/issue_events_002430.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-07T06:07:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2258",

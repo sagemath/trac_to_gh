@@ -216,7 +216,7 @@ Applies against 4.0alpha0, passes all doctests, looks reasonable to me. Positive
 archive/issue_events_005492.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-05-19T17:00:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5236",

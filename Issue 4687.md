@@ -176,7 +176,7 @@ Works good.
 archive/issue_events_004933.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-12-04T18:28:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4687",

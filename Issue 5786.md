@@ -82,7 +82,7 @@ I'm guessing #5712 is the one that fixed it. This should probably be marked as f
 archive/issue_events_006033.json:
 ```json
 {
-    "actor": "@TimDumol",
+    "actor": "https://github.com/TimDumol",
     "created_at": "2010-01-19T03:11:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5786",

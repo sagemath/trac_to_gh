@@ -158,7 +158,7 @@ On Sat, Aug 22, 2009 at 9:34 AM, Nathann Cohen<nathann.cohen@gmail.com> wrote:
 archive/issue_events_001445.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-13T10:05:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1303",

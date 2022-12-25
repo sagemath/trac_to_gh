@@ -152,7 +152,7 @@ Michael
 archive/issue_events_005334.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-01-24T18:04:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
@@ -226,7 +226,7 @@ Changing status from closed to reopened.
 archive/issue_events_005335.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-01-24T18:04:52Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
@@ -278,7 +278,7 @@ Actually, I just remembered that I removed the patch which silenced deprecation 
 archive/issue_events_005336.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2009-06-12T06:56:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",

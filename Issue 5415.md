@@ -852,7 +852,7 @@ ok, this passes all tests. I am setting to positive.
 archive/issue_events_005672.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2017-05-27T23:42:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5415",

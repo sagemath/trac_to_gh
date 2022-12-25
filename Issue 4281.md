@@ -306,7 +306,7 @@ Merged all three patches in Sage 3.2.alpha0
 archive/issue_events_004526.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-10-20T14:01:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4281",

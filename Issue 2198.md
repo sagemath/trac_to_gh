@@ -150,7 +150,7 @@ As there is a patch (and will be an spkg soon) for #6532, this should be closed.
 archive/issue_events_002364.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-25T21:46:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2198",

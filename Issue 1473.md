@@ -160,7 +160,7 @@ Gluegen is supposed to take care of all of that (for applets it does) but maybe 
 archive/issue_events_001624.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-15T09:56:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1473",

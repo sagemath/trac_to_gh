@@ -260,7 +260,7 @@ Patch looks good, applies cleanly, doctests pass on sage.math
 archive/issue_events_008566.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-06T08:32:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8379",

@@ -85,7 +85,7 @@ This enhancement was made a long time ago.
 archive/issue_events_000338.json:
 ```json
 {
-    "actor": "TimothyClemans",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
     "created_at": "2007-10-20T18:43:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/318",

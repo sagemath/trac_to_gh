@@ -76,7 +76,7 @@ sage: timeit('[1..10]')
 archive/issue_events_000906.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2009-01-14T08:09:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/797",
@@ -166,7 +166,7 @@ Changing status from closed to reopened.
 archive/issue_events_000907.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-01-14T16:49:01Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/797",
@@ -764,7 +764,7 @@ Changing status from needs_review to positive_review.
 archive/issue_events_000908.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-01-18T22:39:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/797",

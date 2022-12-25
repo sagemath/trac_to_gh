@@ -125,7 +125,7 @@ That's fine with me. I left it as is in case someone else might have something t
 archive/issue_events_004759.json:
 ```json
 {
-    "actor": "@saliola",
+    "actor": "https://github.com/saliola",
     "created_at": "2008-11-14T17:49:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4514",

@@ -1033,7 +1033,7 @@ Spkg diff, for review only.
 archive/issue_events_009692.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-01-12T08:52:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",

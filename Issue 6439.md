@@ -140,7 +140,7 @@ Resolution: wontfix
 archive/issue_events_006680.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-01-05T13:37:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6439",

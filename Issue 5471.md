@@ -67,7 +67,7 @@ Resolution: duplicate
 archive/issue_events_005725.json:
 ```json
 {
-    "actor": "GeorgSWeber",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
     "created_at": "2009-03-10T20:19:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5471",

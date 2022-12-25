@@ -208,7 +208,7 @@ Merged in 4.0.1.alpha0.
 archive/issue_events_005497.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-01T05:36:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5241",

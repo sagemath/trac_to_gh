@@ -175,7 +175,7 @@ Looks good.  And I reviewed this informally before when I stress tested it for m
 archive/issue_events_009653.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-08-15T08:02:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9506",

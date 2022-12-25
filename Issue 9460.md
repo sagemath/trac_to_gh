@@ -1350,7 +1350,7 @@ Given that that machine is gone... sage.math is dead, long live sage.math!
 archive/issue_events_009615.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-11-28T18:38:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",

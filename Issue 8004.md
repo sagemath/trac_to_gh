@@ -225,7 +225,7 @@ in the queue for 4.3.3.alpha0.
 archive/issue_events_008219.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-02-11T14:58:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8004",

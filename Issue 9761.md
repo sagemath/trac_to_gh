@@ -163,7 +163,7 @@ Oh yes, fixed years ago...
 archive/issue_events_009892.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2015-04-14T23:03:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9761",

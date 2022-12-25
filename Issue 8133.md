@@ -491,7 +491,7 @@ Merged "trac_8133.patch" in 4.4.alpha0.
 archive/issue_events_008343.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-15T23:39:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8133",

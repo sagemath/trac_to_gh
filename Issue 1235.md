@@ -328,7 +328,7 @@ Merged in 2.9.alpha2.
 archive/issue_events_001373.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-09T13:15:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1235",
@@ -400,7 +400,7 @@ Changing status from closed to reopened.
 archive/issue_events_001374.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-12-10T15:34:40Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1235",
@@ -470,7 +470,7 @@ Merged trac-1235-doctest_fix.patch   in 2.9.alpha5.
 archive/issue_events_001375.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-10T21:02:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1235",

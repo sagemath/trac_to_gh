@@ -69,7 +69,7 @@ Looks good to me -- all tests pass.
 archive/issue_events_004011.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-09T00:43:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3789",

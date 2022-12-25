@@ -166,7 +166,7 @@ Excellent work!  The code looks nice and is well-documented.  All tests pass as 
 archive/issue_events_000221.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-04T21:43:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/210",

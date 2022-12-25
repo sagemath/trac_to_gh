@@ -67,7 +67,7 @@ This looks good to me.  All doctests still pass, and the cython example in the d
 archive/issue_events_004194.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-29T03:20:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3966",

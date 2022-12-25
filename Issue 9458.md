@@ -94,7 +94,7 @@ This is basically a duplicate of #8734.
 archive/issue_events_009613.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-07-08T19:37:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9458",

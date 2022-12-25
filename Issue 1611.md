@@ -235,7 +235,7 @@ malloc work also for allocating zero bytes in M4RI, else it will crash
 archive/issue_events_001770.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2009-09-29T08:08:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1611",

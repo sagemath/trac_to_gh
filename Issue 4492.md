@@ -889,7 +889,7 @@ Sounds like the latest patch has been tested and everybody is OK with all of thi
 archive/issue_events_004738.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-27T09:56:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",

@@ -154,7 +154,7 @@ It was not clear to me, even upon rereading the documentation, that `@`interact 
 archive/issue_events_003082.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-05-17T18:45:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2884",

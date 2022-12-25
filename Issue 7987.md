@@ -332,7 +332,7 @@ This is way too outdated to apply, it also incorrectly adds the libraries to `.p
 archive/issue_events_008202.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2015-07-17T20:05:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7987",

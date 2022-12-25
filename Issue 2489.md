@@ -125,7 +125,7 @@ Attachment [2489.2.patch](tarball://root/attachments/some-uuid/ticket2489/2489.2
 archive/issue_events_002668.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-14T20:34:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2489",

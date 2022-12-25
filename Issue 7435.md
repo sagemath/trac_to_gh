@@ -145,7 +145,7 @@ Rebased for SageNB 0.6 + queue in comment.  Replaces previous.
 archive/issue_events_007658.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-01-25T01:09:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
@@ -257,7 +257,7 @@ Changing status from closed to needs_work.
 archive/issue_events_007659.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-01-25T03:18:50Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7435",
@@ -347,7 +347,7 @@ LGTM.
 archive/issue_events_007660.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-01-25T03:22:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7435",

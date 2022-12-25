@@ -122,7 +122,7 @@ Closed as a duplicate of #6679.
 archive/issue_events_001455.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-18T14:48:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1315",

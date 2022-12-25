@@ -436,7 +436,7 @@ reported by mpatel with no other changes.
 archive/issue_events_007963.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-14T14:33:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7751",

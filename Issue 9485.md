@@ -150,7 +150,7 @@ And thanks as well for the original code. It was still quicker for me to fix it 
 archive/issue_events_009636.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-21T02:49:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9485",

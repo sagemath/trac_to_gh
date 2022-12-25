@@ -116,7 +116,7 @@ I have attached a new `README.txt` file. The patch `readme.patch` shows the diff
 archive/issue_events_007794.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-12-01T08:28:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7565",

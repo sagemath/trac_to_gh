@@ -53,7 +53,7 @@ Michael
 archive/issue_events_002936.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-06-27T14:47:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2749",

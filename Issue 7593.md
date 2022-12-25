@@ -400,7 +400,7 @@ I just updated the path to replace MATH by math :-)
 archive/issue_events_007818.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-12-19T21:06:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7593",

@@ -360,7 +360,7 @@ Looks good to me too.  Thanks for working on even the most minor nitpicky reques
 archive/issue_events_009081.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-12T06:32:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8925",

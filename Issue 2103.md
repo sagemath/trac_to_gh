@@ -448,7 +448,7 @@ I am happy to give this a positive review, reinforcing Craig's.
 archive/issue_events_002263.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-10-29T13:47:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2103",

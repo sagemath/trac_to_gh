@@ -107,7 +107,7 @@ Attachment [pari_nf_docs_again.2.hg](tarball://root/attachments/some-uuid/ticket
 archive/issue_events_000638.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-04T19:19:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/584",

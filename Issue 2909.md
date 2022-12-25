@@ -155,7 +155,7 @@ Ah, but *does* it?  For me, it first prints out the (empty) lines every second, 
 archive/issue_events_003111.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2020-03-29T02:03:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2909",

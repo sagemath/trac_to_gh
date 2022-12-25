@@ -49,7 +49,7 @@ This is a dupe of #2553
 archive/issue_events_002738.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-16T21:53:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2555",

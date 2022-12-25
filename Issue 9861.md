@@ -182,7 +182,7 @@ Remember to fill in the "Author(s)" and "Reviewer(s)" fields.  We use these to g
 archive/issue_events_009991.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-15T22:52:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9861",

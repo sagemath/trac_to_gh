@@ -144,7 +144,7 @@ Looks good to me.
 archive/issue_events_009360.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-20T09:20:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9206",

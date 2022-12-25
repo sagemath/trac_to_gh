@@ -97,7 +97,7 @@ Resolution: fixed
 archive/issue_events_004287.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-05-22T02:56:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4055",

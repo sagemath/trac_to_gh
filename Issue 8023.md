@@ -124,7 +124,7 @@ Resolution: duplicate
 archive/issue_events_008234.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-01-21T21:54:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8023",

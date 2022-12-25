@@ -56,7 +56,7 @@ duplicate of #4302.
 archive/issue_events_002266.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2008-11-01T22:18:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2106",

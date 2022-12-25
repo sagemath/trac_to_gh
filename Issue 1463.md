@@ -78,7 +78,7 @@ I've done what this ticket says to do.  This ticket can be closed.
 archive/issue_events_001614.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-12T03:59:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1463",

@@ -172,7 +172,7 @@ Although I didn't test on a system, where the test already went fine before the 
 archive/issue_events_006952.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-12T00:03:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6717",

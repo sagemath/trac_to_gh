@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5458
 archive/issue_events_005713.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2013-07-23T14:30:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5458",

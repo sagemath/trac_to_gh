@@ -226,7 +226,7 @@ Merged all four patches in Sage 3.0.rc0
 archive/issue_events_003169.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-20T06:20:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2964",

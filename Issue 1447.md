@@ -88,7 +88,7 @@ New package is included in 2.9.alpha7.
 archive/issue_events_001594.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2007-12-15T10:53:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1447",

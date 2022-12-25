@@ -413,7 +413,7 @@ I'm also changing this to target 3.2
 archive/issue_events_004163.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-10-26T04:06:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",

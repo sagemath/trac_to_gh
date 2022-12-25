@@ -120,7 +120,7 @@ Now should we do the same thing with GF(2)(), CDF(), etc.?
 archive/issue_events_006451.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-13T21:19:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6201",

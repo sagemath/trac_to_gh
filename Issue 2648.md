@@ -108,7 +108,7 @@ Patch looks good to me. Positive review.
 archive/issue_events_002839.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-22T19:08:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2648",

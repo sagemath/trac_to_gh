@@ -188,7 +188,7 @@ I added trac_3664-3.patch that fixes the doctest failures.
 archive/issue_events_003883.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-09T22:24:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3664",

@@ -131,7 +131,7 @@ Replaced SAGE_ROOT/README.txt with the README.txt here in 4.5.2.alpha1.
 archive/issue_events_009384.json:
 ```json
 {
-    "actor": "@dandrake",
+    "actor": "https://github.com/dandrake",
     "created_at": "2010-07-22T09:03:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9226",
@@ -201,7 +201,7 @@ Changing status from closed to new.
 archive/issue_events_009385.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-08-05T02:22:57Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9226",
@@ -307,7 +307,7 @@ Resolution: fixed
 archive/issue_events_009386.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-08-05T10:59:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9226",

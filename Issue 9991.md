@@ -370,7 +370,7 @@ I also tried after temporarily getting rid of my system's python.  Installing be
 archive/issue_events_010115.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-10-19T18:52:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9991",

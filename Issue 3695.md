@@ -52,7 +52,7 @@ Looks good. It is also safe to apply to sage-3.0.6 even since it contains no new
 archive/issue_events_003917.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-07-21T18:59:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3695",

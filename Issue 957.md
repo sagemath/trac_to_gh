@@ -153,7 +153,7 @@ it also work for me with 2.8.13.rc2 on a G4 on 10.4, so close this.
 archive/issue_events_001079.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-11-22T23:23:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/957",

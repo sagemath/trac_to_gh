@@ -425,7 +425,7 @@ I'm going to merge 0.7.5.3 into alpha1 since it seems like the issue is more wit
 archive/issue_events_008620.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-03-09T08:04:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8435",

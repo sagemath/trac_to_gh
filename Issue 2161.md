@@ -109,7 +109,7 @@ Every parent should have a one cache called `_one_element` where *should* means 
 archive/issue_events_002327.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-15T00:17:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2161",

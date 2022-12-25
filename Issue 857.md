@@ -133,7 +133,7 @@ Michael
 archive/issue_events_000969.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-12-22T17:38:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/857",

@@ -131,7 +131,7 @@ My impression is: The verdict on [sage-devel] was overall negative, so I propose
 archive/issue_events_001973.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2008-04-01T12:06:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1816",

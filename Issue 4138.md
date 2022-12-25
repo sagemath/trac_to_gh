@@ -125,7 +125,7 @@ Look good to me.
 archive/issue_events_004376.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-17T03:52:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4138",

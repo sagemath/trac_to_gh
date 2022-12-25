@@ -241,7 +241,7 @@ After a rebase, this works!  Awesome.
 archive/issue_events_009321.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-03-15T13:02:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9164",

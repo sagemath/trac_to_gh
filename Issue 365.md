@@ -131,7 +131,7 @@ This is fixed now.  It was a problem in the __call__ method of polynomial ring.
 archive/issue_events_000387.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-05-18T15:46:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/365",

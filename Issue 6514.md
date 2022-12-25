@@ -269,7 +269,7 @@ full log of doctest failures
 archive/issue_events_006751.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-02T08:02:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6514",

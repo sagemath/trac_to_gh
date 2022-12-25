@@ -1488,7 +1488,7 @@ Superseded by #13164, close this ticket as duplicate.
 archive/issue_events_009658.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-09-05T09:38:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9511",

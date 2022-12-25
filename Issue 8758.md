@@ -187,7 +187,7 @@ Ok - ignore the new patch.  Let's leave the url as /data.
 archive/issue_events_008926.json:
 ```json
 {
-    "actor": "@TimDumol",
+    "actor": "https://github.com/TimDumol",
     "created_at": "2010-07-11T05:58:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8758",

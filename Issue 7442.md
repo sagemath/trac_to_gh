@@ -202,7 +202,7 @@ Somehow we are at scipy 0.9 now, so this ticket should be closed as invalid now.
 archive/issue_events_007669.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2011-10-18T18:32:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7442",

@@ -244,7 +244,7 @@ Merged trac3485-sage_input-v2.patch and trac3485-sage_input-review-response.patc
 archive/issue_events_003705.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-13T18:57:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3485",

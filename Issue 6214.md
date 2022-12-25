@@ -300,7 +300,7 @@ The patch file should be produced with Mercurial, not with diff: it should inclu
 archive/issue_events_006463.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-15T05:21:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6214",

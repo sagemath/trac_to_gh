@@ -123,7 +123,7 @@ now informs the user about that command. Positive review.
 archive/issue_events_005786.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-13T22:57:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5539",

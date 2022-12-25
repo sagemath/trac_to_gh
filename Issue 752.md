@@ -86,7 +86,7 @@ Resolution: fixed
 archive/issue_events_000845.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-10-21T22:52:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/752",

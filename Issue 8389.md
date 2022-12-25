@@ -663,7 +663,7 @@ Changing type from defect to enhancement.
 archive/issue_events_008574.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-03-03T18:55:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8389",

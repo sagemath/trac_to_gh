@@ -189,7 +189,7 @@ Fine!  Patch applies fine to 4.4.4.alpha1.
 archive/issue_events_009220.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-20T08:20:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9069",

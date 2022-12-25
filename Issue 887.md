@@ -81,7 +81,7 @@ My original code was buggy, but the bug was masked by a Cython bug.  But I was t
 archive/issue_events_001001.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-14T22:56:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/887",

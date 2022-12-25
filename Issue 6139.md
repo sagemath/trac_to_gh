@@ -161,7 +161,7 @@ Merged both patches in 4.0.1.rc1.
 archive/issue_events_006388.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-04T18:22:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6139",

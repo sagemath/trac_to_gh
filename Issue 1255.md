@@ -145,7 +145,7 @@ David also says that he cannot reproduce the crash.
 archive/issue_events_001397.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-31T04:25:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1255",

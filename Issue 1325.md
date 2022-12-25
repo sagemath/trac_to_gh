@@ -343,7 +343,7 @@ This should be fixed once #3405 is in.
 archive/issue_events_001465.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-06-26T06:35:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1325",

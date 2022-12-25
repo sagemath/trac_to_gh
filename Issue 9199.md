@@ -468,7 +468,7 @@ Note that this is Ryan's first contribution (along with #8838 and #7154)
 archive/issue_events_009353.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-15T10:40:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9199",

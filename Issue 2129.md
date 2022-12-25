@@ -213,7 +213,7 @@ I also tested it with the spyx file rhinton uploaded, and everything seems to wo
 archive/issue_events_002291.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-03-25T08:26:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2129",

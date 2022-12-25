@@ -477,7 +477,7 @@ P.S.: Attempting to build with Qt as the graphics back-end is still broken in so
 archive/issue_events_009989.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-10T10:45:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9859",

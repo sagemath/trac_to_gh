@@ -149,7 +149,7 @@ Merged sage0_keywords.2.patch in Sage 2.10.2.alpha0
 archive/issue_events_001873.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-15T00:24:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1714",

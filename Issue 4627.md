@@ -176,7 +176,7 @@ I added another doctest (which really needs compared between versions with `%tim
 archive/issue_events_004874.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-27T04:48:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4627",

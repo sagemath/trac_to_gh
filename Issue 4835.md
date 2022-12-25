@@ -229,7 +229,7 @@ Resolution: duplicate
 archive/issue_events_005080.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-10T10:50:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4835",

@@ -493,7 +493,7 @@ This problem was fixed by #8059  which was merged in sage 4.5.3.alpha1.
 archive/issue_events_009554.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-09-13T08:58:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9397",

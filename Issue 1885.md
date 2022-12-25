@@ -48,7 +48,7 @@ duplicate of #1886
 archive/issue_events_002043.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-01-22T04:49:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1885",

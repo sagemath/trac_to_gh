@@ -105,7 +105,7 @@ Changing status from new to assigned.
 archive/issue_events_003515.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-07-31T01:27:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3296",

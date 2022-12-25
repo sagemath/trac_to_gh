@@ -273,7 +273,7 @@ This will bind to port 0 and the OS will return a valid port to listen on
 archive/issue_events_003812.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-07-09T16:20:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3593",

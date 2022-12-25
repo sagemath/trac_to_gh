@@ -73,7 +73,7 @@ I'll do so. I don't know why I used 0.98.5. I will first build femhub with this 
 archive/issue_events_007200.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-09-22T09:10:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6978",
@@ -143,7 +143,7 @@ Changing status from closed to reopened.
 archive/issue_events_007201.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-22T16:59:38Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6978",
@@ -195,7 +195,7 @@ Resolution: invalid
 archive/issue_events_007202.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-22T16:59:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6978",

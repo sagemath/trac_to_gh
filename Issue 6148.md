@@ -195,7 +195,7 @@ I also read the patch and tried things and it looks fine to me.
 archive/issue_events_006397.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-05-29T17:31:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6148",

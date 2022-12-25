@@ -177,7 +177,7 @@ I can imagine similar problems arising, but this seems like a reasonable fix.  A
 archive/issue_events_001991.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-22T01:28:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1832",

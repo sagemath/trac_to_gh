@@ -227,7 +227,7 @@ Closing this as wontfix since #6503 removes pyprocessing from the standard spkg 
 archive/issue_events_008559.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-03T02:03:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8371",

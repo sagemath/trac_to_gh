@@ -119,7 +119,7 @@ Outdated spkg or build system ticket, should be closed
 archive/issue_events_010069.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-10-03T07:29:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9942",

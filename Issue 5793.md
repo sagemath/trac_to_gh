@@ -81,7 +81,7 @@ http://trac.sagemath.org/sage_trac/ticket/6355
 archive/issue_events_006040.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-06-22T22:35:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
@@ -191,7 +191,7 @@ Changing status from closed to reopened.
 archive/issue_events_006041.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2009-07-01T05:45:26Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
@@ -1317,7 +1317,7 @@ Resolution: fixed
 archive/issue_events_006042.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-31T23:32:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",

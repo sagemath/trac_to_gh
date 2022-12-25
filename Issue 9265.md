@@ -1007,7 +1007,7 @@ Resolution: fixed
 archive/issue_events_009425.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-09-03T12:50:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
@@ -1484,7 +1484,7 @@ Changing status from closed to new.
 archive/issue_events_009426.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-10-17T07:28:38Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
@@ -1774,7 +1774,7 @@ Resolution: fixed
 archive/issue_events_009427.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-10-29T21:24:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",

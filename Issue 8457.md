@@ -189,7 +189,7 @@ Merged [trac_8457-doc_skip_builtins.2.patch](http://trac.sagemath.org/sage_trac/
 archive/issue_events_008641.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-11T04:46:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8457",

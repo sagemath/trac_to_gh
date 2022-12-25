@@ -127,7 +127,7 @@ Same patch as the above, but it's a patch against 2.10.2, as opposed to the curr
 archive/issue_events_002450.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-28T06:54:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2279",
@@ -197,7 +197,7 @@ Changing status from closed to reopened.
 archive/issue_events_002451.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2008-02-28T22:47:45Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2279",
@@ -330,7 +330,7 @@ Combined patches are fine.  Note that 8682.patch is the same as trac-2279.patch,
 archive/issue_events_002452.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-29T18:53:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2279",

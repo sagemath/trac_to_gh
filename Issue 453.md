@@ -79,7 +79,7 @@ fixed in /home/malb/pkgs/singular-3-0-3-20070819.spkg.
 archive/issue_events_000482.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-08-19T15:35:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/453",

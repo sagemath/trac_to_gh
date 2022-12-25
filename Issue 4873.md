@@ -77,7 +77,7 @@ Resolution: duplicate
 archive/issue_events_005116.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-12-24T21:36:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4873",

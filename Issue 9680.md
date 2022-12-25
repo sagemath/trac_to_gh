@@ -149,7 +149,7 @@ Resolution: wontfix
 archive/issue_events_009812.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2015-04-23T01:45:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9680",

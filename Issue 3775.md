@@ -50,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3775
 archive/issue_events_003997.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-05T17:35:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3775",

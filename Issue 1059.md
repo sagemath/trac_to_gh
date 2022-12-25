@@ -100,7 +100,7 @@ applied to 2.8.11.rc1 - via with new lcalc-20070107.p0.spkg
 archive/issue_events_001182.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-11-02T00:41:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1059",

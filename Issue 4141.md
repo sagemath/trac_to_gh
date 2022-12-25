@@ -163,7 +163,7 @@ In the meantime I found #4127, which talks about how to correctly use it.  Sadly
 archive/issue_events_004379.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-04-26T09:08:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4141",

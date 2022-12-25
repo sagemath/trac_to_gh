@@ -140,7 +140,7 @@ William -- Is this a problem with `sagenb.org`?
 archive/issue_events_006506.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-01-27T01:57:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6262",

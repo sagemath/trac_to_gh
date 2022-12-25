@@ -163,7 +163,7 @@ AFAIK it's supposed to be in the optional repository, but there were issues with
 archive/issue_events_006092.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-01T01:17:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5840",

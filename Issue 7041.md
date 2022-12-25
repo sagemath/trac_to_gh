@@ -319,7 +319,7 @@ Changing keywords from "gap solaris cc CXX compiler hardcoded hard-coded" to "ga
 archive/issue_events_007262.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-06-06T19:10:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7041",

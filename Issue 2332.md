@@ -195,7 +195,7 @@ Rock solid (for me and my superfast laptop)!
 archive/issue_events_002510.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-17T04:29:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2332",

@@ -158,7 +158,7 @@ Please note the request to close this...
 archive/issue_events_005050.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2009-10-06T20:04:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4808",

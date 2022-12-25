@@ -87,7 +87,7 @@ Looks good to me and passes tests, but it depends on #3244 .
 archive/issue_events_003466.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-05-25T14:13:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3247",

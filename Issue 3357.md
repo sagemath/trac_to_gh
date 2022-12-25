@@ -310,7 +310,7 @@ Pending all doctests passing I give this a positive review. There is still too m
 archive/issue_events_003574.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-06-11T03:44:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3357",

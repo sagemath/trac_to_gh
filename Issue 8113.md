@@ -171,7 +171,7 @@ local/lib/libgd.so.2.0.0:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamicall
 archive/issue_events_008319.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-02-11T15:16:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8113",

@@ -218,7 +218,7 @@ but I think we can close this ticket.
 archive/issue_events_002187.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2013-07-22T16:04:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2031",

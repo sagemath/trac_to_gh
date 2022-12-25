@@ -632,7 +632,7 @@ Mabshoff, to apply this apply:
 archive/issue_events_003614.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-10T08:59:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",

@@ -497,7 +497,7 @@ Merged [trac_6949-symbolic_min_max.take3.patch](http://trac.sagemath.org/sage_tr
 archive/issue_events_007173.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-05-08T22:07:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6949",

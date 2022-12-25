@@ -150,7 +150,7 @@ I don't think you're misinterpreting my question, I think I just don't understan
 archive/issue_events_008340.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-01-31T00:57:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8130",

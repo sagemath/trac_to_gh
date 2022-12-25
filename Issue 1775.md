@@ -136,7 +136,7 @@ I cannot duplicate this in Sage 3.2.3 either.  I'm going to mark it as invalid a
 archive/issue_events_001932.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-01-23T12:43:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1775",

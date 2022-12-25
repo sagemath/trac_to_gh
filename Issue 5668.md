@@ -145,7 +145,7 @@ This was only really ever applicable to absolutely immense notebook instantiatio
 archive/issue_events_005911.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-03-28T20:41:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5668",

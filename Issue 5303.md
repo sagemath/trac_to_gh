@@ -161,7 +161,7 @@ I was not in time but this seems a reasonable compromise to me!
 archive/issue_events_005559.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-20T20:55:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5303",

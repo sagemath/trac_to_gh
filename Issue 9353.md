@@ -69,7 +69,7 @@ Resolution: duplicate
 archive/issue_events_009506.json:
 ```json
 {
-    "actor": "retry",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/retry",
     "created_at": "2010-06-29T00:02:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9353",

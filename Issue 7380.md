@@ -51,7 +51,7 @@ Useless.
 archive/issue_events_007604.json:
 ```json
 {
-    "actor": "@nathanncohen",
+    "actor": "https://github.com/nathanncohen",
     "created_at": "2010-02-28T18:03:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7380",
@@ -193,7 +193,7 @@ Changing status from closed to new.
 archive/issue_events_007605.json:
 ```json
 {
-    "actor": "@nathanncohen",
+    "actor": "https://github.com/nathanncohen",
     "created_at": "2010-03-01T07:24:03Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7380",
@@ -283,7 +283,7 @@ Resolution: worksforme
 archive/issue_events_007606.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-01T10:53:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7380",

@@ -129,7 +129,7 @@ I guess this should be closed as a duplicate of #9051
 archive/issue_events_008102.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2010-10-20T15:53:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7887",

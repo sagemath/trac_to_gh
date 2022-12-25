@@ -128,7 +128,7 @@ diff -r 08b375707022 -r 061691096b76 sage/rings/groebner_fan.py
 archive/issue_events_000162.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-01-19T11:00:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/156",

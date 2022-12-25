@@ -339,7 +339,7 @@ Maybe we should add the original example as a test somewhere, but where?
 archive/issue_events_001279.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-27T23:20:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1151",

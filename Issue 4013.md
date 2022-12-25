@@ -49,7 +49,7 @@ The first cell of a new worksheet is of the "cell_not_evaluated" class.  I just 
 archive/issue_events_004243.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-01-20T05:29:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4013",

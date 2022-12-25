@@ -178,7 +178,7 @@ It's exactly as you say, new_gen() calls _sig_off.
 archive/issue_events_009796.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-08-09T09:42:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9661",

@@ -217,7 +217,7 @@ burcin: it seems that there are several people interested in helping with symbol
 archive/issue_events_007180.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-24T15:21:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6956",

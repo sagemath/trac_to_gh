@@ -129,7 +129,7 @@ Michael
 archive/issue_events_000175.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2008-11-14T05:27:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/169",
@@ -229,7 +229,7 @@ Changing status from closed to reopened.
 archive/issue_events_000176.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2008-11-14T05:33:00Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/169",
@@ -757,7 +757,7 @@ Merged both patches in Sage 3.2.1.alpha0
 archive/issue_events_000177.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-21T07:27:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/169",

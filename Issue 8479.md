@@ -305,7 +305,7 @@ Great work!
 archive/issue_events_008662.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-05-08T22:13:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8479",

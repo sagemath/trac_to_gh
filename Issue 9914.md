@@ -201,7 +201,7 @@ Resolution: fixed
 archive/issue_events_010041.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-29T10:48:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9914",

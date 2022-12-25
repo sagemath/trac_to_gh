@@ -294,7 +294,7 @@ Done. All tests passed!
 archive/issue_events_008481.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-03-06T08:36:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8283",

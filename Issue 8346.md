@@ -117,7 +117,7 @@ Yes.
 archive/issue_events_008536.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-04-05T06:15:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8346",

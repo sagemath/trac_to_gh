@@ -153,7 +153,7 @@ At least I did. Anyway, the patch applies and does what it is supposed to do. Po
 archive/issue_events_002761.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-18T00:32:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2576",

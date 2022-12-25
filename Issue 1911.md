@@ -81,7 +81,7 @@ Several comments, but positive review with the additional patch:
 archive/issue_events_002067.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-26T11:21:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1911",

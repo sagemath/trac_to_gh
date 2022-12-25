@@ -1371,7 +1371,7 @@ John, revert this again in case you encounter new errors... ;-)
 archive/issue_events_010000.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-16T00:49:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9870",

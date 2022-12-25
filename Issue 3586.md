@@ -230,7 +230,7 @@ Attachment [sage-3586.patch](tarball://root/attachments/some-uuid/ticket3586/sag
 archive/issue_events_003803.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-07-07T21:46:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3586",

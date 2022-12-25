@@ -141,7 +141,7 @@ Fixed by the patch at #3880.
 archive/issue_events_004111.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-19T01:50:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3886",

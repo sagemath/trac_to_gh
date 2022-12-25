@@ -138,7 +138,7 @@ Resolution: wontfix
 archive/issue_events_008929.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-04-05T06:14:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8761",

@@ -102,7 +102,7 @@ This should probably be marked as invalid.
 archive/issue_events_001030.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-19T01:21:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/914",
@@ -172,7 +172,7 @@ Changing status from closed to reopened.
 archive/issue_events_001031.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-19T01:21:19Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/914",
@@ -224,7 +224,7 @@ Resolution: invalid
 archive/issue_events_001032.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-19T01:21:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/914",
@@ -258,7 +258,7 @@ Changing status from closed to reopened.
 archive/issue_events_001033.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-19T01:21:30Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/914",
@@ -292,7 +292,7 @@ Resolution changed from invalid to
 archive/issue_events_001034.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-19T01:21:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/914",

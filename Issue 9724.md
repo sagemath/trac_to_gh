@@ -219,7 +219,7 @@ It does work.  This is not mentioned in the patch for #7496, though, so I'm addi
 archive/issue_events_009857.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-06-24T15:03:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9724",

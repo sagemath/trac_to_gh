@@ -85,7 +85,7 @@ Resolution: fixed
 archive/issue_events_007263.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-09-27T20:07:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7042",

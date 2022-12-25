@@ -69,7 +69,7 @@ Code looks good, doctests pass.  Positive review.
 archive/issue_events_006304.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-05-18T23:09:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6049",

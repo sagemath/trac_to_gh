@@ -201,7 +201,7 @@ What's the current status of this ticket? Presumably, the 4.2.1 vs. 4.2.2 issue 
 archive/issue_events_003604.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-30T07:06:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3388",

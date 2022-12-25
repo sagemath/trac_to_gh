@@ -58,7 +58,7 @@ Resolution: wontfix
 archive/issue_events_002226.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-01-19T22:18:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2065",

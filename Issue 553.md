@@ -86,7 +86,7 @@ Changing assignee from @williamstein to @mwhansen.
 archive/issue_events_000594.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-07T04:14:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/553",
@@ -156,7 +156,7 @@ Changing status from closed to reopened.
 archive/issue_events_000595.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-07T07:21:31Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/553",
@@ -356,7 +356,7 @@ Merged in 2.9.rc0.
 archive/issue_events_000596.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-15T11:26:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/553",

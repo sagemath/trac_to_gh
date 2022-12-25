@@ -156,7 +156,7 @@ I fixed some typos and formatting issues. Both 2143.patch and 2143-2.patch shoul
 archive/issue_events_002305.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-16T02:57:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2143",

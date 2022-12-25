@@ -870,7 +870,7 @@ Successfully compiles on Solaris/t2. All 148 tests passed. (It even builds OK on
 archive/issue_events_006693.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-24T06:58:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6453",

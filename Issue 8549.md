@@ -412,7 +412,7 @@ I currently have no possible access to any OS X machine. All my tests was comput
 archive/issue_events_008732.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-05T22:29:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8549",

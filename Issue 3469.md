@@ -102,7 +102,7 @@ TypeError: no coercion of this rational to integer
 archive/issue_events_003690.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2010-01-18T05:00:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3469",

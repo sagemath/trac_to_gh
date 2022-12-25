@@ -69,7 +69,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/137
 archive/issue_events_000143.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2008-03-08T20:50:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/137",

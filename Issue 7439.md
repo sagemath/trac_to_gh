@@ -392,7 +392,7 @@ Great!
 archive/issue_events_007664.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-07T05:06:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7439",

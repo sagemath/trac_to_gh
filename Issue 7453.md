@@ -400,7 +400,7 @@ I've added the spkg here:
 archive/issue_events_007680.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2010-02-07T05:37:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",

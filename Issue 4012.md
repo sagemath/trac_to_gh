@@ -104,7 +104,7 @@ The edit tab allows one to edit the worksheet.  The text tab gives output simila
 archive/issue_events_004242.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2009-01-22T00:47:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4012",

@@ -158,7 +158,7 @@ Resolution: invalid
 archive/issue_events_008084.json:
 ```json
 {
-    "actor": "olazo",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/olazo",
     "created_at": "2010-01-24T19:36:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7869",

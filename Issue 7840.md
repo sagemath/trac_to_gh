@@ -54,7 +54,7 @@ The new spkg is here:
 archive/issue_events_008055.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-01-04T07:14:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7840",

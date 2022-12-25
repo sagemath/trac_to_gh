@@ -200,7 +200,7 @@ Yes it is. Positive review.
 archive/issue_events_006433.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-13T20:43:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6185",

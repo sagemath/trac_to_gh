@@ -124,7 +124,7 @@ Fixed for sage-2.8.3.
 archive/issue_events_000426.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-08-29T01:51:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/400",

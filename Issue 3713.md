@@ -163,7 +163,7 @@ This is a duplicate of #3167. Close it as per Tom Boothby's suggestion.
 archive/issue_events_003933.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-12T16:32:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3713",

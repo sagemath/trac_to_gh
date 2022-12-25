@@ -748,7 +748,7 @@ Merged into 4.4.alpha1:
 archive/issue_events_008669.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-19T05:22:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8488",

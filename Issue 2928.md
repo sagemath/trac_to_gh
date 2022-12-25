@@ -79,7 +79,7 @@ Michael
 archive/issue_events_003128.json:
 ```json
 {
-    "actor": "@kedlaya",
+    "actor": "https://github.com/kedlaya",
     "created_at": "2008-04-15T11:14:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
@@ -193,7 +193,7 @@ Changing status from closed to reopened.
 archive/issue_events_003129.json:
 ```json
 {
-    "actor": "@kedlaya",
+    "actor": "https://github.com/kedlaya",
     "created_at": "2008-04-16T11:27:27Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
@@ -323,7 +323,7 @@ Applied against 3.0.rc0, this fixes the problem on my 32-bit machine (where I wa
 archive/issue_events_003130.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-21T00:37:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2928",

@@ -357,7 +357,7 @@ Jaap
 archive/issue_events_008324.json:
 ```json
 {
-    "actor": "@jaapspies",
+    "actor": "https://github.com/jaapspies",
     "created_at": "2010-01-30T12:46:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8116",

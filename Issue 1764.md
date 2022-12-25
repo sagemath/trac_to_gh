@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1764
 archive/issue_events_001922.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2008-01-13T11:35:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1764",

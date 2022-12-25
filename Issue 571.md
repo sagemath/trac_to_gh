@@ -114,7 +114,7 @@ sage -t  ell_rational_field.py
 archive/issue_events_000621.json:
 ```json
 {
-    "actor": "@aghitza",
+    "actor": "https://github.com/aghitza",
     "created_at": "2008-01-27T04:59:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/571",
@@ -188,7 +188,7 @@ Changing status from closed to reopened.
 archive/issue_events_000622.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-01-27T12:54:07Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/571",
@@ -269,7 +269,7 @@ Resolution: fixed
 archive/issue_events_000623.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-27T14:40:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/571",

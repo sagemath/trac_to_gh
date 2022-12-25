@@ -148,7 +148,7 @@ Michael
 archive/issue_events_000694.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-15T20:24:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/634",
@@ -218,7 +218,7 @@ Changing status from closed to reopened.
 archive/issue_events_000695.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-15T20:29:47Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/634",
@@ -259,7 +259,7 @@ Michael
 archive/issue_events_000696.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-15T22:44:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/634",

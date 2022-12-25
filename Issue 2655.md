@@ -336,7 +336,7 @@ Thanks. This will be removed before the final release.
 archive/issue_events_002846.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-04T21:24:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2655",

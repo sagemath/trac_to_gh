@@ -126,7 +126,7 @@ Unless the request is specified, I'm all for closing it.
 archive/issue_events_000392.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2008-04-01T12:25:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/370",

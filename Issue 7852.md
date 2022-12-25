@@ -368,7 +368,7 @@ Resolution: fixed
 archive/issue_events_008067.json:
 ```json
 {
-    "actor": "@nexttime",
+    "actor": "https://github.com/nexttime",
     "created_at": "2011-09-13T12:15:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7852",

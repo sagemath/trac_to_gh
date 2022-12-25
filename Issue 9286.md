@@ -130,7 +130,7 @@ http://boxen.math.washington.edu/home/kirkby/patches/boehm_gc-7.1.p6.spkg
 archive/issue_events_009446.json:
 ```json
 {
-    "actor": "@gvol",
+    "actor": "https://github.com/gvol",
     "created_at": "2010-06-24T03:09:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9286",
@@ -238,7 +238,7 @@ Changing status from closed to new.
 archive/issue_events_009447.json:
 ```json
 {
-    "actor": "@gvol",
+    "actor": "https://github.com/gvol",
     "created_at": "2010-06-24T03:13:31Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9286",
@@ -326,7 +326,7 @@ Resolution: fixed
 archive/issue_events_009448.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-06-25T15:52:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9286",

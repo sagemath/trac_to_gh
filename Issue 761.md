@@ -216,7 +216,7 @@ Same patch as listed in the post.
 archive/issue_events_000858.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-10-04T19:53:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/761",

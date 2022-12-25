@@ -354,7 +354,7 @@ Yes, this was my mistake and can be closed as invalid.
 archive/issue_events_009856.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2011-03-04T22:30:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9723",

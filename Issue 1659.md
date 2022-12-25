@@ -124,7 +124,7 @@ sage: type(a)
 archive/issue_events_001819.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-08-26T20:16:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1659",

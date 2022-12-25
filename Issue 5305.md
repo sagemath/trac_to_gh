@@ -58,7 +58,7 @@ https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Date-pic
 archive/issue_events_005561.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2017-03-21T11:19:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5305",

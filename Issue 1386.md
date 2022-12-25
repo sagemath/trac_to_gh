@@ -75,7 +75,7 @@ Changing assignee from @malb to @rlmill.
 archive/issue_events_001530.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-03-20T22:39:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1386",

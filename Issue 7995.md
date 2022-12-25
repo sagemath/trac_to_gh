@@ -325,7 +325,7 @@ Merged in the script repository.
 archive/issue_events_008209.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-23T09:58:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",

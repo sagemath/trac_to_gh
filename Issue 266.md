@@ -67,7 +67,7 @@ Changing assignee from @williamstein to @ncalexan.
 archive/issue_events_000281.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2007-02-18T21:09:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/266",

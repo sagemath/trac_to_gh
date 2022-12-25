@@ -173,7 +173,7 @@ Merged trac_4745-combined.patch in Sage 3.2.2.alpha2
 archive/issue_events_004987.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-12-11T15:27:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4745",

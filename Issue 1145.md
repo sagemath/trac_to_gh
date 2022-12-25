@@ -202,7 +202,7 @@ since no progress was done in 2 years, I close that ticket.
 archive/issue_events_001272.json:
 ```json
 {
-    "actor": "@zimmermann6",
+    "actor": "https://github.com/zimmermann6",
     "created_at": "2010-02-05T20:44:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
@@ -254,7 +254,7 @@ Changing status from closed to new.
 archive/issue_events_001273.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2010-02-05T21:53:13Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",

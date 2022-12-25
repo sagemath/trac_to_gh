@@ -82,7 +82,7 @@ Rolled into #5079
 archive/issue_events_005048.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2009-01-23T22:30:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4806",

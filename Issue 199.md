@@ -93,7 +93,7 @@ Groups:
 archive/issue_events_000208.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2008-02-08T07:03:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/199",

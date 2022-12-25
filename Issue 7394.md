@@ -102,7 +102,7 @@ Changing assignee from @aghitza to @burcin.
 archive/issue_events_007617.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2009-11-22T18:02:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7394",

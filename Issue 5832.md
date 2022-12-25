@@ -55,7 +55,7 @@ Resolution: duplicate
 archive/issue_events_006082.json:
 ```json
 {
-    "actor": "@dwbump",
+    "actor": "https://github.com/dwbump",
     "created_at": "2009-04-20T05:16:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5832",

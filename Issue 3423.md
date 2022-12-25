@@ -127,7 +127,7 @@ Duplicate of #9640.
 archive/issue_events_003639.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-11-02T12:57:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3423",

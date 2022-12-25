@@ -769,7 +769,7 @@ Since #12415 completely rewrites the doctest framework with much better code, I'
 archive/issue_events_009606.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-02-22T21:37:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",

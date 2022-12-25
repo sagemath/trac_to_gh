@@ -168,7 +168,7 @@ Merged in Sage 2.10.4.rc0 - I will valgrind this once rc0 is out.
 archive/issue_events_002715.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-16T05:23:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2534",

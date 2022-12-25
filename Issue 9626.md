@@ -171,7 +171,7 @@ so this can indeed be closed.
 archive/issue_events_009766.json:
 ```json
 {
-    "actor": "@slel",
+    "actor": "https://github.com/slel",
     "created_at": "2020-08-14T00:54:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9626",

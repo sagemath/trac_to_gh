@@ -803,7 +803,7 @@ Resolution: invalid
 archive/issue_events_004510.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2008-12-05T01:23:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
@@ -837,7 +837,7 @@ Changing status from closed to reopened.
 archive/issue_events_004511.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-01-19T08:16:05Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
@@ -915,7 +915,7 @@ Merged trac_4267_extcode-remove-javascript-packages.patch in Sage 3.3.alpha0
 archive/issue_events_004512.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-01-19T08:16:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",

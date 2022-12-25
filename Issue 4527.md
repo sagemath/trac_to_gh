@@ -319,7 +319,7 @@ Looks good. I added a doctest based on Soroosh's original example in the extra p
 archive/issue_events_004771.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-15T09:52:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4527",

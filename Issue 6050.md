@@ -116,7 +116,7 @@ Attachment [trac_6050-1.patch](tarball://root/attachments/some-uuid/ticket6050/t
 archive/issue_events_006305.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-04T19:01:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6050",

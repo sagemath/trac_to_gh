@@ -103,7 +103,7 @@ obsolete. I will close later if nobody objects
 archive/issue_events_008863.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2019-09-06T18:37:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8689",

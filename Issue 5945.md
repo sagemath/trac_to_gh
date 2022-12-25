@@ -977,7 +977,7 @@ Doctests are fixed.
 archive/issue_events_006201.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-19T22:19:17Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",

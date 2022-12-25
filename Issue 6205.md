@@ -72,7 +72,7 @@ So since there were no methods in that class before, and 1 now, does that mean t
 archive/issue_events_006454.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-13T20:35:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6205",

@@ -66,7 +66,7 @@ Attachment [inverse_mod.patch](tarball://root/attachments/some-uuid/ticket6832/i
 archive/issue_events_007065.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-23T04:08:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6832",

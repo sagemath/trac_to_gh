@@ -163,7 +163,7 @@ based on Sage 4.0.1.rc2
 archive/issue_events_006476.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-13T21:18:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6229",

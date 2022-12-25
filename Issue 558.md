@@ -163,7 +163,7 @@ Patch 6170.patch makes sure no new elements are added tot he pool once its free'
 archive/issue_events_000600.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-07T03:11:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/558",
@@ -233,7 +233,7 @@ Changing status from closed to reopened.
 archive/issue_events_000601.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-07T03:49:50Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/558",
@@ -283,7 +283,7 @@ it is commented out.
 archive/issue_events_000602.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-09-07T11:10:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/558",

@@ -180,7 +180,7 @@ Merged trac_3949.patch and extcode_3949.patch in Sage 3.2.alpha1
 archive/issue_events_004177.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-10-25T23:01:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3949",

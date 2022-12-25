@@ -643,7 +643,7 @@ Okay, I think that this is finally in shape.  Thanks for the back and forth on t
 archive/issue_events_007725.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-07-22T12:48:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7496",

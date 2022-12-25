@@ -113,7 +113,7 @@ I can't test on the latter one, though.
 archive/issue_events_006689.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-07-03T01:02:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6448",

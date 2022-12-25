@@ -57,7 +57,7 @@ This has been fixed. Confirm and chekc please?
 archive/issue_events_006085.json:
 ```json
 {
-    "actor": "@TimDumol",
+    "actor": "https://github.com/TimDumol",
     "created_at": "2010-01-19T03:11:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5835",

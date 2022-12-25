@@ -296,7 +296,7 @@ I put Richard's name in the authors list since he should get the credit for fixi
 archive/issue_events_010015.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-05-27T12:01:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9890",

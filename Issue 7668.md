@@ -165,7 +165,7 @@ Resolution: invalid
 archive/issue_events_007886.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-09-01T15:50:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7668",
@@ -199,7 +199,7 @@ Changing status from closed to new.
 archive/issue_events_007887.json:
 ```json
 {
-    "actor": "@kcrisman",
+    "actor": "https://github.com/kcrisman",
     "created_at": "2020-09-01T21:34:33Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7668",

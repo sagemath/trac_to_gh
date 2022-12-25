@@ -224,7 +224,7 @@ See #6972 for a continuation of the updated spkg above.
 archive/issue_events_003300.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-22T17:02:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3086",

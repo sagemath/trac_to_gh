@@ -84,7 +84,7 @@ Mind you, that should say `self.__multiple_of_order` to `self._multiple_of_order
 archive/issue_events_003888.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-07-18T09:25:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3669",

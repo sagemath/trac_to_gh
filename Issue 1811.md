@@ -188,7 +188,7 @@ Close as fixed by #7514.
 archive/issue_events_001968.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-01T01:41:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1811",

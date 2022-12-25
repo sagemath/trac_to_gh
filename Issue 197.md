@@ -87,7 +87,7 @@ Much of this is implemented, or is brainstorming that should be totally re-evalu
 archive/issue_events_000206.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-23T17:26:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/197",

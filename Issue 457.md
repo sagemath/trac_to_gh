@@ -95,7 +95,7 @@ it's been fixed now and the fix has been pushed out.
 archive/issue_events_000486.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-08-19T18:49:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/457",

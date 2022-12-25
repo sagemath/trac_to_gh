@@ -163,7 +163,7 @@ It would also be nice to be able to grab historical data between two specified d
 archive/issue_events_003564.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-06-08T23:33:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3346",

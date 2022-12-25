@@ -86,7 +86,7 @@ Resolution: wontfix
 archive/issue_events_001926.json:
 ```json
 {
-    "actor": "@embray",
+    "actor": "https://github.com/embray",
     "created_at": "2018-08-03T17:23:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1768",

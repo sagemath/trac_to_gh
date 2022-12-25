@@ -103,7 +103,7 @@ Since I opened it as a request, I hope it's okay that I ask for it to be closed 
 archive/issue_events_007500.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2015-01-13T01:18:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7277",

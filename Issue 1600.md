@@ -138,7 +138,7 @@ patch looks good, does what it is supposed to do, is documented. I say apply.
 archive/issue_events_001758.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-26T11:16:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1600",

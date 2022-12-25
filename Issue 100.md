@@ -57,7 +57,7 @@ fixed
 archive/issue_events_000102.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-01-13T02:19:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/100",

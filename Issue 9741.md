@@ -229,7 +229,7 @@ Changing status from needs_review to positive_review.
 archive/issue_events_009873.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-15T22:52:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
@@ -459,7 +459,7 @@ Changing status from closed to needs_work.
 archive/issue_events_009874.json:
 ```json
 {
-    "actor": "@rbeezer",
+    "actor": "https://github.com/rbeezer",
     "created_at": "2010-09-19T15:21:22Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
@@ -475,7 +475,7 @@ archive/issue_events_009874.json:
 archive/issue_events_009875.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-19T21:57:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9741",

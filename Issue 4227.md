@@ -94,7 +94,7 @@ Looks good and fixes the doctest failures.
 archive/issue_events_004464.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-10-01T13:15:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4227",

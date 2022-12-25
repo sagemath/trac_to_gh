@@ -983,7 +983,7 @@ Merged `trac_6870-final-v2.2.patch`.
 archive/issue_events_007102.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-30T08:26:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",

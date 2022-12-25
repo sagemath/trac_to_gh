@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5123
 archive/issue_events_005372.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-05T01:19:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5123",

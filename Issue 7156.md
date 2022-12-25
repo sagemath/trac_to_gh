@@ -123,7 +123,7 @@ Fixed by #7352
 archive/issue_events_007376.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-20T06:20:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7156",

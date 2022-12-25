@@ -378,7 +378,7 @@ Apply only: trac_5761-latex_docstrings-ts.patch
 archive/issue_events_006008.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-02-09T12:13:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5761",

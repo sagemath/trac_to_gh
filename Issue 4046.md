@@ -325,7 +325,7 @@ Just [attachment:trac_4046-chrome_and_friends.patch].  The key capture utility *
 archive/issue_events_004278.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-25T08:43:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4046",

@@ -175,7 +175,7 @@ You are supposed to set milestone to duplicate/invalid/wontfix and then positive
 archive/issue_events_009183.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-11-07T14:56:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9031",

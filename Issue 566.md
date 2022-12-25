@@ -138,7 +138,7 @@ Attachment [gmp_leak.patch](tarball://root/attachments/some-uuid/ticket566/gmp_l
 archive/issue_events_000612.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-07T03:16:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/566",
@@ -190,7 +190,7 @@ Changing status from closed to reopened.
 archive/issue_events_000613.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-07T06:01:08Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/566",
@@ -308,7 +308,7 @@ Resolution: fixed
 archive/issue_events_000614.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-07T18:38:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/566",

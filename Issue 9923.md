@@ -229,7 +229,7 @@ Thanks!
 archive/issue_events_010049.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-17T03:27:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9923",

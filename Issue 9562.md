@@ -3969,7 +3969,7 @@ Sollte ich dein Urteil infrage stellen weil du uns für sterblich hältst?
 archive/issue_events_009707.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-11-15T08:55:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9562",
@@ -4021,7 +4021,7 @@ Changing status from closed to new.
 archive/issue_events_009708.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-11-20T10:24:29Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9562",
@@ -4109,7 +4109,7 @@ Changing status from needs_review to positive_review.
 archive/issue_events_009709.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-12-01T08:12:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9562",

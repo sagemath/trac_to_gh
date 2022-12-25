@@ -53,7 +53,7 @@ Attachment [subst_hash.hg](tarball://root/attachments/some-uuid/ticket1075/subst
 archive/issue_events_001197.json:
 ```json
 {
-    "actor": "jbmohler",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jbmohler",
     "created_at": "2007-11-15T22:08:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1075",

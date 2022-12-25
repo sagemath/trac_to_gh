@@ -190,7 +190,7 @@ Michael
 archive/issue_events_000417.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-08-29T02:39:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/395",
@@ -318,7 +318,7 @@ Changing status from closed to reopened.
 archive/issue_events_000418.json:
 ```json
 {
-    "actor": "mhampton",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mhampton",
     "created_at": "2007-09-11T16:48:26Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/395",
@@ -508,7 +508,7 @@ applied for sage-2.8.4.2.
 archive/issue_events_000419.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-13T15:03:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/395",

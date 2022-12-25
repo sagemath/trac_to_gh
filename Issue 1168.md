@@ -114,7 +114,7 @@ Changing assignee from @williamstein to @mwhansen.
 archive/issue_events_001300.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2007-11-30T23:38:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1168",

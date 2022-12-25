@@ -186,7 +186,7 @@ I went ahead and removed the src/.hg/ repo from the Cython spkg and checked in t
 archive/issue_events_007493.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-17T11:10:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
@@ -238,7 +238,7 @@ Changing status from closed to needs_work.
 archive/issue_events_007494.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2009-11-17T20:07:49Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7272",
@@ -410,7 +410,7 @@ I'm changing this to positive review, as the changes between when this was merge
 archive/issue_events_007495.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-12-07T23:19:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7272",

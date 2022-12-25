@@ -185,7 +185,7 @@ Changing keywords from "" to "scipy".
 archive/issue_events_004091.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2010-01-20T06:31:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3870",

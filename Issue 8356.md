@@ -81,7 +81,7 @@ Changing priority from major to minor.
 archive/issue_events_008546.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-03-07T01:36:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8356",

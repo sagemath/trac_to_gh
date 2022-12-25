@@ -907,7 +907,7 @@ Merged all four patches in Sage 2.11.alpha1. If anybody has issues with this pat
 archive/issue_events_002695.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-21T05:32:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2514",

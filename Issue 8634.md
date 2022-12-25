@@ -89,7 +89,7 @@ The discussion at [sage-devel](http://groups.google.com/group/sage-devel/browse_
 archive/issue_events_008803.json:
 ```json
 {
-    "actor": "@robert-marik",
+    "actor": "https://github.com/robert-marik",
     "created_at": "2010-04-21T13:25:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8634",

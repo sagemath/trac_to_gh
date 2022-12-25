@@ -100,7 +100,7 @@ Oops, right. Sorry.
 archive/issue_events_008868.json:
 ```json
 {
-    "actor": "@nthiery",
+    "actor": "https://github.com/nthiery",
     "created_at": "2010-04-18T10:02:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8697",

@@ -274,7 +274,7 @@ I think we can close this as a duplicate of those other tickets now that they ar
 archive/issue_events_006381.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2013-07-22T15:02:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6132",

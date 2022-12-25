@@ -103,7 +103,7 @@ Changing status from new to assigned.
 archive/issue_events_001085.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-10-23T19:45:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/963",

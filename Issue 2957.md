@@ -199,7 +199,7 @@ Burcin agrees that this is a positive review now.
 archive/issue_events_003163.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-01-28T14:11:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2957",

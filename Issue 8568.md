@@ -381,7 +381,7 @@ Sorry, Burcin, truthfully I hadn't even noticed that!  I was just trying to make
 archive/issue_events_008747.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-06T01:27:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
@@ -451,7 +451,7 @@ Changing status from closed to needs_work.
 archive/issue_events_008748.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-07T06:53:25Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
@@ -691,7 +691,7 @@ Changing status from needs_review to positive_review.
 archive/issue_events_008749.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-29T08:39:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",

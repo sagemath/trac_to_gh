@@ -193,7 +193,7 @@ I agree: it is better than the present situation.  If I have time I will try to 
 archive/issue_events_003859.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-12-26T17:09:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3640",

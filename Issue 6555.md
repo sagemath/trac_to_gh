@@ -68,7 +68,7 @@ It also appears that there is other work for them to be compatible with Python 2
 archive/issue_events_006792.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-14T08:50:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6555",

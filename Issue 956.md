@@ -177,7 +177,7 @@ Attachment [7069.patch](tarball://root/attachments/some-uuid/ticket956/7069.patc
 archive/issue_events_001076.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-10-22T01:46:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/956",
@@ -287,7 +287,7 @@ Changing status from closed to reopened.
 archive/issue_events_001077.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-10-22T07:03:38Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/956",
@@ -321,7 +321,7 @@ PLEASE NOTE -- Don't use the patch here!! Instead, use the ones in #968.
 archive/issue_events_001078.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-10-23T19:58:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/956",

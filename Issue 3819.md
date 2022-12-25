@@ -143,7 +143,7 @@ I agree with this patch.
 archive/issue_events_004043.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-13T00:20:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3819",

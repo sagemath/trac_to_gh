@@ -80,7 +80,7 @@ Changing assignee from @williamstein to @malb.
 archive/issue_events_000446.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-09-03T13:55:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/419",

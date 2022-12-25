@@ -439,7 +439,7 @@ Attachment [trac_5991_dynamic_class-nt.2.patch](tarball://root/attachments/some-
 archive/issue_events_006246.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-15T07:15:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5991",

@@ -68,7 +68,7 @@ Resolution: invalid
 archive/issue_events_002843.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2020-03-29T02:03:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2652",

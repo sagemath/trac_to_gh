@@ -96,7 +96,7 @@ Looks like I simultaneously reviewed this.  Positive review from me too.
 archive/issue_events_006195.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-19T13:31:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5941",

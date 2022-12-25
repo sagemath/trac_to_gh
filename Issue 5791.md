@@ -130,7 +130,7 @@ So this is ready to go - positive review.
 archive/issue_events_006038.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-04-30T04:09:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5791",

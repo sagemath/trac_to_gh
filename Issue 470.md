@@ -123,7 +123,7 @@ should be enough to free everything.
 archive/issue_events_000499.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-10-12T01:56:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/470",
@@ -215,7 +215,7 @@ Changing status from closed to reopened.
 archive/issue_events_000500.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-10-13T20:09:47Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/470",
@@ -270,7 +270,7 @@ Michael
 archive/issue_events_000501.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-10-14T11:54:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/470",

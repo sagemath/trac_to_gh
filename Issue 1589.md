@@ -177,7 +177,7 @@ Merged in 2.9.2.
 archive/issue_events_001747.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-05T12:10:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1589",

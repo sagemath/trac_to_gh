@@ -90,7 +90,7 @@ Works well for me.
 archive/issue_events_003959.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-10T03:26:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3736",

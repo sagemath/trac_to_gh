@@ -115,7 +115,7 @@ You were right. After removing ttf-jsmath and installing the downloaded fonts it
 archive/issue_events_009190.json:
 ```json
 {
-    "actor": "jan",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/jan",
     "created_at": "2010-05-28T22:47:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9038",

@@ -51,7 +51,7 @@ Resolution: duplicate
 archive/issue_events_001086.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2007-10-21T20:48:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/964",

@@ -97,7 +97,7 @@ Changing status from new to needs_review.
 archive/issue_events_008194.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-04-29T06:09:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7979",

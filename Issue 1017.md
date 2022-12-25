@@ -125,7 +125,7 @@ Resolution: fixed
 archive/issue_events_001141.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-28T18:38:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1017",

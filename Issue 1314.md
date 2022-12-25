@@ -1917,7 +1917,7 @@ For a future ticket with #15657 - make `Graph.tutte_polynomial` a ``@`cached_met
 archive/issue_events_001454.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-01-11T14:56:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",

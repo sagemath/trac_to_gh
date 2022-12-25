@@ -408,7 +408,7 @@ My guess is that he covers NTL, but we can always open another ticket and addres
 archive/issue_events_003225.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-05-06T19:28:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3020",

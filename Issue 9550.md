@@ -118,7 +118,7 @@ Probably too late to investigate ;-)
 archive/issue_events_009698.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2013-12-19T20:10:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9550",

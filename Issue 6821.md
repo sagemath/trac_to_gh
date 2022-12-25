@@ -72,7 +72,7 @@ On second thought, it was stupid of me to open this ticket. So marked as duplica
 archive/issue_events_007055.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-25T00:17:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6821",

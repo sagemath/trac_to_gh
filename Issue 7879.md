@@ -628,7 +628,7 @@ Attached a rebased patch because of fuzz.
 archive/issue_events_008094.json:
 ```json
 {
-    "actor": "@nexttime",
+    "actor": "https://github.com/nexttime",
     "created_at": "2011-09-13T12:16:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7879",

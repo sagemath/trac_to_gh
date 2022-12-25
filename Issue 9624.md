@@ -74,7 +74,7 @@ Please delete
 archive/issue_events_009765.json:
 ```json
 {
-    "actor": "@dandrake",
+    "actor": "https://github.com/dandrake",
     "created_at": "2010-07-28T14:09:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9624",

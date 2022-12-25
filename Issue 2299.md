@@ -332,7 +332,7 @@ Merged 2299.patch in Sage 2.10.3.rc0
 archive/issue_events_002474.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-28T00:48:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2299",

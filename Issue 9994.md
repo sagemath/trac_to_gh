@@ -235,7 +235,7 @@ Resolution: invalid
 archive/issue_events_010118.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-06-25T13:32:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9994",

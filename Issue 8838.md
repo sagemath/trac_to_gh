@@ -288,7 +288,7 @@ Note that this is Ryan's first contribution (along with #9199 and #7154)
 archive/issue_events_009003.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-15T10:40:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8838",

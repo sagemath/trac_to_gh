@@ -125,7 +125,7 @@ Good catch!  I deleted those two lines and posted an updated patch.  Thanks for 
 archive/issue_events_006787.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-20T17:24:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6552",
@@ -213,7 +213,7 @@ Changing status from closed to reopened.
 archive/issue_events_006788.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-20T17:37:25Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6552",
@@ -247,7 +247,7 @@ Resolution: fixed
 archive/issue_events_006789.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-23T03:37:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6552",

@@ -101,7 +101,7 @@ This must be FIXED.
 archive/issue_events_002171.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-07-19T13:17:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2017",

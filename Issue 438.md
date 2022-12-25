@@ -112,7 +112,7 @@ Changing assignee from @williamstein to @robertwb.
 archive/issue_events_000465.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2008-02-23T06:36:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/438",

@@ -272,7 +272,7 @@ Works well for me.  Pity it requires magma :(
 archive/issue_events_004534.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-06-24T10:04:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4290",

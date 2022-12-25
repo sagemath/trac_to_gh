@@ -229,7 +229,7 @@ Updated patch looks fine. (But haven't yet applied/tested it.)
 archive/issue_events_008866.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-06T07:55:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8694",

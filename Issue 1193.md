@@ -144,7 +144,7 @@ Resolution: invalid
 archive/issue_events_001329.json:
 ```json
 {
-    "actor": "@jvoight",
+    "actor": "https://github.com/jvoight",
     "created_at": "2008-03-12T17:01:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1193",

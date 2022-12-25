@@ -69,7 +69,7 @@ Done. Please confirm this.
 archive/issue_events_008415.json:
 ```json
 {
-    "actor": "@dandrake",
+    "actor": "https://github.com/dandrake",
     "created_at": "2010-02-08T23:24:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8213",

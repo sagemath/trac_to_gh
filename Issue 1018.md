@@ -120,7 +120,7 @@ Attachment [balanced-prod-1018.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_events_001142.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-28T18:08:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1018",

@@ -166,7 +166,7 @@ Changing type from defect to enhancement.
 archive/issue_events_004473.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2009-09-29T08:10:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4236",

@@ -398,7 +398,7 @@ Paul
 archive/issue_events_003162.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-01-18T08:07:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2956",

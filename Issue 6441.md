@@ -1678,7 +1678,7 @@ Merged patches in this order:
 archive/issue_events_006682.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-09T05:56:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",

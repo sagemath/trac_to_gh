@@ -128,7 +128,7 @@ Changes look sensible, and all doctests in `sage/rings/number_field` pass. Posit
 archive/issue_events_009740.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-29T04:23:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9596",

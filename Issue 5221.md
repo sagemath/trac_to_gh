@@ -165,7 +165,7 @@ archive/issue_comments_039943.json:
 archive/issue_events_005478.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-23T00:21:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5221",

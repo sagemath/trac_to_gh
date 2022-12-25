@@ -171,7 +171,7 @@ David
 archive/issue_events_006398.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-05-28T17:51:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6149",

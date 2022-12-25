@@ -152,7 +152,7 @@ Rob
 archive/issue_events_008404.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-02-10T18:31:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8202",

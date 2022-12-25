@@ -292,7 +292,7 @@ Nathann
 archive/issue_events_008651.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-09-10T12:50:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8467",

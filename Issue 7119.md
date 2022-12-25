@@ -318,7 +318,7 @@ Adam
 archive/issue_events_007340.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-15T15:33:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7119",

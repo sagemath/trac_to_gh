@@ -119,7 +119,7 @@ The spkg in 1161 incorporates the fix for this and also upgrades cvxopt to a new
 archive/issue_events_001251.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-11-18T06:17:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1125",

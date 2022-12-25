@@ -465,7 +465,7 @@ Positive review.
 archive/issue_events_008487.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-02T21:32:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8289",

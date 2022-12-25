@@ -113,7 +113,7 @@ I'm setting this to "positive review" to bring it to the attention of the releas
 archive/issue_events_008161.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-20T07:52:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7945",

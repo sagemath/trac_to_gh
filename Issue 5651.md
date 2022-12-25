@@ -403,7 +403,7 @@ These issues should be addressed in another enhancement ticket.
 archive/issue_events_005892.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-19T08:27:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5651",

@@ -513,7 +513,7 @@ Resolution: invalid
 archive/issue_events_002441.json:
 ```json
 {
-    "actor": "@garyfurnish",
+    "actor": "https://github.com/garyfurnish",
     "created_at": "2008-03-09T05:39:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2270",

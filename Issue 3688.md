@@ -170,7 +170,7 @@ skip dsage files
 archive/issue_events_003910.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-24T09:11:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3688",

@@ -68,7 +68,7 @@ As of Sage 4.3.1, ticket #7975 removed dsage from the standard spkg repository. 
 archive/issue_events_003570.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-02T06:21:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3352",

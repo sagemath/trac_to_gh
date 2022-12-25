@@ -219,7 +219,7 @@ Safari 3.1 isn't supported by Sage yet. Works great elsewhere.
 archive/issue_events_003004.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-06T06:54:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2813",

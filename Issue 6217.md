@@ -120,7 +120,7 @@ I've made it so that the examples don't use the string 'a' as a bases since that
 archive/issue_events_006465.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-06-06T16:54:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6217",

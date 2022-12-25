@@ -2440,7 +2440,7 @@ Resolution: fixed
 archive/issue_events_008011.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-08-23T12:46:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
@@ -2522,7 +2522,7 @@ Changing status from closed to new.
 archive/issue_events_008012.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-08-24T20:24:40Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
@@ -3363,7 +3363,7 @@ Just realized, that I'm the reviewer: I'm fine with reestablishing to positive r
 archive/issue_events_008013.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-11-16T21:25:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",

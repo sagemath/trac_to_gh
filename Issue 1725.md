@@ -73,7 +73,7 @@ I put this into the experimental package directory.
 archive/issue_events_001883.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-09T02:12:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1725",

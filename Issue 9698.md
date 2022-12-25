@@ -864,7 +864,7 @@ Please don't put spaces in patch filenames
 archive/issue_events_009831.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-01T10:10:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
@@ -945,7 +945,7 @@ Changing status from closed to needs_work.
 archive/issue_events_009832.json:
 ```json
 {
-    "actor": "@eviatarbach",
+    "actor": "https://github.com/eviatarbach",
     "created_at": "2011-01-05T04:30:48Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
@@ -979,7 +979,7 @@ I created a new ticket for this: #10561
 archive/issue_events_009833.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-05T08:19:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",

@@ -95,7 +95,7 @@ oh, 'make test' passes on 64-bit Linux.
 archive/issue_events_001659.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-12-22T18:53:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1505",

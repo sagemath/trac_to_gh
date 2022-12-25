@@ -83,7 +83,7 @@ This is a trivial patch, I know, but it was also to demonstrate the development 
 archive/issue_events_005761.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-03-20T20:35:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5509",

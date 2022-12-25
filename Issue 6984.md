@@ -141,7 +141,7 @@ True, but who knows when that will get in.
 archive/issue_events_007208.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-04-28T12:46:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6984",

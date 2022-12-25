@@ -186,7 +186,7 @@ Except maybe on sage.misc.sagedoc, but that's most likely a glitch from building
 archive/issue_events_008916.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-09T02:22:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8747",

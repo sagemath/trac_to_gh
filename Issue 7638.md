@@ -107,7 +107,7 @@ I had to rebase the patch for sage-4.3.alpha1; rebased patch attached.
 archive/issue_events_007863.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-12-10T14:24:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7638",

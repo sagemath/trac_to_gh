@@ -152,7 +152,7 @@ Attachment [trac1366.patch](tarball://root/attachments/some-uuid/ticket1366/trac
 archive/issue_events_001507.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-10T05:30:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
@@ -222,7 +222,7 @@ Changing status from closed to reopened.
 archive/issue_events_001508.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-10T23:43:35Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
@@ -463,7 +463,7 @@ Resolution: fixed
 archive/issue_events_001509.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-10T01:26:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1366",

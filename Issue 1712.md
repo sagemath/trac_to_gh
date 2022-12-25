@@ -265,7 +265,7 @@ OK, I see the problem and the solution is good. Will keep this in mind for the c
 archive/issue_events_001871.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-11T19:25:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1712",

@@ -96,7 +96,7 @@ On a completely insignificant note, I'm not sure why you did a0inv = ..., and th
 archive/issue_events_002063.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-25T18:13:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1906",

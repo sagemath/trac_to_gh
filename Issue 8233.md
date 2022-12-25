@@ -188,7 +188,7 @@ Tested on sage-4.3.3 after having applied ticket #7619. All tests passed, lookin
 archive/issue_events_008434.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-03-06T08:52:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8233",

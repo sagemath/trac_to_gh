@@ -91,7 +91,7 @@ The optional spkg has been added to sagemath.org.
 archive/issue_events_001623.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-15T05:45:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1472",

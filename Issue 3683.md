@@ -346,7 +346,7 @@ Then there is a positive review from my side and (if i am allowed to do so) I re
 archive/issue_events_003903.json:
 ```json
 {
-    "actor": "@simon-king-jena",
+    "actor": "https://github.com/simon-king-jena",
     "created_at": "2008-08-13T16:15:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
@@ -422,7 +422,7 @@ Changing status from closed to reopened.
 archive/issue_events_003904.json:
 ```json
 {
-    "actor": "aginiewicz",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/aginiewicz",
     "created_at": "2008-08-14T17:36:28Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3683",
@@ -541,7 +541,7 @@ Merged 10128.patch, 10129.patch and 10130.patch in Sage 3.1.2.alpha0
 archive/issue_events_003905.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-22T20:01:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3683",

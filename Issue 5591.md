@@ -58,7 +58,7 @@ Reported "upstream" at https://github.com/sagemath/sagenb/issues/222
 archive/issue_events_005835.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2020-03-29T02:09:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5591",

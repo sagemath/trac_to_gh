@@ -125,7 +125,7 @@ This can be closed. Thanks a lot !
 archive/issue_events_009094.json:
 ```json
 {
-    "actor": "casamayou",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/casamayou",
     "created_at": "2010-05-27T15:49:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
@@ -159,7 +159,7 @@ Changing status from closed to new.
 archive/issue_events_009095.json:
 ```json
 {
-    "actor": "@kcrisman",
+    "actor": "https://github.com/kcrisman",
     "created_at": "2010-05-27T15:55:06Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
@@ -342,7 +342,7 @@ see #9480
 archive/issue_events_009096.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-20T10:04:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",

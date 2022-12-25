@@ -64,7 +64,7 @@ Duplicate of #11926.
 archive/issue_events_006623.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-04-02T15:46:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6375",

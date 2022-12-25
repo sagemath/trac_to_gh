@@ -225,7 +225,7 @@ Changing component from notebook to build.
 archive/issue_events_003146.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-12-09T02:36:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2942",

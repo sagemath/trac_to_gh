@@ -525,7 +525,7 @@ I've opened #9631 for re-merging #9501 after we fix the NFS/doctest problem.
 archive/issue_events_009757.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-29T05:31:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9616",

@@ -294,7 +294,7 @@ Fixes the error, and makes the same change throughout.  Positive review.
 archive/issue_events_008173.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-18T21:44:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7957",

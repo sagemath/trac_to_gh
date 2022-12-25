@@ -88,7 +88,7 @@ This is an exact duplicate of #2477. Make sure to check before posting tickets!
 archive/issue_events_002912.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2008-03-29T20:05:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2724",

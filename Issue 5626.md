@@ -184,7 +184,7 @@ Don't forget to rename amsmath.sty back after testing.
 archive/issue_events_005867.json:
 ```json
 {
-    "actor": "@TimDumol",
+    "actor": "https://github.com/TimDumol",
     "created_at": "2010-01-19T03:00:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5626",

@@ -69,7 +69,7 @@ Resolution: invalid
 archive/issue_events_000812.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-10-22T01:36:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/729",
@@ -125,7 +125,7 @@ Changing status from closed to reopened.
 archive/issue_events_000813.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-10-22T07:03:51Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/729",
@@ -195,7 +195,7 @@ This is duplicate because #749 takes care of it.
 archive/issue_events_000814.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-10-23T18:01:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/729",

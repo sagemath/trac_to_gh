@@ -219,7 +219,7 @@ I think this can now be regarded as a duplicate of #9705 and thus closed.
 archive/issue_events_007036.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-06-20T18:54:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6801",

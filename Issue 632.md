@@ -123,7 +123,7 @@ And we are already at 0.8.4 for IPython.
 archive/issue_events_000692.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-10-24T10:35:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/632",

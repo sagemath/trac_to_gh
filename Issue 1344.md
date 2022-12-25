@@ -83,7 +83,7 @@ Michael
 archive/issue_events_001486.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-20T03:06:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1344",

@@ -153,7 +153,7 @@ positive review
 archive/issue_events_008019.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-01-13T11:37:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7804",

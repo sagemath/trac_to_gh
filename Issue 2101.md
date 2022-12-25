@@ -142,7 +142,7 @@ Merged all new spkgs but quaddouble-2.3.4.p1.spkg in Sage 2.10.2.alpha0
 archive/issue_events_002261.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-14T23:21:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2101",

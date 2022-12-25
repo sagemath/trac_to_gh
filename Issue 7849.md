@@ -409,7 +409,7 @@ The actual code change only affects Sun Studio compilers so I'll accept that Dav
 archive/issue_events_008064.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-01-14T01:51:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7849",

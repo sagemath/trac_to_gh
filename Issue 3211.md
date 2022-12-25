@@ -476,7 +476,7 @@ I realize this isn't ready for review yet, but at the very least we would want t
 archive/issue_events_003428.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-02T21:55:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3211",

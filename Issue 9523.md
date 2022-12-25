@@ -2213,7 +2213,7 @@ As far as readline is concerned, I think the current state is a definite improve
 archive/issue_events_009672.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-09T18:59:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",

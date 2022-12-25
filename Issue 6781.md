@@ -1229,7 +1229,7 @@ Resolution: fixed
 archive/issue_events_007012.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-15T20:05:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
@@ -1284,7 +1284,7 @@ Changing status from closed to needs_work.
 archive/issue_events_007013.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-16T02:47:51Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
@@ -1374,7 +1374,7 @@ Changing status from needs_work to needs_review.
 archive/issue_events_007014.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-16T02:51:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
@@ -1426,7 +1426,7 @@ Changing status from closed to new.
 archive/issue_events_007015.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-16T02:51:22Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
@@ -1516,7 +1516,7 @@ I'm not sure what it takes to review the `deps` file. The proposed change defini
 archive/issue_events_007016.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-16T17:15:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",

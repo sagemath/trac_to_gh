@@ -244,7 +244,7 @@ There are non-trivial issues involved with fixing this (namely, moving things to
 archive/issue_events_002637.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2008-06-20T04:46:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
@@ -338,7 +338,7 @@ Changing status from closed to reopened.
 archive/issue_events_002638.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-06-27T20:20:25Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
@@ -500,7 +500,7 @@ I suggest that this ticket be closed, with a link to #3927 instead.
 archive/issue_events_002639.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2008-11-14T08:52:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2460",

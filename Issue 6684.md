@@ -96,7 +96,7 @@ Resolution: fixed
 archive/issue_events_006919.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-11T23:20:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6684",

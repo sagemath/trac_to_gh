@@ -151,7 +151,7 @@ Resolution: invalid
 archive/issue_events_009476.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-05-21T07:22:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9319",

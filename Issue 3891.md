@@ -176,7 +176,7 @@ The reviewer's patch looks good to me, and all tests passed.  (I based the docst
 archive/issue_events_004118.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-24T00:47:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3891",

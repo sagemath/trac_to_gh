@@ -207,7 +207,7 @@ Resolution: duplicate
 archive/issue_events_007637.json:
 ```json
 {
-    "actor": "ylchapuy",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/ylchapuy",
     "created_at": "2009-11-10T00:53:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7412",

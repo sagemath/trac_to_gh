@@ -306,7 +306,7 @@ Merged [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachmen
 archive/issue_events_008447.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-15T03:43:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",

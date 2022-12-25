@@ -87,7 +87,7 @@ I changed the priority to minor because polymake is an optional package.
 archive/issue_events_000429.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-08-29T01:55:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/403",

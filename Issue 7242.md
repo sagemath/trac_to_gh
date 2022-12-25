@@ -56,7 +56,7 @@ Duplicate of #6503.  I'll get to this today.
 archive/issue_events_007461.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-19T04:28:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7242",

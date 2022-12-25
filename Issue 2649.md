@@ -76,7 +76,7 @@ subsumed by #2651
 archive/issue_events_002840.json:
 ```json
 {
-    "actor": "@rhinton",
+    "actor": "https://github.com/rhinton",
     "created_at": "2008-03-23T02:17:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2649",

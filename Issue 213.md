@@ -50,7 +50,7 @@ Resolution: fixed
 archive/issue_events_000224.json:
 ```json
 {
-    "actor": "TimothyClemans",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
     "created_at": "2007-03-26T03:34:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/213",

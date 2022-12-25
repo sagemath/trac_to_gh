@@ -51,7 +51,7 @@ Looks good. I particularly like the ability to do "O(x^10)" and implicitly creat
 archive/issue_events_004862.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-27T03:13:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4613",

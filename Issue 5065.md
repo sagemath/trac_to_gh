@@ -149,7 +149,7 @@ Remove assignee @loefflerd.
 archive/issue_events_005311.json:
 ```json
 {
-    "actor": "@JohnCremona",
+    "actor": "https://github.com/JohnCremona",
     "created_at": "2010-08-14T16:47:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5065",

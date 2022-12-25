@@ -197,7 +197,7 @@ Once this ticket is closed, ticket #5564 should also be closed as a consequence 
 archive/issue_events_006553.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-16T21:22:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6307",
@@ -276,7 +276,7 @@ Changing status from closed to reopened.
 archive/issue_events_006554.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-22T17:16:39Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6307",
@@ -433,7 +433,7 @@ Resolution: fixed
 archive/issue_events_006555.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-23T09:16:17Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6307",

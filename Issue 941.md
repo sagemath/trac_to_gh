@@ -237,7 +237,7 @@ David roe says this *is* just a dupe of #919.
 archive/issue_events_001061.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-20T17:59:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/941",

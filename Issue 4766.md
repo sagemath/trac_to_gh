@@ -123,7 +123,7 @@ I get the same, complete information from `parallel?` in the notebook and at the
 archive/issue_events_005008.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-01T09:00:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4766",

@@ -1234,7 +1234,7 @@ Resolution: fixed
 archive/issue_events_009589.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-12-02T16:09:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
@@ -1424,7 +1424,7 @@ Changing status from closed to new.
 archive/issue_events_009590.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-12-14T08:13:07Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
@@ -1951,7 +1951,7 @@ Looks good to me ("merged" changed to rc0 because there is an additional patch).
 archive/issue_events_009591.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-12-19T09:33:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",

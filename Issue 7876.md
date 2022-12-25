@@ -372,7 +372,7 @@ Merged [trac_7876-pynac_print.take2.patch](http://trac.sagemath.org/sage_trac/at
 archive/issue_events_008091.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-18T21:40:47Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7876",

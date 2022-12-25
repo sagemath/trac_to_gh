@@ -193,7 +193,7 @@ Changing status from new to assigned.
 archive/issue_events_005448.json:
 ```json
 {
-    "actor": "@johnperry-math",
+    "actor": "https://github.com/johnperry-math",
     "created_at": "2009-02-08T17:43:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
@@ -319,7 +319,7 @@ Changing status from closed to reopened.
 archive/issue_events_005449.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-08T18:35:29Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5194",
@@ -412,7 +412,7 @@ Resolution: fixed
 archive/issue_events_005450.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-09T11:16:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5194",

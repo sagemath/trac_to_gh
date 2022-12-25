@@ -112,7 +112,7 @@ I am changing it to "resolved as fixed";  hope that's ok.
 archive/issue_events_002060.json:
 ```json
 {
-    "actor": "@JohnCremona",
+    "actor": "https://github.com/JohnCremona",
     "created_at": "2008-09-09T14:09:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1903",

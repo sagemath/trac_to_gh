@@ -277,7 +277,7 @@ Changing priority from major to critical.
 archive/issue_events_007747.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-05-16T08:02:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7518",

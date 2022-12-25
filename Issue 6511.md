@@ -87,7 +87,7 @@ Just to let people know, this has been merged in sage-4.1.1-alpha0. I can't clos
 archive/issue_events_006749.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-16T21:31:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6511",

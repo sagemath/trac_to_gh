@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5005
 archive/issue_events_005249.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2010-01-17T09:45:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5005",

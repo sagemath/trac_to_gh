@@ -107,7 +107,7 @@ http://sage.math.washington.edu/home/wstein/tmp/flint-1.2.4.p4.spkg
 archive/issue_events_006375.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-05-29T17:31:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6125",

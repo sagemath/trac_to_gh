@@ -72,7 +72,7 @@ Yep, the reasoning is explained in the patch.  Doctests in matrixspace.py pass o
 archive/issue_events_005447.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-06T22:28:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5193",

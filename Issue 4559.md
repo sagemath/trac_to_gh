@@ -79,7 +79,7 @@ This is fixed via #5954, isn't it?
 archive/issue_events_004804.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-15T15:52:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4559",

@@ -86,7 +86,7 @@ there hasn't been a slideshow mode for at least 6 months...
 archive/issue_events_000332.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2008-03-17T04:41:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/313",
@@ -138,7 +138,7 @@ Changing status from closed to reopened.
 archive/issue_events_000333.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-03-17T04:57:01Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/313",
@@ -252,7 +252,7 @@ Michael
 archive/issue_events_000334.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-01-23T10:03:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/313",

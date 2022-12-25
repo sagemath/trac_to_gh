@@ -78,7 +78,7 @@ Mike, I'm ccing you as this should apparently be closed.
 archive/issue_events_006196.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-01-02T03:21:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5942",

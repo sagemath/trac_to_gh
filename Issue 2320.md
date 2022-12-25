@@ -186,7 +186,7 @@ Patch looks good to me. Positive review. I assume I need to apply #2322 also to 
 archive/issue_events_002496.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-14T17:41:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2320",

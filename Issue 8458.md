@@ -456,7 +456,7 @@ Lukáš: in the future try to remember to add yourself as Author.
 archive/issue_events_008642.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-02-06T21:22:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",

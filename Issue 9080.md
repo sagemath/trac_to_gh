@@ -273,7 +273,7 @@ But we need a lot more doctests for just about all of these - see #11514.
 archive/issue_events_009237.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-07-22T12:49:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9080",

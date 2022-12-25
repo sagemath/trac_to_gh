@@ -812,7 +812,7 @@ Thanks for the review!
 archive/issue_events_005405.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-01-21T21:06:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5155",

@@ -85,7 +85,7 @@ This will be fixed by #7109.
 archive/issue_events_007142.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2010-01-27T17:16:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6915",

@@ -133,7 +133,7 @@ archive/issue_comments_063273.json:
 archive/issue_events_007726.json:
 ```json
 {
-    "actor": "@TimDumol",
+    "actor": "https://github.com/TimDumol",
     "created_at": "2010-01-19T03:15:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7497",

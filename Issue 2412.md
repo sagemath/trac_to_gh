@@ -126,7 +126,7 @@ As per request on IRC:
 archive/issue_events_002588.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2008-11-14T05:20:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2412",

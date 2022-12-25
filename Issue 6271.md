@@ -71,7 +71,7 @@ There is such a flag.  It's SAGE_CHECK.  See http://trac.sagemath.org/sage_trac/
 archive/issue_events_006515.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2009-06-14T22:31:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6271",

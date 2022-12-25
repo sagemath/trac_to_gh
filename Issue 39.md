@@ -156,7 +156,7 @@ diff -r 39c4cda2f4c4 -r cbda6c27c46e sage/rings/multi_polynomial_ideal.py
 archive/issue_events_000038.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-01-19T09:22:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/39",

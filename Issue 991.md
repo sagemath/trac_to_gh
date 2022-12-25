@@ -184,7 +184,7 @@ Looks good to me, probably.  It's just a format issue anyways.
 archive/issue_events_001114.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-11-20T15:51:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/991",

@@ -332,7 +332,7 @@ Michael
 archive/issue_events_002371.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-14T17:01:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2205",
@@ -420,7 +420,7 @@ Changing status from closed to reopened.
 archive/issue_events_002372.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-03-14T19:50:55Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2205",
@@ -454,7 +454,7 @@ I'm reopening this because there is now a procedure for new spkg's to go into sa
 archive/issue_events_002373.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-15T08:35:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2205",

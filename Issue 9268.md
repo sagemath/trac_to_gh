@@ -121,7 +121,7 @@ There were a number of wonky things like this we never saw often enough to diagn
 archive/issue_events_009430.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-03-28T20:45:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9268",

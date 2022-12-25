@@ -121,7 +121,7 @@ The patch looks great, thanks!
 archive/issue_events_002522.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-03T02:55:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2345",

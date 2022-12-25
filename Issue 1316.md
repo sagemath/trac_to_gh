@@ -92,7 +92,7 @@ Changing assignee from @mwhansen to @rlmill.
 archive/issue_events_001456.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-06-19T22:23:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1316",

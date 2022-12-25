@@ -251,7 +251,7 @@ Please see #7367.
 archive/issue_events_007326.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-11-12T04:55:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7104",

@@ -95,7 +95,7 @@ Now the javascript message is also gone, but still no search box.  This is alrea
 archive/issue_events_006619.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2020-03-29T02:12:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6370",

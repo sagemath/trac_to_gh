@@ -226,7 +226,7 @@ Merged in Sage 2.10.2.alpha1
 archive/issue_events_002370.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-18T19:05:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2204",

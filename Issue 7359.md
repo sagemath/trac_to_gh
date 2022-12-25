@@ -70,7 +70,7 @@ Nathann
 archive/issue_events_007582.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-10-09T08:43:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7359",

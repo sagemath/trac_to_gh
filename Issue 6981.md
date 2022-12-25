@@ -388,7 +388,7 @@ The only changes from .p8 are:
 archive/issue_events_007205.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-27T02:32:55Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6981",

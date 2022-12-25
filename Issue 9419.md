@@ -970,7 +970,7 @@ I think they do behave identically.  The double bracket version calls a bash bui
 archive/issue_events_009574.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-12-24T01:03:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9419",

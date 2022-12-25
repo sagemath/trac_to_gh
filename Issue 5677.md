@@ -80,7 +80,7 @@ sage: _
 archive/issue_events_005920.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2013-07-23T12:56:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5677",

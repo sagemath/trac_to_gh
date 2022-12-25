@@ -103,7 +103,7 @@ Resolution: duplicate
 archive/issue_events_002613.json:
 ```json
 {
-    "actor": "@garyfurnish",
+    "actor": "https://github.com/garyfurnish",
     "created_at": "2008-04-03T01:16:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2436",

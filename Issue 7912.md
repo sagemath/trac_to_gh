@@ -150,7 +150,7 @@ I'm listing this as positive review -- I used this spkg as the base when I made 
 archive/issue_events_008127.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-01-14T21:08:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7912",

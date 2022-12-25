@@ -255,7 +255,7 @@ Apply [attachment:trac_8345-doctest.patch].
 archive/issue_events_008535.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-06-15T20:12:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8345",

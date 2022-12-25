@@ -110,7 +110,7 @@ looks good.
 archive/issue_events_001642.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-14T05:13:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1488",

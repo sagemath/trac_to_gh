@@ -109,7 +109,7 @@ The patch does what it advertises and doctests that behavior. All good, I say ap
 archive/issue_events_002790.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-21T02:25:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2599",

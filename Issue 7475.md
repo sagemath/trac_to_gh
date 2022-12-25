@@ -222,7 +222,7 @@ Looks good.
 archive/issue_events_007703.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-02-03T22:59:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7475",

@@ -109,7 +109,7 @@ Changing status from new to needs_review.
 archive/issue_events_008698.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-06-19T18:47:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8518",

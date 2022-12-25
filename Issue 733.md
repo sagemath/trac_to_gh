@@ -82,7 +82,7 @@ archive/issue_comments_004287.json:
 archive/issue_events_000820.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-22T05:58:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/733",

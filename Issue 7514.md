@@ -842,7 +842,7 @@ I've merged sagelib-7514_combined.patch in sage-4.3.1.alpha0.
 archive/issue_events_007743.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2010-01-04T06:41:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",

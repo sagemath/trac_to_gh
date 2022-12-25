@@ -125,7 +125,7 @@ Good catch.  Closed due to #5330.
 archive/issue_events_002140.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-02-26T17:22:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1984",

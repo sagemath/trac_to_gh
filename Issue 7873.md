@@ -235,7 +235,7 @@ Thank you very much for the positive review.
 archive/issue_events_008088.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-01-14T02:39:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7873",

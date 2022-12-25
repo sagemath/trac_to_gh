@@ -63,7 +63,7 @@ sage: K(2) - K(3)
 archive/issue_events_000085.json:
 ```json
 {
-    "actor": "dmharvey",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
     "created_at": "2006-10-10T23:57:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/85",

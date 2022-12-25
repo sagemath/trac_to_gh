@@ -50,7 +50,7 @@ Maybe this isn't necessary any more ...
 archive/issue_events_009399.json:
 ```json
 {
-    "actor": "@mkoeppe",
+    "actor": "https://github.com/mkoeppe",
     "created_at": "2021-08-26T03:44:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9237",

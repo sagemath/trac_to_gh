@@ -112,7 +112,7 @@ The attached patch resolves those warnings as claimed.
 archive/issue_events_008881.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-19T05:18:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8711",

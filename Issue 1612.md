@@ -95,7 +95,7 @@ Resolution: fixed
 archive/issue_events_001771.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2008-06-15T02:04:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1612",

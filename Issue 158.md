@@ -49,7 +49,7 @@ Attachment [94.patch](tarball://root/attachments/some-uuid/ticket158/94.patch) b
 archive/issue_events_000164.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2006-11-06T07:52:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/158",

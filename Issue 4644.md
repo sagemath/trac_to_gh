@@ -266,7 +266,7 @@ Note that the patch applies to the scripts repo.
 archive/issue_events_004891.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-10-13T20:17:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4644",

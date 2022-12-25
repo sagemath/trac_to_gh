@@ -57,7 +57,7 @@ Anyway, this is now posted.
 archive/issue_events_001158.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-11-01T02:59:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1033",

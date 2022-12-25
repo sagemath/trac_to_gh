@@ -84,7 +84,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4696
 archive/issue_events_004941.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2013-07-23T00:32:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4696",

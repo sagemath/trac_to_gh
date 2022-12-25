@@ -108,7 +108,7 @@ Merged both patches in Sage 3.0.1.alpha1
 archive/issue_events_003236.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-27T01:25:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3031",
@@ -229,7 +229,7 @@ Changing status from closed to reopened.
 archive/issue_events_003237.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-28T02:32:31Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3031",
@@ -319,7 +319,7 @@ Remerged the previously reverted patches and merged trac-3031-pt3.patch in Sage 
 archive/issue_events_003238.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-29T00:04:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3031",

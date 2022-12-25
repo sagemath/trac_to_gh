@@ -131,7 +131,7 @@ However, short of a specific example, this ticket is rather vague, and I have ne
 archive/issue_events_003469.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2018-03-08T10:05:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3250",

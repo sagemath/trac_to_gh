@@ -69,7 +69,7 @@ part 2 of 2  -- this adds full doctests.
 archive/issue_events_003672.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-06-23T09:59:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3453",

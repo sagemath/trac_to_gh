@@ -113,7 +113,7 @@ Looks good and passes tests.
 archive/issue_events_004405.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-21T20:19:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4168",

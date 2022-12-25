@@ -86,7 +86,7 @@ Applied OK against Sage 4.1.1. Passed all doctests. The change looks reasonable.
 archive/issue_events_006999.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-25T05:00:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6767",

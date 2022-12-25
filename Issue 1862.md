@@ -259,7 +259,7 @@ Merged 1862.patch in Sage 2.10.4.rc0
 archive/issue_events_002020.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-16T02:53:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1862",

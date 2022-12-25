@@ -88,7 +88,7 @@ So: positive reivew!
 archive/issue_events_006687.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-06-29T20:43:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6446",

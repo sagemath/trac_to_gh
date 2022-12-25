@@ -230,7 +230,7 @@ Excellent -- positive review. Apply all three patches.
 archive/issue_events_009880.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-12T06:33:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9747",

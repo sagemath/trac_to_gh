@@ -148,7 +148,7 @@ foo.html shows that firefox gives the same behavior.
 archive/issue_events_003999.json:
 ```json
 {
-    "actor": "acleone",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/acleone",
     "created_at": "2010-01-19T06:57:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3777",

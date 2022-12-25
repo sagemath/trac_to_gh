@@ -229,7 +229,7 @@ Yes, this is in much better shape now, thanks to #2542.
 archive/issue_events_001743.json:
 ```json
 {
-    "actor": "@aghitza",
+    "actor": "https://github.com/aghitza",
     "created_at": "2008-10-11T12:30:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
@@ -299,7 +299,7 @@ Changing status from closed to reopened.
 archive/issue_events_001744.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2008-11-30T20:30:44Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
@@ -463,7 +463,7 @@ Looks good to me.
 archive/issue_events_001745.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-01-25T02:20:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",

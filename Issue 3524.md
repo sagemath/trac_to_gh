@@ -99,7 +99,7 @@ Resolution: invalid
 archive/issue_events_003741.json:
 ```json
 {
-    "actor": "ghtdak",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/ghtdak",
     "created_at": "2008-06-28T17:34:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3524",
@@ -151,7 +151,7 @@ Changing status from closed to new.
 archive/issue_events_003742.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-01-30T12:02:11Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3524",
@@ -416,7 +416,7 @@ Resolution: worksforme
 archive/issue_events_003743.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-05-21T08:05:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3524",

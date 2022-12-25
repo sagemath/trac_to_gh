@@ -80,7 +80,7 @@ Although it is not the same issue, this will be fixed by #7822. I have a new pat
 archive/issue_events_008133.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2010-02-19T11:59:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7918",

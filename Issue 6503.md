@@ -970,7 +970,7 @@ As far as the parallel compilation and parallel doctesting of Sage is concerned,
 archive/issue_events_006741.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-03T01:58:05Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",

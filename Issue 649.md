@@ -195,7 +195,7 @@ merged in 2.9.1 rc0
 archive/issue_events_000715.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-12-22T18:37:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/649",

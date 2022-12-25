@@ -50,7 +50,7 @@ This ticket can be closed now. There's no patch to merge. I can confirm that whe
 archive/issue_events_005599.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-07-04T01:23:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5343",

@@ -114,7 +114,7 @@ This works for me in sage-2.8.15alpha1.
 archive/issue_events_001429.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2007-12-02T02:38:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1286",

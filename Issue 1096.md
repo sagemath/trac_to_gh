@@ -85,7 +85,7 @@ applied to 2.8.12.rc0
 archive/issue_events_001222.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-11-06T21:41:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1096",

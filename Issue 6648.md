@@ -1387,7 +1387,7 @@ Starting next fall I plan to develop this further as my senior project in math a
 archive/issue_events_006884.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2010-04-29T05:32:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6648",

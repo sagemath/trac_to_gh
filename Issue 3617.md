@@ -162,7 +162,7 @@ Sebastian
 archive/issue_events_003834.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-23T08:13:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3617",

@@ -156,7 +156,7 @@ Yep, this looks good. As William pointed out to me when I asked, the issue is ju
 archive/issue_events_008183.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-01-18T22:26:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7968",

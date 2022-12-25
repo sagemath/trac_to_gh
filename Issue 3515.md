@@ -111,7 +111,7 @@ Resolution: invalid
 archive/issue_events_003732.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-07-12T14:05:06Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3515",

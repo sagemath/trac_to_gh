@@ -279,7 +279,7 @@ The patch applies cleanly now. Merged in Sage 2.11.alpha2
 archive/issue_events_002804.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-28T18:21:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2614",

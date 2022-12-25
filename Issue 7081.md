@@ -80,7 +80,7 @@ Editing $SAGE_LOCAL/bin/sage-eval to os.chdir(os.getenv('CUR')) before evalutati
 archive/issue_events_007303.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-15T08:57:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7081",

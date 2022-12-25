@@ -93,7 +93,7 @@ sage: m.group(int(0))
 archive/issue_events_001269.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-11-25T18:11:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1142",

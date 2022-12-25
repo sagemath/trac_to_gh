@@ -53,7 +53,7 @@ applications, so you know about it.  Hmm.
 archive/issue_events_000342.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-03-21T22:46:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/322",
@@ -105,7 +105,7 @@ Changing status from closed to reopened.
 archive/issue_events_000343.json:
 ```json
 {
-    "actor": "TimothyClemans",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
     "created_at": "2007-03-26T03:58:37Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/322",
@@ -193,7 +193,7 @@ Resolution: invalid
 archive/issue_events_000344.json:
 ```json
 {
-    "actor": "boothby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/boothby",
     "created_at": "2020-03-29T02:12:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/322",

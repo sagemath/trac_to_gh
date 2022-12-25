@@ -71,7 +71,7 @@ In any case, the bug appears to be fixed now, so I'm closing this ticket.
 archive/issue_events_000373.json:
 ```json
 {
-    "actor": "dmharvey",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
     "created_at": "2007-08-18T17:29:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/350",

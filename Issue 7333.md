@@ -308,7 +308,7 @@ Merged in with the optional packages.
 archive/issue_events_007555.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-12-09T02:54:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7333",

@@ -77,7 +77,7 @@ Attachment [axes.pdf](tarball://root/attachments/some-uuid/ticket2769/axes.pdf) 
 archive/issue_events_002957.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2008-09-02T20:14:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2769",

@@ -128,7 +128,7 @@ This should definately get changed.
 archive/issue_events_002538.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2009-04-16T11:02:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2361",

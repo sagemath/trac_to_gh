@@ -170,7 +170,7 @@ Resolution: wontfix
 archive/issue_events_003756.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-07-01T04:40:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
@@ -204,7 +204,7 @@ Changing status from closed to new.
 archive/issue_events_003757.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2010-12-11T11:58:59Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
@@ -874,7 +874,7 @@ Apologies for not be clear.  I first applied the patch to the sage-4.7.rc2 sourc
 archive/issue_events_003758.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-05-17T08:47:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",

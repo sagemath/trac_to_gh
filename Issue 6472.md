@@ -264,7 +264,7 @@ Resolution: worksforme
 archive/issue_events_006710.json:
 ```json
 {
-    "actor": "@embray",
+    "actor": "https://github.com/embray",
     "created_at": "2018-08-14T17:30:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6472",

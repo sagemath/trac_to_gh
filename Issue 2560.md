@@ -63,7 +63,7 @@ delete - duplicate
 archive/issue_events_002743.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2008-03-16T22:36:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2560",

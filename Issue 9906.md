@@ -577,7 +577,7 @@ Should this be merged in Sage 4.6.1? (if yes, please set the Milestone)
 archive/issue_events_010033.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-16T08:20:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9906",

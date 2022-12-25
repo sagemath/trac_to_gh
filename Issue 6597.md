@@ -135,7 +135,7 @@ I am glad this will be soon in so that we don't have this patch anymore in Sage-
 archive/issue_events_006836.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-09T08:55:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6597",

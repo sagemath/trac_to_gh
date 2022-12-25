@@ -158,7 +158,7 @@ Resolution: duplicate
 archive/issue_events_008262.json:
 ```json
 {
-    "actor": "rkirov",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/rkirov",
     "created_at": "2010-04-04T17:18:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8053",

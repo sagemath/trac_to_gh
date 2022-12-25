@@ -146,7 +146,7 @@ Just an FYI.  I deleted all snapshots, then ran this patch on all the sagenb.org
 archive/issue_events_006136.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-04-30T09:35:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5880",

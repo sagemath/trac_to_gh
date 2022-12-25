@@ -222,7 +222,7 @@ merged with #8330
 archive/issue_events_008540.json:
 ```json
 {
-    "actor": "@rhinton",
+    "actor": "https://github.com/rhinton",
     "created_at": "2010-03-02T02:56:17Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8350",

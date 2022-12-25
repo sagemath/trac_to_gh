@@ -58,7 +58,7 @@ Looks good to me.
 archive/issue_events_006598.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-06-24T10:02:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6354",
@@ -148,7 +148,7 @@ Changing status from closed to new.
 archive/issue_events_006599.json:
 ```json
 {
-    "actor": "@nthiery",
+    "actor": "https://github.com/nthiery",
     "created_at": "2009-11-17T20:25:07Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6354",
@@ -239,7 +239,7 @@ Changing status from needs_review to positive_review.
 archive/issue_events_006600.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-19T17:37:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6354",

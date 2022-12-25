@@ -121,7 +121,7 @@ Resolution: wontfix
 archive/issue_events_009924.json:
 ```json
 {
-    "actor": "@rhinton",
+    "actor": "https://github.com/rhinton",
     "created_at": "2010-08-27T16:37:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9800",

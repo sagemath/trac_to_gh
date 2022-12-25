@@ -121,7 +121,7 @@ Fixed the doctest directly :)
 archive/issue_events_001366.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-11-21T13:05:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1228",

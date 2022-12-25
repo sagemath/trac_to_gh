@@ -337,7 +337,7 @@ Resolution: fixed
 archive/issue_events_009422.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-06-25T15:45:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
@@ -389,7 +389,7 @@ Changing status from closed to new.
 archive/issue_events_009423.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-07-11T19:16:40Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
@@ -691,7 +691,7 @@ Could be the first time I ever use `sage -info ...` (which ought to dump `SPKG.t
 archive/issue_events_009424.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-07-05T10:08:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9264",

@@ -60,7 +60,7 @@ $
 archive/issue_events_009465.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-07-01T17:10:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9307",

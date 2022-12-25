@@ -83,7 +83,7 @@ I say apply, but there are no doctests!  Why is the preparser not considered imp
 archive/issue_events_002306.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-15T04:58:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2144",
@@ -171,7 +171,7 @@ Changing status from closed to reopened.
 archive/issue_events_002307.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-02-15T10:15:09Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2144",
@@ -305,7 +305,7 @@ Resolution: fixed
 archive/issue_events_002308.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-15T22:05:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2144",

@@ -140,7 +140,7 @@ Why not? :)
 archive/issue_events_006653.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2009-07-09T19:10:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6408",

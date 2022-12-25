@@ -187,7 +187,7 @@ ok, John, as you wish
 archive/issue_events_008281.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2021-02-05T14:58:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8075",

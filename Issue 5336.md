@@ -103,7 +103,7 @@ Attachment [trac_5336.patch](tarball://root/attachments/some-uuid/ticket5336/tra
 archive/issue_events_005591.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-24T19:29:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5336",

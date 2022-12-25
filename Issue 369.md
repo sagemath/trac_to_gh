@@ -55,7 +55,7 @@ Resolution: duplicate
 archive/issue_events_000391.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2008-01-20T19:49:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/369",

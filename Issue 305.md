@@ -102,7 +102,7 @@ This is fixed by David Roe's new p-adics in SAGE-2.3.
 archive/issue_events_000324.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-03-06T22:22:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/305",

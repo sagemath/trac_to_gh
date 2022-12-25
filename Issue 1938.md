@@ -500,7 +500,7 @@ Merged 1938-fast-float-fixes.hg and trac-1938-fix_some_docstrings.patch in Sage 
 archive/issue_events_002094.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-01-30T09:21:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1938",

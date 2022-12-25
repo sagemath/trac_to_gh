@@ -98,7 +98,7 @@ Looks good to me.
 archive/issue_events_004320.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-09T02:03:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4082",

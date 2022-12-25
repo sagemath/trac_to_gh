@@ -200,7 +200,7 @@ This is fixed for me also, by applying the patch from #2843 against 3.0alpha3 (w
 archive/issue_events_002501.json:
 ```json
 {
-    "actor": "@kedlaya",
+    "actor": "https://github.com/kedlaya",
     "created_at": "2008-04-11T21:02:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
@@ -252,7 +252,7 @@ Changing status from closed to reopened.
 archive/issue_events_002502.json:
 ```json
 {
-    "actor": "@kedlaya",
+    "actor": "https://github.com/kedlaya",
     "created_at": "2008-04-18T13:46:57Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
@@ -358,7 +358,7 @@ Merged 9596.patch in Sage 3.0.1.alpha0
 archive/issue_events_002503.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-26T03:39:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2325",

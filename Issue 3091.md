@@ -137,7 +137,7 @@ Changing status from new to needs_info.
 archive/issue_events_003305.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-01-16T20:18:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3091",

@@ -207,7 +207,7 @@ Resolution: wontfix
 archive/issue_events_007878.json:
 ```json
 {
-    "actor": "@videlec",
+    "actor": "https://github.com/videlec",
     "created_at": "2020-03-29T15:52:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7657",

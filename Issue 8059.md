@@ -3838,7 +3838,7 @@ THe parallel build issue is now #9733.
 archive/issue_events_008268.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-08-15T08:02:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8059",

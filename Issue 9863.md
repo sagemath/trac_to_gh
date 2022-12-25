@@ -1492,7 +1492,7 @@ Positive review implicit by #10359.
 archive/issue_events_009993.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-12-05T11:57:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",

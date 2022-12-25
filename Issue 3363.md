@@ -91,7 +91,7 @@ To release manager: Yes, this should be closed.  Although the app is still not d
 archive/issue_events_003580.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-06-12T18:47:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3363",

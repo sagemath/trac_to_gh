@@ -424,7 +424,7 @@ As far as I understand, this new SPKG doesn't depend on #5793. So I'm merging th
 archive/issue_events_006601.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-23T04:41:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6355",
@@ -494,7 +494,7 @@ Changing status from closed to reopened.
 archive/issue_events_006602.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-26T08:30:25Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6355",
@@ -564,7 +564,7 @@ The code/doctest related to cliquer is to be found in #5793 : almost all the fun
 archive/issue_events_006603.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-31T23:30:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6355",

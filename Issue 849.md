@@ -52,7 +52,7 @@ Attachment [sage-cython-fixes.hg](tarball://root/attachments/some-uuid/ticket849
 archive/issue_events_000962.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-13T07:24:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/849",

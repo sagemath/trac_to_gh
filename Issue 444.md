@@ -267,7 +267,7 @@ then apply all 4 attachments to this bug (one bundle, and 3 patches) in order.
 archive/issue_events_000471.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-15T11:23:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/444",

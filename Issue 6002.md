@@ -79,7 +79,7 @@ archive/issue_comments_047664.json:
 archive/issue_events_006255.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-25T08:20:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6002",

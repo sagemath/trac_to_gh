@@ -224,7 +224,7 @@ Just a small comment: I believe that we can now use dollar signs for math input 
 archive/issue_events_007942.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-01-03T21:28:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7728",

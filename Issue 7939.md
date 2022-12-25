@@ -1454,7 +1454,7 @@ Merged [singular-3-1-0-4-20100120.spkg](http://sage.math.washington.edu/home/mal
 archive/issue_events_008155.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-24T17:38:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",

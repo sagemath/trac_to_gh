@@ -52,7 +52,7 @@ This works, looks good, and also works with #5636.
 archive/issue_events_005879.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-03-31T08:32:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5638",

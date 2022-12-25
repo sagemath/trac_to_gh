@@ -203,7 +203,7 @@ Resolution: fixed
 archive/issue_events_005943.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-12T07:34:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5701",

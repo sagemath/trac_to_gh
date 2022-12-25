@@ -206,7 +206,7 @@ Merged [trac_8307-update_sage-update.patch](http://trac.sagemath.org/sage_trac/a
 archive/issue_events_008504.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-02T21:13:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8307",

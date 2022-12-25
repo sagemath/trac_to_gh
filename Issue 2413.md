@@ -57,7 +57,7 @@ I believe this refers to documentation which is generated from server/notebook/t
 archive/issue_events_002589.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-14T05:34:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2413",

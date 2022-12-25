@@ -105,7 +105,7 @@ Jumping up and down enthusiastic positive review!!!
 archive/issue_events_007622.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-06T06:13:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7399",

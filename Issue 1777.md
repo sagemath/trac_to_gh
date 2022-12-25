@@ -118,7 +118,7 @@ Changing assignee from @williamstein to @jasongrout.
 archive/issue_events_001934.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-14T14:50:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1777",

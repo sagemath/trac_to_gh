@@ -384,7 +384,7 @@ I am happy.  (I thought I had reviewed the new patch, but maybe I was dreaming!)
 archive/issue_events_009285.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-06-09T02:28:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9127",

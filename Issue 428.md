@@ -160,7 +160,7 @@ Michael
 archive/issue_events_000455.json:
 ```json
 {
-    "actor": "dmharvey",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
     "created_at": "2007-08-28T22:27:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/428",

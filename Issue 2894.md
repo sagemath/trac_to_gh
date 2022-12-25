@@ -151,7 +151,7 @@ Attachment [2894-notebookperformance.patch](tarball://root/attachments/some-uuid
 archive/issue_events_003092.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-12T12:44:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2894",

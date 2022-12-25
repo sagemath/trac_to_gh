@@ -128,7 +128,7 @@ It SEGFAULTS with `sage -tp 2 sage/rings` in bernouli_mod_p.pyx though. If that 
 archive/issue_events_004302.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-05T16:59:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4066",

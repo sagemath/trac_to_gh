@@ -487,7 +487,7 @@ I'm closing this as fixed. See comment:8 for more info.
 archive/issue_events_001359.json:
 ```json
 {
-    "actor": "@burcin",
+    "actor": "https://github.com/burcin",
     "created_at": "2010-09-08T12:29:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1221",

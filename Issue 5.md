@@ -86,7 +86,7 @@ Apparently I'm the only person who has ever requested this, and I don't particul
 archive/issue_events_000005.json:
 ```json
 {
-    "actor": "dmharvey",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/dmharvey",
     "created_at": "2008-03-16T13:49:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5",

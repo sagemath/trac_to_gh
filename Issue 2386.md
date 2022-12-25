@@ -58,7 +58,7 @@ Discuss!
 archive/issue_events_002562.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2008-03-04T20:46:41Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2386",

@@ -63,7 +63,7 @@ mistakes in gen.pyx a rewriting interrupt.c/h somewhat.
 archive/issue_events_000783.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-09-21T05:46:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/710",

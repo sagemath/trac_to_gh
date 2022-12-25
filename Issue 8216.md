@@ -661,7 +661,7 @@ Apparently the incompatibilities with the 1.51 version are unavoidable.  Once in
 archive/issue_events_008418.json:
 ```json
 {
-    "actor": "mhampton",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mhampton",
     "created_at": "2011-01-13T04:41:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8216",

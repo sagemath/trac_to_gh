@@ -478,7 +478,7 @@ These three seem to be a matter of taste.  As long as we accurately document wha
 archive/issue_events_007714.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-08-19T17:45:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",

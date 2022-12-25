@@ -179,7 +179,7 @@ I'm closing this as a duplicate of #9568.
 archive/issue_events_000839.json:
 ```json
 {
-    "actor": "@nexttime",
+    "actor": "https://github.com/nexttime",
     "created_at": "2011-09-13T09:30:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
@@ -324,7 +324,7 @@ Changing status from closed to new.
 archive/issue_events_000840.json:
 ```json
 {
-    "actor": "@kini",
+    "actor": "https://github.com/kini",
     "created_at": "2012-05-28T05:55:36Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
@@ -1271,7 +1271,7 @@ Changing status from needs_review to positive_review.
 archive/issue_events_000841.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-06-19T12:24:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/748",

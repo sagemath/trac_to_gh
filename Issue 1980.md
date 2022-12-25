@@ -155,7 +155,7 @@ Works for me.
 archive/issue_events_002136.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-10-25T21:43:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1980",

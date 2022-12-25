@@ -57,7 +57,7 @@ This is fixed thanks to Sphinx and ReST which has native support for this.
 archive/issue_events_004138.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2009-04-27T13:01:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3911",

@@ -114,7 +114,7 @@ SCORE rings/laurent_series_ring.py: 100% (25 of 25)
 archive/issue_events_006826.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-02-08T13:24:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6589",

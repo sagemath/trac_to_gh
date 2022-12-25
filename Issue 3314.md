@@ -260,7 +260,7 @@ Ok. I tried this with 3.0.3rc0 after applying both #3312 and #3314 and can't rep
 archive/issue_events_003534.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2008-06-18T04:39:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3314",

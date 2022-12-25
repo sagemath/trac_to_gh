@@ -120,7 +120,7 @@ archive/issue_comments_005689.json:
 archive/issue_events_001053.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-10-21T01:05:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/935",
@@ -190,7 +190,7 @@ Changing status from closed to reopened.
 archive/issue_events_001054.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-28T16:07:51Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/935",
@@ -278,7 +278,7 @@ I think the attached patch should fix this problem.  (I will close the ticket on
 archive/issue_events_001055.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-28T21:40:17Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/935",

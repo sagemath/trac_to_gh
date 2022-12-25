@@ -168,7 +168,7 @@ Resolution: worksforme
 archive/issue_events_004195.json:
 ```json
 {
-    "actor": "@jvoight",
+    "actor": "https://github.com/jvoight",
     "created_at": "2008-09-20T17:05:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
@@ -202,7 +202,7 @@ Changing status from closed to reopened.
 archive/issue_events_004196.json:
 ```json
 {
-    "actor": "@jvoight",
+    "actor": "https://github.com/jvoight",
     "created_at": "2008-09-20T17:05:35Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3967",
@@ -358,7 +358,7 @@ Merged trac-3967-rebase.patch in Sage 3.1.3.alpha1
 archive/issue_events_004197.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-23T00:09:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3967",

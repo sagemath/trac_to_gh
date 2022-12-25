@@ -101,7 +101,7 @@ Attachment [maxima-error2.9.1.alpha2.patch](tarball://root/attachments/some-uuid
 archive/issue_events_001740.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-12-21T22:09:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1584",

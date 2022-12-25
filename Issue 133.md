@@ -266,7 +266,7 @@ Very good!
 archive/issue_events_000139.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-01T04:43:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/133",

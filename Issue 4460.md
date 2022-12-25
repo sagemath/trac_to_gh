@@ -236,7 +236,7 @@ I have no opinion about this, but if you want to do something about it, let's mo
 archive/issue_events_004706.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-23T06:57:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
@@ -445,7 +445,7 @@ Changing status from closed to reopened.
 archive/issue_events_004707.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-28T17:44:57Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
@@ -562,7 +562,7 @@ Resolution: fixed
 archive/issue_events_004708.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-30T01:46:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4460",

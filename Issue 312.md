@@ -69,7 +69,7 @@ This bug report actually doesn't make any sense, or is the result of confusion a
 archive/issue_events_000331.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-08-19T02:05:07Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/312",

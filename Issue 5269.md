@@ -125,7 +125,7 @@ Patch looks good and doctests pass.
 archive/issue_events_005525.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-15T07:56:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5269",

@@ -230,7 +230,7 @@ Tests pass, formatting updated as requested by jdemeyer.
 archive/issue_events_009704.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-01-21T21:07:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9559",

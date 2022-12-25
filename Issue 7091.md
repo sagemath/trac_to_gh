@@ -334,7 +334,7 @@ I've made an spkg with the changes William mentioned at http://sage.math.washing
 archive/issue_events_007313.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-03-08T20:50:25Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7091",

@@ -697,7 +697,7 @@ This might be totally wrong, but we will see :)
 archive/issue_events_001134.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-28T10:13:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1010",

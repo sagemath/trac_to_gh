@@ -75,7 +75,7 @@ Changing status from new to assigned.
 archive/issue_events_002210.json:
 ```json
 {
-    "actor": "@aghitza",
+    "actor": "https://github.com/aghitza",
     "created_at": "2008-02-23T01:23:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2049",

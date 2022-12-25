@@ -165,7 +165,7 @@ Weird. Works now.
 archive/issue_events_002022.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-05-17T19:54:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1864",

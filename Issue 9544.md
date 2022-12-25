@@ -371,7 +371,7 @@ Replying to [comment:15 kcrisman]:
 archive/issue_events_009693.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-06-28T09:36:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9544",

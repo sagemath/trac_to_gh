@@ -115,7 +115,7 @@ http://sage.math.washington.edu/home/mvngu/release/merged-tkt.txt
 archive/issue_events_005094.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-20T15:52:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4849",

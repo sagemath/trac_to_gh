@@ -235,7 +235,7 @@ Francis: You should put the ticket number in your commit message.
 archive/issue_events_008341.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-03-02T21:44:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",

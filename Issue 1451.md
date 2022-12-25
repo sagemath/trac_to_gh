@@ -104,7 +104,7 @@ Fixed by #1296, which was merged in 2.9.alpha5.
 archive/issue_events_001598.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-11T17:58:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1451",

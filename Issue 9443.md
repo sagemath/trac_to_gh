@@ -445,7 +445,7 @@ Thanks!  The new patch applies cleanly to 4.5.3.alpha0.  I've attached V2, which
 archive/issue_events_009600.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-09-15T11:14:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9443",

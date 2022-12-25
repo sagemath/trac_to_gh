@@ -2841,7 +2841,7 @@ apply trac_6812_integer_vectors_mod_permgroup-final.patch trac_6812-reviewer.pat
 archive/issue_events_007046.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-06-14T06:37:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6812",

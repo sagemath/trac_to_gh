@@ -176,7 +176,7 @@ Close as fixed by #8079.
 archive/issue_events_004107.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-14T14:39:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3882",

@@ -49,7 +49,7 @@ Changing type from defect to enhancement.
 archive/issue_events_001503.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2007-12-02T04:51:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1362",

@@ -104,7 +104,7 @@ Sorry this took 18 hours.  Patch looks fine, applied fine and deals with the pro
 archive/issue_events_008876.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-19T05:17:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8706",

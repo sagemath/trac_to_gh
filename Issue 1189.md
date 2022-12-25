@@ -209,7 +209,7 @@ Resolution: fixed
 archive/issue_events_001321.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-11-18T06:15:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
@@ -340,7 +340,7 @@ Changing status from closed to reopened.
 archive/issue_events_001322.json:
 ```json
 {
-    "actor": "@certik",
+    "actor": "https://github.com/certik",
     "created_at": "2007-11-18T13:59:08Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
@@ -507,7 +507,7 @@ Merged in 2.8.15.rc0 - finally ;)
 archive/issue_events_001323.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-02T23:23:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
@@ -577,7 +577,7 @@ Changing status from closed to reopened.
 archive/issue_events_001324.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-03T00:30:05Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
@@ -699,7 +699,7 @@ Michael
 archive/issue_events_001325.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2007-12-10T22:30:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1189",

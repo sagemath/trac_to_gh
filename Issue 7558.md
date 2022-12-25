@@ -68,7 +68,7 @@ Copy of #7559 :-)
 archive/issue_events_007788.json:
 ```json
 {
-    "actor": "@nathanncohen",
+    "actor": "https://github.com/nathanncohen",
     "created_at": "2009-11-30T12:24:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7558",

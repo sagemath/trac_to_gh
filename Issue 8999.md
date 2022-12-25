@@ -133,7 +133,7 @@ bug disappeared when I rebuilt sage.
 archive/issue_events_009153.json:
 ```json
 {
-    "actor": "mariah",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mariah",
     "created_at": "2010-05-20T19:06:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8999",

@@ -93,7 +93,7 @@ The example in the description works for me.  I suggest closing this ticket as 
 archive/issue_events_005825.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-01T08:49:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5580",

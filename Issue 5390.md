@@ -142,7 +142,7 @@ Cheers
 archive/issue_events_005647.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-27T22:58:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5390",

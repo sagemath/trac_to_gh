@@ -380,7 +380,7 @@ Resolution: wontfix
 archive/issue_events_008734.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2015-04-09T12:13:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8551",

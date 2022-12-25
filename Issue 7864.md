@@ -1269,7 +1269,7 @@ There are no library patches. All patches are in the .spkg file and are committe
 archive/issue_events_008079.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-08-09T09:37:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7864",

@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6560
 archive/issue_events_006797.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-21T10:06:23Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6560",

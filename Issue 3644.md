@@ -90,7 +90,7 @@ If this is about doctesting, isn't it already "enabled" in `sagenb.simple.twist`
 archive/issue_events_003863.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-11-14T08:46:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3644",

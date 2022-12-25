@@ -195,7 +195,7 @@ Resolution: invalid
 archive/issue_events_003568.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2009-01-22T22:43:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3350",

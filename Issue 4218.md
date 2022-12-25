@@ -188,7 +188,7 @@ and also that `S.random_element()` gives a random integer (I think).  Another ti
 archive/issue_events_004455.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-12-21T22:39:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4218",

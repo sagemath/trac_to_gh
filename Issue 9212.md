@@ -71,7 +71,7 @@ Attachment [trac-9212-identity-zero-mutable.patch](tarball://root/attachments/so
 archive/issue_events_009366.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2010-06-11T07:44:18Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
@@ -309,7 +309,7 @@ Changing status from closed to new.
 archive/issue_events_009367.json:
 ```json
 {
-    "actor": "@jasongrout",
+    "actor": "https://github.com/jasongrout",
     "created_at": "2010-06-14T16:11:48Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
@@ -468,7 +468,7 @@ Changing status from needs_review to positive_review.
 archive/issue_events_009368.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-07-20T08:20:50Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",

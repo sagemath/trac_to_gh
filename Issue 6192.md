@@ -139,7 +139,7 @@ Merged in 4.0.1.rc0.
 archive/issue_events_006440.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-06-04T06:29:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6192",

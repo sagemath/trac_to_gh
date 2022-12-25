@@ -963,7 +963,7 @@ Everything here is now in a doctest in #4102, including the stuff in the thread 
 archive/issue_events_003641.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-02-17T20:10:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3426",

@@ -1355,7 +1355,7 @@ Michael
 archive/issue_events_005229.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-03-25T10:19:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
@@ -1407,7 +1407,7 @@ Changing status from closed to reopened.
 archive/issue_events_005230.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2009-04-10T09:23:37Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4987",
@@ -1479,7 +1479,7 @@ This is a blocker for 0.11.1
 archive/issue_events_005231.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-04-10T10:22:28Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4987",

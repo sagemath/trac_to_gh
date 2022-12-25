@@ -234,7 +234,7 @@ Acaccording to Yi this is fixed, so close this.
 archive/issue_events_002189.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-24T16:58:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2033",

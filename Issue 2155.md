@@ -199,7 +199,7 @@ Merged in Sage 2.10.3.rc1 (or earlier via #2053). It would be great if somebody 
 archive/issue_events_002321.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-05T00:46:12Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2155",

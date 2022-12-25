@@ -219,7 +219,7 @@ Rebased to sage-5.8.beta0.
 archive/issue_events_006233.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-02-22T19:09:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5978",

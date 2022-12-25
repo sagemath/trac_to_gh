@@ -436,7 +436,7 @@ Merged 1382_5.patch and 1382_5-part2of2.patch in Sage 2.10.3.alpha0. Thanks Will
 archive/issue_events_001526.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-24T21:25:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1382",

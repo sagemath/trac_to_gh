@@ -119,7 +119,7 @@ Done by ncalexan for 4.0.2.alpha0.
 archive/issue_events_006526.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-14T22:18:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6282",

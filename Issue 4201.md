@@ -318,7 +318,7 @@ I just indented the examples on Jason's patches.  +1 to them.  Apply only the la
 archive/issue_events_004440.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-27T04:24:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4201",

@@ -149,7 +149,7 @@ Resolution: fixed
 archive/issue_events_006844.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-24T22:35:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6605",
@@ -270,7 +270,7 @@ Changing status from closed to reopened.
 archive/issue_events_006845.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-27T05:24:22Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6605",
@@ -324,7 +324,7 @@ Resolution: fixed
 archive/issue_events_006846.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-15T16:34:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6605",

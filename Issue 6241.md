@@ -130,7 +130,7 @@ Yep, I can give that a positive review.
 archive/issue_events_006486.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2009-06-16T05:20:57Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6241",

@@ -130,7 +130,7 @@ LGTM. Nice job.
 archive/issue_events_008016.json:
 ```json
 {
-    "actor": "@TimDumol",
+    "actor": "https://github.com/TimDumol",
     "created_at": "2010-01-19T03:33:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7801",

@@ -87,7 +87,7 @@ This bug has been fixed in 2.10.4, please close it.
 archive/issue_events_002384.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-24T16:49:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2214",

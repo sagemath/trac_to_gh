@@ -275,7 +275,7 @@ Merged "fibonaccy-graph.patch" in 4.4.alpha0
 archive/issue_events_008772.json:
 ```json
 {
-    "actor": "@jhpalmieri",
+    "actor": "https://github.com/jhpalmieri",
     "created_at": "2010-04-16T18:51:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8600",

@@ -50,7 +50,7 @@ This will work once #12415 is finished (it works now on my machine).
 archive/issue_events_004537.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-02-22T21:35:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4294",

@@ -95,7 +95,7 @@ Looks good to me!
 archive/issue_events_004362.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-15T02:49:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4125",
@@ -227,7 +227,7 @@ Changing status from closed to reopened.
 archive/issue_events_004363.json:
 ```json
 {
-    "actor": "GeorgSWeber",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber",
     "created_at": "2008-10-06T19:23:12Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4125",
@@ -297,7 +297,7 @@ Michael
 archive/issue_events_004364.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-10-07T11:56:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4125",

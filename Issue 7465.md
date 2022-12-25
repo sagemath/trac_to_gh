@@ -131,7 +131,7 @@ Resolution: worksforme
 archive/issue_events_007691.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-11-05T06:58:00Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7465",

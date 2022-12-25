@@ -48,7 +48,7 @@ Changing assignee from boothby to TimothyClemans.
 archive/issue_events_000363.json:
 ```json
 {
-    "actor": "TimothyClemans",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
     "created_at": "2007-03-31T18:24:37Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/339",

@@ -322,7 +322,7 @@ Resolution: fixed
 archive/issue_events_009959.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-01T10:11:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
@@ -356,7 +356,7 @@ Changing status from closed to needs_work.
 archive/issue_events_009960.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-02T15:34:34Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
@@ -430,7 +430,7 @@ forget the patch.)
 archive/issue_events_009961.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-11-04T11:43:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
@@ -464,7 +464,7 @@ Changing status from closed to new.
 archive/issue_events_009962.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-11-04T11:43:42Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
@@ -555,7 +555,7 @@ Done.
 archive/issue_events_009963.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-10T22:20:13Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9837",

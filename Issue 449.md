@@ -135,7 +135,7 @@ Fixed since #1626 has been merged in Sage 3.0.alpha5.
 archive/issue_events_000476.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-14T03:57:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/449",

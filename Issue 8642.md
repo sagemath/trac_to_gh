@@ -125,7 +125,7 @@ Merged into sagenb-0.8.p0
 archive/issue_events_008811.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2010-04-29T05:03:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8642",

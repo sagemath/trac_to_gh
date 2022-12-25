@@ -140,7 +140,7 @@ See Trac #5300 which will be about doing the same thing more efficiently.
 archive/issue_events_005545.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-18T00:58:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5291",

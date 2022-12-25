@@ -207,7 +207,7 @@ Done!
 archive/issue_events_008344.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-02-10T18:31:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8134",

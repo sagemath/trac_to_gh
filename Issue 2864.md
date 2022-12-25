@@ -353,7 +353,7 @@ Attachment [2864.2.patch](tarball://root/attachments/some-uuid/ticket2864/2864.2
 archive/issue_events_003058.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-04-10T20:31:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",

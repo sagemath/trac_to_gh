@@ -2090,7 +2090,7 @@ This ticket might have got a bit confusing. Just to recap, these things need goi
 archive/issue_events_007733.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2010-01-04T01:47:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7505",

@@ -2083,7 +2083,7 @@ Thanks!  Patches apply fine now.  Sorry for the mess.
 archive/issue_events_009845.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-27T09:13:56Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9713",
@@ -2173,7 +2173,7 @@ Changing status from closed to new.
 archive/issue_events_009846.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-01-29T09:21:26Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9713",
@@ -2425,7 +2425,7 @@ Resolution: fixed
 archive/issue_events_009847.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2011-02-07T08:13:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9713",

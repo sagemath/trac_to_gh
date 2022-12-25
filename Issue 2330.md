@@ -294,7 +294,7 @@ Changing status from needs_review to positive_review.
 archive/issue_events_002508.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2017-12-11T01:04:08Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2330",

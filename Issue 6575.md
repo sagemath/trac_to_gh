@@ -64,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6575
 archive/issue_events_006812.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-01-25T15:48:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6575",

@@ -50,7 +50,7 @@ Resolution: invalid
 archive/issue_events_000319.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-03-01T18:07:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/302",
@@ -155,7 +155,7 @@ Changing status from closed to reopened.
 archive/issue_events_000320.json:
 ```json
 {
-    "actor": "TimothyClemans",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans",
     "created_at": "2007-03-01T22:27:51Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/302",
@@ -269,7 +269,7 @@ For example on the TRAC server for Knoboo I've seen it report that the server is
 archive/issue_events_000321.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-07-04T21:40:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/302",

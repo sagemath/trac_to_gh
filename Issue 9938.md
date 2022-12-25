@@ -173,7 +173,7 @@ Resolution: fixed
 archive/issue_events_010065.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-02-11T15:14:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9938",

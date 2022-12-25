@@ -175,7 +175,7 @@ ok, the bot is happy.
 archive/issue_events_010016.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2016-03-08T23:30:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9891",

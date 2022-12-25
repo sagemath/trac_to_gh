@@ -343,7 +343,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic_field.py
 archive/issue_events_000100.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-01-22T03:27:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/98",

@@ -1645,7 +1645,7 @@ archive/issue_comments_044121.json:
 archive/issue_events_005894.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-23T22:40:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
@@ -1850,7 +1850,7 @@ Changing status from closed to reopened.
 archive/issue_events_005895.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-28T17:59:05Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",
@@ -1946,7 +1946,7 @@ Merged:
 archive/issue_events_005896.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-30T02:01:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5653",

@@ -102,7 +102,7 @@ I think the right change is to make the doctests in darwin_utilities.pyx marked
 archive/issue_events_006669.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-02T06:16:15Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6427",

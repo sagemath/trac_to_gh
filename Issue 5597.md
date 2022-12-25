@@ -442,7 +442,7 @@ I applied just [attachment:trac_5597-infinite_polynomial_ring.patch] to 4.2.alph
 archive/issue_events_005841.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-10-21T06:18:48Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5597",

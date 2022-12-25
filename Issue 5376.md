@@ -75,7 +75,7 @@ I see that the patch fixes the formatting and typo issues. Positive review.
 archive/issue_events_005631.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-28T16:25:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5376",

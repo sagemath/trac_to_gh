@@ -133,7 +133,7 @@ Michael
 archive/issue_events_002375.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2008-03-05T00:38:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2207",
@@ -221,7 +221,7 @@ Changing status from closed to reopened.
 archive/issue_events_002376.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2008-03-05T01:09:01Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/2207",
@@ -257,7 +257,7 @@ New patch against 2.10.3.rc1 attached which adds missing doctests
 archive/issue_events_002377.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-03-05T05:35:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2207",

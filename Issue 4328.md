@@ -155,7 +155,7 @@ Resolution: worksforme
 archive/issue_events_004575.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2008-10-20T13:23:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4328",

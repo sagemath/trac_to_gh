@@ -243,7 +243,7 @@ diff -r 158dfcee989e -r 5e2621f34000 sage/interfaces/ecm.py
 archive/issue_events_000193.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2007-01-09T18:13:59Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/186",

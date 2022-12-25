@@ -1942,7 +1942,7 @@ Its done, finally!
 archive/issue_events_006426.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-11T16:33:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",

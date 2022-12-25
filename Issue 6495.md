@@ -6632,7 +6632,7 @@ Resolution: fixed
 archive/issue_events_006733.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2013-02-17T22:41:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",

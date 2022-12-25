@@ -218,7 +218,7 @@ This seems to have "magically" fixed itself for me after 3.0.1.alpha1.  After co
 archive/issue_events_003242.json:
 ```json
 {
-    "actor": "@garyfurnish",
+    "actor": "https://github.com/garyfurnish",
     "created_at": "2008-05-01T10:24:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3035",

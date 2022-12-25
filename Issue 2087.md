@@ -99,7 +99,7 @@ Attachment [trac_2087.patch](tarball://root/attachments/some-uuid/ticket2087/tra
 archive/issue_events_002248.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-25T19:49:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2087",

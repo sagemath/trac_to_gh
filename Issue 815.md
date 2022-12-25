@@ -192,7 +192,7 @@ Merged scripts-815.patch in Sage 3.2.1.rc0
 archive/issue_events_000927.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-28T07:00:44Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/815",

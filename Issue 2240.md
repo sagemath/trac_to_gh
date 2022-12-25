@@ -259,7 +259,7 @@ New patch posted.
 archive/issue_events_002410.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-26T07:39:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2240",

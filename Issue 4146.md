@@ -90,7 +90,7 @@ William suggested that this probably got fixed in matplotlib as pdf rendering go
 archive/issue_events_004384.json:
 ```json
 {
-    "actor": "shumow",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/shumow",
     "created_at": "2009-01-23T10:28:32Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4146",

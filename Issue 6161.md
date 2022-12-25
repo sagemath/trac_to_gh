@@ -110,7 +110,7 @@ I'm going to close this an invalid.  A more appropriate ticket should be opened 
 archive/issue_events_006410.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2009-05-31T19:25:02Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6161",

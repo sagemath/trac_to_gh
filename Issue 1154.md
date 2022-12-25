@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1154
 archive/issue_events_001284.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-12-02T06:33:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1154",

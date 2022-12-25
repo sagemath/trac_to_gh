@@ -102,7 +102,7 @@ Dupe of #6482
 archive/issue_events_006717.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2009-09-09T20:13:29Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6481",

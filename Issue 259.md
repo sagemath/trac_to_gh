@@ -147,7 +147,7 @@ In sage 2.8.7.2 with axiom4sage 0.3.1, this works for me on 32-bit and 64-bit x8
 archive/issue_events_000275.json:
 ```json
 {
-    "actor": "cwitty",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/cwitty",
     "created_at": "2007-10-20T22:37:26Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/259",

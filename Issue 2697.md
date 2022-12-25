@@ -861,7 +861,7 @@ Merged trac_2697.patch in Sage 3.3.alpha2
 archive/issue_events_002887.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-01-24T18:41:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2697",

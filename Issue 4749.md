@@ -251,7 +251,7 @@ OK, I relented.  I have added a patch which addresses the specific bug.  There i
 archive/issue_events_004992.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-12-21T12:37:24Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4749",

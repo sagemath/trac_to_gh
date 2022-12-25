@@ -81,7 +81,7 @@ This ticket can be closed.
 archive/issue_events_009161.json:
 ```json
 {
-    "actor": "@dimpase",
+    "actor": "https://github.com/dimpase",
     "created_at": "2010-05-22T08:34:20Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9007",

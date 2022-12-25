@@ -111,7 +111,7 @@ We should close this ticket as outdated.
 archive/issue_events_010111.json:
 ```json
 {
-    "actor": "@fchapoton",
+    "actor": "https://github.com/fchapoton",
     "created_at": "2020-06-25T13:33:35Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9987",

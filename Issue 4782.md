@@ -245,7 +245,7 @@ Number Field in b with defining polynomial x^2 - 69*x + 38 over its base field
 archive/issue_events_005024.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-02-20T05:19:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
@@ -375,7 +375,7 @@ Changing status from closed to reopened.
 archive/issue_events_005025.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-02-20T07:03:47Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
@@ -559,7 +559,7 @@ Does anyone still experience issues?
 archive/issue_events_005026.json:
 ```json
 {
-    "actor": "@robertwb",
+    "actor": "https://github.com/robertwb",
     "created_at": "2010-12-04T19:40:27Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4782",

@@ -197,7 +197,7 @@ Jaap
 archive/issue_events_006547.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-06-15T23:56:39Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
@@ -285,7 +285,7 @@ Changing status from closed to reopened.
 archive/issue_events_006548.json:
 ```json
 {
-    "actor": "@williamstein",
+    "actor": "https://github.com/williamstein",
     "created_at": "2009-06-16T00:01:57Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
@@ -429,7 +429,7 @@ Resolution: fixed
 archive/issue_events_006549.json:
 ```json
 {
-    "actor": "@craigcitro",
+    "actor": "https://github.com/craigcitro",
     "created_at": "2009-06-17T23:55:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6303",

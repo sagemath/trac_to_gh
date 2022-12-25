@@ -101,7 +101,7 @@ This is now fixed by #3541.  Cheers.
 archive/issue_events_005504.json:
 ```json
 {
-    "actor": "ekirkman",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/ekirkman",
     "created_at": "2009-02-14T03:48:19Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5248",

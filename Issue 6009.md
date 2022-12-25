@@ -185,7 +185,7 @@ Reviewer patch looks good.
 archive/issue_events_006264.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-05-11T08:52:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6009",

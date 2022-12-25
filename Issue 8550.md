@@ -187,7 +187,7 @@ thanks
 archive/issue_events_008733.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2017-12-14T12:40:14Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8550",

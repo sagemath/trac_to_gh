@@ -121,7 +121,7 @@ Tested both with and without the database installed!
 archive/issue_events_006558.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-07-23T03:24:34Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6310",

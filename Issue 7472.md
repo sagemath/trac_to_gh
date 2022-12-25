@@ -552,7 +552,7 @@ Attachment [trac-7472-review.patch](tarball://root/attachments/some-uuid/ticket7
 archive/issue_events_007698.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-01-18T22:57:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7472",

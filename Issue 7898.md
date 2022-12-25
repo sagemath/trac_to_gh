@@ -141,7 +141,7 @@ Jaap
 archive/issue_events_008111.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-01-14T02:50:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7898",
@@ -211,7 +211,7 @@ Changing status from closed to new.
 archive/issue_events_008112.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-01-14T06:35:28Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7898",
@@ -441,7 +441,7 @@ Resolution: fixed
 archive/issue_events_008113.json:
 ```json
 {
-    "actor": "@rlmill",
+    "actor": "https://github.com/rlmill",
     "created_at": "2010-01-16T02:29:09Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7898",

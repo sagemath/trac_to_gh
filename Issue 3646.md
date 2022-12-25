@@ -321,7 +321,7 @@ The patch `trac_3646-rebased-v2.patch` is the same as `trac_3646-rebased.patch`.
 archive/issue_events_003865.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-24T07:54:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3646",

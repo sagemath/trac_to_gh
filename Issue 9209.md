@@ -156,7 +156,7 @@ Changing status from needs_review to positive_review.
 archive/issue_events_009363.json:
 ```json
 {
-    "actor": "@embray",
+    "actor": "https://github.com/embray",
     "created_at": "2017-07-13T07:54:31Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9209",

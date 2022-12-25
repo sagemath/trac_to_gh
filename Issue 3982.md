@@ -69,7 +69,7 @@ I've attached a new patch which adds a simple doctest.  Only apply trac_3982.2.p
 archive/issue_events_004212.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-29T00:18:33Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3982",

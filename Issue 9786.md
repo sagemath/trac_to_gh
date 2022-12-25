@@ -723,7 +723,7 @@ Vincent
 archive/issue_events_009916.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2015-04-21T00:10:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9786",

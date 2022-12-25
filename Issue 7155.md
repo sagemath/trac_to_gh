@@ -81,7 +81,7 @@ This is now a duplicate of #7325, which already has a first patch, so I am closi
 archive/issue_events_007375.json:
 ```json
 {
-    "actor": "@kcrisman",
+    "actor": "https://github.com/kcrisman",
     "created_at": "2009-10-28T00:54:58Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7155",

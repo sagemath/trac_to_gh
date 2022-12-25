@@ -177,7 +177,7 @@ Positive review of the proposal to close as duplicate.
 archive/issue_events_010017.json:
 ```json
 {
-    "actor": "@qed777",
+    "actor": "https://github.com/qed777",
     "created_at": "2010-10-03T09:37:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9892",
@@ -247,7 +247,7 @@ Changing status from closed to needs_work.
 archive/issue_events_010018.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-10-17T08:39:22Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9892",
@@ -483,7 +483,7 @@ Thanks!
 archive/issue_events_010019.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-10T22:20:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9892",
@@ -553,7 +553,7 @@ Changing status from closed to new.
 archive/issue_events_010020.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-12T13:24:49Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/9892",
@@ -641,7 +641,7 @@ Resolution: fixed
 archive/issue_events_010021.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2010-11-15T23:26:38Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9892",

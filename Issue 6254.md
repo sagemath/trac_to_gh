@@ -72,7 +72,7 @@ This is a duplicate of #6196.
 archive/issue_events_006498.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-08-13T19:21:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6254",

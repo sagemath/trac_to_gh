@@ -50,7 +50,7 @@ Attachment [4523-typo-theta.patch](tarball://root/attachments/some-uuid/ticket45
 archive/issue_events_004778.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-20T09:33:53Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4532",

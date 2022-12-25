@@ -130,7 +130,7 @@ It still works for me too, but this should probably be fixed for consistencies s
 archive/issue_events_007060.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-24T06:18:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6826",

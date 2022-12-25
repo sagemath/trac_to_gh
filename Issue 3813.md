@@ -433,7 +433,7 @@ Merged in Sage 3.1.2.alpha0
 archive/issue_events_004035.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-21T22:12:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
@@ -570,7 +570,7 @@ Changing status from closed to reopened.
 archive/issue_events_004036.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-22T00:36:06Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
@@ -646,7 +646,7 @@ The latest trac_3813-final.patch should apply to the latest Sage.
 archive/issue_events_004037.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-27T00:59:03Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3813",

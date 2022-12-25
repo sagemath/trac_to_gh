@@ -47,7 +47,7 @@ These patches are shipped with SAGE now.
 archive/issue_events_000141.json:
 ```json
 {
-    "actor": "@malb",
+    "actor": "https://github.com/malb",
     "created_at": "2007-08-09T21:48:16Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/135",

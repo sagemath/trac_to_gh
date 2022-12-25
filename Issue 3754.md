@@ -74,7 +74,7 @@ My work at #5159 hopefully provides something a bit closer to what Lloyd was aft
 archive/issue_events_003976.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2009-05-12T01:39:45Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3754",

@@ -282,7 +282,7 @@ Dave
 archive/issue_events_007373.json:
 ```json
 {
-    "actor": "drkirkby",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/drkirkby",
     "created_at": "2010-06-19T13:07:49Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7153",

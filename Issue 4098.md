@@ -130,7 +130,7 @@ You got there before me but I agree.
 archive/issue_events_004335.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-09-10T21:25:54Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/4098",

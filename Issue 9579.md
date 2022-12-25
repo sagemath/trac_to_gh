@@ -196,7 +196,7 @@ dear release manager, first merge trac_9579.patch and then trac_9579_review.patc
 archive/issue_events_009724.json:
 ```json
 {
-    "actor": "@dandrake",
+    "actor": "https://github.com/dandrake",
     "created_at": "2010-07-26T02:37:43Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9579",

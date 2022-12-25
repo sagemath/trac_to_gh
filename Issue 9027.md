@@ -568,7 +568,7 @@ Merged in 4.5.2.alpha1.
 archive/issue_events_009179.json:
 ```json
 {
-    "actor": "@dandrake",
+    "actor": "https://github.com/dandrake",
     "created_at": "2010-07-26T02:17:30Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9027",

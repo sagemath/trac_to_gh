@@ -116,7 +116,7 @@ Michael
 archive/issue_events_002123.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-13T07:31:22Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1969",

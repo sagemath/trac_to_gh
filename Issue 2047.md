@@ -94,7 +94,7 @@ I am not objecting this patch goes in, but maybe a follow-up patch could address
 archive/issue_events_002205.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-02-07T05:25:42Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/2047",

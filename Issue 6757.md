@@ -126,7 +126,7 @@ I suspect this should be closed in that case.
 archive/issue_events_006987.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2009-09-28T01:34:21Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/6757",

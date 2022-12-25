@@ -524,7 +524,7 @@ Resolution: fixed
 archive/issue_events_005626.json:
 ```json
 {
-    "actor": "@ncalexan",
+    "actor": "https://github.com/ncalexan",
     "created_at": "2009-06-13T23:20:40Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5371",

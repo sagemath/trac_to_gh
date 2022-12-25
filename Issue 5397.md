@@ -159,7 +159,7 @@ I suggest to resolve it as duplicate, even though I couldn't point my finger to 
 archive/issue_events_005654.json:
 ```json
 {
-    "actor": "@jdemeyer",
+    "actor": "https://github.com/jdemeyer",
     "created_at": "2012-03-02T13:54:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5397",

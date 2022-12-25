@@ -91,7 +91,7 @@ Looks good to me.  I've updated the website to include this.
 archive/issue_events_008719.json:
 ```json
 {
-    "actor": "@mwhansen",
+    "actor": "https://github.com/mwhansen",
     "created_at": "2011-12-18T09:50:10Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/8538",

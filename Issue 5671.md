@@ -315,7 +315,7 @@ Which has been done :)  mmezz, just add your real name in the reviewers field.
 archive/issue_events_005914.json:
 ```json
 {
-    "actor": "@vbraun",
+    "actor": "https://github.com/vbraun",
     "created_at": "2014-03-19T04:41:52Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",

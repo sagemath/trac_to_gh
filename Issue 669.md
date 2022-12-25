@@ -99,7 +99,7 @@ Changing assignee from @williamstein to failure.
 archive/issue_events_000737.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-11-21T18:59:01Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/669",

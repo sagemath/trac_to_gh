@@ -125,7 +125,7 @@ Closing this as a duplicate of #6456.
 archive/issue_events_001779.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-02-02T07:14:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/1620",

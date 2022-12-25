@@ -109,7 +109,7 @@ Regards,
 archive/issue_events_009662.json:
 ```json
 {
-    "actor": "@alexanderdreyer",
+    "actor": "https://github.com/alexanderdreyer",
     "created_at": "2010-08-19T06:47:51Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/9513",

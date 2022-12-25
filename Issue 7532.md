@@ -463,7 +463,7 @@ OK, I'll move my patch from here to #7535.  I'll also take a look at those other
 archive/issue_events_007760.json:
 ```json
 {
-    "actor": "@TimDumol",
+    "actor": "https://github.com/TimDumol",
     "created_at": "2010-01-20T09:41:11Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
@@ -533,7 +533,7 @@ Changing status from closed to needs_work.
 archive/issue_events_007761.json:
 ```json
 {
-    "actor": "@TimDumol",
+    "actor": "https://github.com/TimDumol",
     "created_at": "2010-01-20T09:41:46Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
@@ -842,7 +842,7 @@ Thank you for pointing out the addendum, jhpalmieri.  Merged in this order:
 archive/issue_events_007762.json:
 ```json
 {
-    "actor": "mvngu",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mvngu",
     "created_at": "2010-01-23T20:03:36Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/7532",

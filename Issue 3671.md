@@ -270,7 +270,7 @@ http://sage.math.washington.edu/home/was/patches/linbox-1.1.6rc0.p1.spkg
 archive/issue_events_003890.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-07-21T14:15:46Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3671",
@@ -435,7 +435,7 @@ Changing status from closed to reopened.
 archive/issue_events_003891.json:
 ```json
 {
-    "actor": "@ClementPernet",
+    "actor": "https://github.com/ClementPernet",
     "created_at": "2008-08-12T19:02:09Z",
     "event": "reopened",
     "issue": "https://github.com/sagemath/sagetest/issues/3671",
@@ -491,7 +491,7 @@ Resolution: fixed
 archive/issue_events_003892.json:
 ```json
 {
-    "actor": "mabshoff",
+    "actor": "https://trac.sagemath.org/admin/accounts/users/mabshoff",
     "created_at": "2008-08-13T00:10:04Z",
     "event": "closed",
     "issue": "https://github.com/sagemath/sagetest/issues/3671",
